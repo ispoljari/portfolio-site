@@ -1,8 +1,13 @@
+/* 
+Critical css necessary for styling the loading spinner.
+It is loaded before bundle.js, styled-components, and immediately after index.html.
+*/
+
 body {
   background-color: #191919;
 }
 
-.loader:empty {
+.loader {
   position: absolute;
   top: calc(50% - 4em);
   left: calc(50% - 4em);
@@ -12,6 +17,8 @@ body {
   border-left: 1.1em solid #000;
   border-radius: 50%;
   animation: load8 1.1s infinite linear;
+  opacity: 1;
+  transition: opacity 0.2s ease-out;
 }
 
 @keyframes load8 {
@@ -21,4 +28,8 @@ body {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.loader--hide {
+  opacity: 0;
 }

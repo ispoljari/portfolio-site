@@ -1,25 +1,14 @@
 import React, { Component } from 'react';
 
 import { Home, Matrix } from '../index';
+import { showLoader, hideLoader } from '../../util';
 
 class App extends Component {
-  state = {
-    loading: true
-  };
-
   componentDidMount() {
-    this.setState({
-      loading: false
-    })
+    hideLoader();
   }
 
   render() {
-    const { loading } = this.state;
-
-    if(loading) {
-      return null;
-    }
-    
     return (
       <React.Fragment>
         <Matrix />

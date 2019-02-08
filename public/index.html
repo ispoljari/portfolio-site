@@ -9,7 +9,7 @@
     />
     <meta name="theme-color" content="#000000" />
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" />
-    <link rel="stylesheet" href="loader.css">
+    <link rel="stylesheet" href="critical.css"> <!-- styles for spinner, before content from bundle.js is rendered to DOM -->
     <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -28,7 +28,8 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root" class="loader"></div>
+    <div id="root"></div>
+    <div class="loader"></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
