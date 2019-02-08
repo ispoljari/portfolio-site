@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box } from '@smooth-ui/core-sc';
+import { Link } from 'react-router-dom'; 
 
 import * as Styled from './Navigation.styled';
 
@@ -10,24 +11,24 @@ const Navigation = () => (
   >
     <Styled.NavList>
       <li>
-        <a href="#1">
+        <Link to="/">
           Home
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="#2">
+        <Link to="/about">
           About
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="#3">
+        <Link to="/portfolio">
           Portfolio
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="#4">
+        <Link to="/contact">
           Contact
-        </a>
+        </Link>
       </li>
     </Styled.NavList>
   </Box>
