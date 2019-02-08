@@ -9,8 +9,7 @@ class Matrix extends Component {
   }
 
   componentDidMount() {
-    const canvas = this.canvasRef.current;
-    animateBackground(canvas);
+    animateBackground(this.canvasRef.current);
   }
 
   render() {
