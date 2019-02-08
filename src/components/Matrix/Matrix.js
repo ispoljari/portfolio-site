@@ -14,7 +14,7 @@ class Matrix extends Component {
 
   render() {
     return (
-      <div style={{zIndex: '-100', position: 'fixed'}}>
+      <div style={{zIndex: '-2', position: 'fixed'}}>
         <canvas ref={this.canvasRef} width={window.innerWidth} height={window.innerHeight}/>
       </div>
     );
