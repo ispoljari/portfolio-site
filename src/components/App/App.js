@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 
+import { Home } from '../index';
+
 class App extends Component {
   render() {
     return (
-      <h1>Personal Portfolio</h1>
+      <Home />
     );
   }
 }
