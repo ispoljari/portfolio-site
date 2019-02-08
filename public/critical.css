@@ -1,5 +1,6 @@
 /* 
-Critical css necessary for styling the loading spinner.
+Critical css necessary for styling the loading spinner, 
+which is visible immediately on page access.
 It is loaded before bundle.js, styled-components, and immediately after index.html.
 */
 
