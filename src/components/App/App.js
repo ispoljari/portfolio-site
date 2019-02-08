@@ -6,6 +6,7 @@ import { showLoader, hideLoader } from '../../util';
 class App extends Component {
   componentDidMount() {
     hideLoader();
+
   }
 
   render() {
