@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import { animateBackground } from '../../util';
+
 class Matrix extends Component {
   constructor(props) {
     super(props);
@@ -8,12 +10,12 @@ class Matrix extends Component {
 
   componentDidMount() {
     const canvas = this.canvasRef.current;
-    const ctx = canvas.getContext('2d');
+    animateBackground(canvas);
   }
 
   render() {
     return (
-      <div>
+      <div style={{zIndex: '-100', position: 'fixed'}}>
         <canvas ref={this.canvasRef} width={window.innerWidth} height={window.innerHeight}/>
       </div>
     );

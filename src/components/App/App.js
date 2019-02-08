@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 
-import { Home } from '../index';
+import { Home, Matrix } from '../index';
 
 class App extends Component {
   render() {
     return (
-      <Home />
+      <React.Fragment>
+        <Matrix />
+        <Home />
+      </React.Fragment>      
     );
   }
 }
