@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col } from '@smooth-ui/core-sc';
 
-import { Home, Matrix } from '../index';
+import { Home, Matrix, Navigation } from '../index';
 import { hideLoader } from '../../util';
 import * as Styled from './App.style';
 
@@ -12,7 +12,7 @@ class App extends Component {
 
   componentDidMount() {
     hideLoader();
-    
+
     this.setState({
       visible: true
     });
@@ -27,15 +27,14 @@ class App extends Component {
         <Styled.Box
           visible={visible}
         >
+          <Navigation />
           <Grid>
             <Row>
               <Col>
-                {/* <Navigation /> */}
-              </Col>
-            </Row>
-            <Row>
-              <Col>
                 <Home />
+                {/* <About />
+                <Portfolio />
+                <Contact /> */}
               </Col>
             </Row>
           </Grid>      
