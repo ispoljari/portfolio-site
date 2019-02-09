@@ -1,3 +1,5 @@
+import FontFaceObserver from 'fontfaceobserver';
+
 const animateBackground = canvas => {
   const ctx = canvas.getContext('2d');
   canvas.height = window.innerHeight;
@@ -24,8 +26,13 @@ const hideLoader = () => {
   }, 200);
 };
 
+const FONT_LATO = new FontFaceObserver('Lato');
+const FONT_PLAYFAIR = new FontFaceObserver('Playfair Display');
+const waitForExternalFontsLoad = () => Promise.all([FONT_LATO.load(), FONT_PLAYFAIR.load()]);
+
 export {
   animateBackground,
   showLoader,
-  hideLoader
+  hideLoader,
+  waitForExternalFontsLoad
 };

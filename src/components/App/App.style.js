@@ -21,7 +21,7 @@ const fadeOut = keyframes`
 `;
 
 export const InitialFadeInBox = styled.div`
-  /* visibility: ${props => props.visible ? 'visible' : 'hidden'}; */
+  visibility: ${props => props.visible ? 'visible' : 'hidden'};
   animation: ${props => props.visible ? fadeIn : fadeOut} 1s linear;
   transition: visibility 1s linear;
 `;
