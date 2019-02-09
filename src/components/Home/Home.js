@@ -19,11 +19,13 @@ const Home = () => (
         <Styled.Heading>
           Hello World. 
           <br/> 
-          My name is Ivan Špoljarić, and I'm a 
+          My name is Ivan Špoljarić,
+          <br/>
+          and I'm a 
           <br/> 
-          <span>
-            Web Developer
-          </span>.
+          <span>Web Developer</span>
+          <br/>
+          from Zagreb, Croatia.
         </Styled.Heading>
       </Box>
     </Col>
