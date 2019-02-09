@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 export const NavList = styled.ul`
   display: flex;
@@ -43,6 +43,15 @@ export const NavList = styled.ul`
   }
 `;
 
+const rotationIn = keyframes`
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+`;
+
 export const Logo = styled.img`
   width: 50px;
   padding: 20px;
@@ -53,5 +62,9 @@ export const Logo = styled.img`
 
   @media (min-width: 992px) {
     width: 65px;
+  }
+
+  :hover {
+    animation: ${rotationIn} 0.4s linear;
   }
 `;
