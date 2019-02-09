@@ -3,7 +3,7 @@ import { Grid, Row, Col } from '@smooth-ui/core-sc';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import { Home, Navigation, About, Portfolio } from '../index';
-import { hideLoader, waitForExternalFontsLoad } from '../../util';
+import { hideLoader, externalFontsLoadingComplete } from '../../util';
 import * as Styled from './App.style';
 
 class App extends Component {
@@ -19,14 +19,9 @@ class App extends Component {
   };
 
   componentDidMount() {
-    waitForExternalFontsLoad()
-    .then(() => {
-      hideLoader();
+    if (externalFontsLoadingComplete()) {
       this.execAfterFontLoadEval();
-    })
-    .catch(() => {
-      this.execAfterFontLoadEval();
-    });
+    }
   };
 
   render() {

@@ -7,14 +7,14 @@ export const NavList = styled.ul`
   padding: 20px;
   margin: 0;
   list-style: none;
-  font-size: calc(20px + (24 - 20) * ((100vw - 320px) / (900 - 320)));
+  font-size: calc(18px + (26 - 18) * ((100vw - 320px) / (992 - 320)));
 
-  @media (min-width: 900px) {
-    font-size: 24px;
+  @media (min-width: 992px) {
+    font-size: 26px;
   }
 
   @media (max-width: 320px) {
-    font-size: 20px;
+    font-size: 18px;
   }
   
   a {
@@ -27,6 +27,10 @@ export const NavList = styled.ul`
     margin-right: 20px;
     padding: 0px;
 
+    @media (min-width: 576px) {
+      margin-right: 40px;
+  }
+
     :last-of-type {
       margin-right: 0;
       padding: 10px;
@@ -36,5 +40,18 @@ export const NavList = styled.ul`
         color: black;
       }
     }
+  }
+`;
+
+export const Logo = styled.img`
+  width: 50px;
+  padding: 20px;
+
+  @media (min-width: 576px) {
+    width: 60px;
+  }
+
+  @media (min-width: 992px) {
+    width: 65px;
   }
 `;

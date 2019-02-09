@@ -3,12 +3,12 @@ import styled from 'styled-components';
 export const Heading = styled.h1`
   margin: 0;
   line-height: 1.5;
-  font-size: calc(36px + (70 - 36) * ((100vw - 320px) / (900 - 320)));
+  font-size: calc(36px + (70 - 36) * ((100vw - 320px) / (992 - 320)));
   padding-top: 20vh;
   padding-bottom: 20px;
   letter-spacing: 2px;
 
-  @media (min-width: 900px) {
+  @media (min-width: 992px) {
     font-size: 70px;
   }
 
