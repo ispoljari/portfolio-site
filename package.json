@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@smooth-ui/core-sc": "^9.0.1",
+    "fontfaceobserver": "^2.1.0",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
     "react-router-dom": "^4.3.1",

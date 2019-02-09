@@ -1,8 +1,10 @@
 /* 
 Critical css necessary for styling the loading spinner, 
 which is visible immediately on page access.
-It is loaded before js modules from bundle.js, which include styled-components, and immediately after index.html.
+It is loaded before js modules from bundle.js, which include react components and style, and immediately after index.html.
 */
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Playfair+Display');
 
 body {
   background-color: #191919;
