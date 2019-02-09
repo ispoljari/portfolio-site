@@ -1,17 +1,33 @@
 import React from 'react';
-import { Box } from '@smooth-ui/core-sc';
+
+import { Box, Row, Col } from '@smooth-ui/core-sc';
+import * as Styled from './Home.styled';
 
 const Home = () => (
-  <Box
-    pt='200px'
-    pb='200px'
+  <Row
+    mx={0}
+    px={15}
   >
-    <h1 
-      style={{fontSize: '70px', zIndex: '2', margin: 0}}
+    <Col
+      px={0}
+      maxWidth="1100px"
+      width="100%"
+      my={0}
+      mx="auto"
     >
-      Hello, my name is Ivan Špoljarić, and I'm a Web Developer.
-    </h1>
-  </Box>
+      <Box>
+        <Styled.Heading>
+          Hello World. 
+          <br/> 
+          My name is Ivan Špoljarić, and I'm a 
+          <br/> 
+          <span>
+            Web Developer
+          </span>.
+        </Styled.Heading>
+      </Box>
+    </Col>
+  </Row>
 );
 
 export default Home;

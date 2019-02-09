@@ -24,24 +24,34 @@ class App extends Component {
 
     return (
       <React.Fragment>
-        <Matrix />
-        <Router>
-          <Styled.InitialFadeInBox
-            visible={visible}
+        <Styled.InitialFadeInBox
+          visible={visible}
           >
-            <Navigation />
-            <Grid>
-              <Row>
-                <Col>
-                  <Route exact path="/" component={Home}/>
-                  <Route path="/about" component={About}/>
-                  <Route path="/portfolio" component={Portfolio}/>
-                  <Route path="/contact" component={Contact}/>
-                </Col>
-              </Row>
-            </Grid>  
-          </Styled.InitialFadeInBox>
-        </Router>
+          <Grid 
+            fluid
+            px={0}
+            mx={0}
+            >
+            <Router>
+              <React.Fragment>
+                <Navigation />
+                <Row
+                  mx={0}
+                  px={15}
+                >
+                  <Col
+                    px={0}
+                  >
+                    <Route exact path="/" component={Home}/>
+                    <Route path="/about" component={About}/>
+                    <Route path="/portfolio" component={Portfolio}/>
+                    <Route path="/contact" component={Contact}/>
+                  </Col>
+                </Row>
+              </React.Fragment>
+            </Router>
+          </Grid>  
+        </Styled.InitialFadeInBox>
       </React.Fragment>
     );
   }
