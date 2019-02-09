@@ -2,26 +2,30 @@ import styled from 'styled-components';
 
 export const NavList = styled.ul`
   display: flex;
-  padding: 5px;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px;
   margin: 0;
   list-style: none;
   font-size: 20px;
+  
+  a {
+    text-decoration: none;
+    color: rgba(250, 250, 250, 0.6);
+  }
 
   li {
-    margin-right: 5px;
-    padding: 0 5px;
-
-    a {
-      text-decoration: none;
-      color: rgba(250, 250, 250, 0.6);
-    }
+    margin-right: 20px;
+    padding: 0px;
 
     :last-of-type {
       margin-right: 0;
-    }
+      padding: 10px;
+      background-color: #fff;
 
-    :hover {
-      color: rgba(200, 200, 200, 0.2);
+      a {
+        color: black;
+      }
     }
-}
+  }
 `;

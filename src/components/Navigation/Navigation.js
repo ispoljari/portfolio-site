@@ -7,27 +7,31 @@ import * as Styled from './Navigation.styled';
 const Navigation = () => (
   <Box
     width="100%"
+    maxWidth="350px"
     position="fixed"
+    right={0}
   >
     <Styled.NavList>
       <li>
-        <Link to="/">
+        <Link 
+          to="/"
+        >
           Home
         </Link>
       </li>
       <li>
-        <Link to="/about">
+        <Link 
+          to="/about"
+          >
           About
         </Link>
       </li>
       <li>
-        <Link to="/portfolio">
+        <Link 
+          to="/portfolio"
+          color="black"
+        >
           Portfolio
-        </Link>
-      </li>
-      <li>
-        <Link to="/contact">
-          Contact
         </Link>
       </li>
     </Styled.NavList>
