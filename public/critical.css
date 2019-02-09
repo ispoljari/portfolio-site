@@ -25,34 +25,12 @@ body {
   z-index: -1;
 }
 
-.hidePlanet {
-  position: absolute;
-  top: 25%;
-  left: 25%;
-  border-radius: 50%;
-  border: 3px solid #191919;
-  width: 5.6em;
-  height: 5.6em;
-  background-color: #191919;
-  animation: no-rotation 3s infinite linear;
-  z-index:1;
-}
-
 @keyframes rotation{
   0% {
     transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-
-@keyframes no-rotation{
-  0% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(0deg);
   }
 }
 
