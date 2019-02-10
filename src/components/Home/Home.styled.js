@@ -4,7 +4,7 @@ export const Heading = styled.h1`
   margin: 0;
   line-height: 1.5;
   font-size: calc(28px + (64 - 28) * ((100vw - 320px) / (992 - 320)));
-  padding-top: 20vh;
+  padding-top: 18vh;
   padding-bottom: 20px;
   letter-spacing: 2px;
 
@@ -20,3 +20,12 @@ export const Heading = styled.h1`
     color: #fff;
   }
 `
+export const SocialImg = styled.img`
+  width: 25px;
+  margin-right: 15px;
+
+  :last-of-type {
+    width: 26px;
+    margin-right: 0;
+  }
+`;
