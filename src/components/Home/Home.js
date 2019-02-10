@@ -36,7 +36,7 @@ const Home = () => (
     </Row>
     <Row
       mx={0}
-      mt="5vw"
+      mt="5vh"
       px={15}
     >
       <Col
@@ -49,7 +49,7 @@ const Home = () => (
         <Box
           display="flex"
           alignItems="center"
-          justifyContent="flex-start"
+          justifyContent="center"
           mb={30}
         >
           <Styled.SocialImg src={linkedin} alt="Linkedin logo"/>

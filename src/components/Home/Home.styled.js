@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Heading = styled.h1`
   margin: 0;
   line-height: 1.5;
-  font-size: calc(28px + (64 - 28) * ((100vw - 320px) / (992 - 320)));
+  font-size: calc(30px + (64 - 30) * ((100vw - 320px) / (992 - 320)));
   padding-top: 18vh;
   padding-bottom: 20px;
   letter-spacing: 2px;
@@ -13,7 +13,7 @@ export const Heading = styled.h1`
   }
 
   @media (max-width: 320px) {
-    font-size: 28px;
+    font-size: 30px;
   }
 
   span {
@@ -21,11 +21,11 @@ export const Heading = styled.h1`
   }
 `
 export const SocialImg = styled.img`
-  width: 25px;
-  margin-right: 15px;
+  width: 10%;
+  max-width: 40px;
+  margin-right: 30px;
 
   :last-of-type {
-    width: 26px;
     margin-right: 0;
   }
 `;
