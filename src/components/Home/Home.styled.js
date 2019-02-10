@@ -20,10 +20,14 @@ export const Heading = styled.h1`
     color: #fff;
   }
 `
-export const SocialImg = styled.img`
+export const SocialLink = styled.a`
   width: 10%;
   max-width: 40px;
   margin-right: 30px;
+
+  img {
+    width: 100%;
+  }
 
   :last-of-type {
     margin-right: 0;

@@ -52,9 +52,37 @@ const Home = () => (
           justifyContent="center"
           mb={30}
         >
-          <Styled.SocialImg src={linkedin} alt="Linkedin logo"/>
-          <Styled.SocialImg src={github} alt="Github logo"/>
-          <Styled.SocialImg src={medium} alt="Medium logo"/>
+          <Styled.SocialLink 
+            href="https://www.linkedin.com/in/ivan-špoljarić-2206a184
+            "
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img 
+              src={linkedin} 
+              alt="Linkedin logo"
+            />
+          </Styled.SocialLink >
+          <Styled.SocialLink  
+            href="https://github.com/ispoljari"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={github} 
+              alt="Github logo"
+            />
+          </Styled.SocialLink >
+          <Styled.SocialLink  
+            href="https://medium.com/@ivanspoljaric22"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={medium} 
+              alt="Medium logo"
+            />
+          </Styled.SocialLink >
         </Box>
       </Col>
     </Row>
