@@ -12,15 +12,15 @@ body {
 
 .loader {
   position: absolute;
-  top: calc(50% - 6em);
-  left: calc(50% - 6em);
+  top: calc(50% - 5em);
+  left: calc(50% - 5em);
   opacity: 1;
   transition: opacity 0.2s ease-out;
 }
 
 .loader img {
-  width: 12em;
-  height: 12em;
+  width: 10em;
+  height: 10em;
   animation: rotation 3s infinite linear;
   z-index: -1;
 }

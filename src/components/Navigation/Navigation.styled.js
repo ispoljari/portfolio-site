@@ -64,7 +64,7 @@ export const Logo = styled.img`
     width: 65px;
   }
 
-  :hover {
+  :active {
     animation: ${rotationIn} 0.4s linear;
   }
 `;
