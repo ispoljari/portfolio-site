@@ -36,7 +36,7 @@ const Home = () => (
     </Row>
     <Row
       mx={0}
-      mt="5vh"
+      mt={{xs: "6vh", xl: "9vh"}}
       px={15}
     >
       <Col

@@ -23,8 +23,17 @@ export const Heading = styled.h1`
 
 export const SocialLink = styled.a`
   width: 8%;
-  max-width: 35px;
-  margin-right: 30px;
+  max-width: 30px;
+  margin-right: 28px;
+
+  @media (min-width: 576px) {
+    max-width: 35px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-right: 45px;
+  }
+
 
   img {
     width: 100%;
