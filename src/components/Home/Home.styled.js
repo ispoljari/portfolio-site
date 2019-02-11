@@ -19,7 +19,8 @@ export const Heading = styled.h1`
   span {
     color: #fff;
   }
-`
+`;
+
 export const SocialLink = styled.a`
   width: 8%;
   max-width: 35px;

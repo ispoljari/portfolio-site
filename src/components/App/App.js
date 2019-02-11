@@ -8,7 +8,9 @@ import * as Styled from './App.style';
 
 class App extends Component {
   state = {
-    visible: false
+    visible: false,
+    prevScrollY: 0,
+    offset: false,
   };
 
   execAfterFontLoadEval = () => {
@@ -18,14 +20,41 @@ class App extends Component {
     });
   };
 
+  handleScroll = () => {
+    const { prevScrollY } = this.state; 
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > prevScrollY) {
+      this.setState({ 
+        offset: true 
+      });
+    } else {
+      this.setState({ 
+        offset: false 
+      });
+    }
+
+    this.setState({ 
+      prevScrollY: currentScrollY 
+    });
+  }
+
+  componentWillMount = () => {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
   componentDidMount() {
     if (externalFontsLoadingComplete()) {
       this.execAfterFontLoadEval();
     }
   };
 
+  componentWillUnmount = () => {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
   render() {
-    const { visible } = this.state;
+    const { visible, offset } = this.state;
 
     return (
       <React.Fragment>
@@ -45,7 +74,7 @@ class App extends Component {
                 <Col
                   px={0}
                 >
-                  <Navigation />
+                  <Navigation offset={offset}/>
                   <Route exact path="/" component={Home}/>
                   <Route path="/about" component={About}/>
                   <Route path="/portfolio" component={Portfolio}/>

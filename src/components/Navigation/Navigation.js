@@ -5,8 +5,9 @@ import { Link } from 'react-router-dom';
 import * as Styled from './Navigation.styled';
 import logo from '../../svg/logo.svg';
 
-const Navigation = () => (
-  <Box
+const Navigation = ({ offset }) => (
+  <Styled.NavWrapper
+    offset={offset ? '-100px' : '0px'}
     width="100%"
     position="fixed"
     right={0}
@@ -15,8 +16,6 @@ const Navigation = () => (
       display="flex"
       justifyContent="space-between"
       alignItems="center"
-      px={{xl: '40px'}}
-      py={{xl: '20px'}}
     >
       <Link 
         to="/"
@@ -44,7 +43,7 @@ const Navigation = () => (
         </li>
       </Styled.NavList>
     </Box>
-  </Box>
+  </Styled.NavWrapper>
 );
 
 export default Navigation;

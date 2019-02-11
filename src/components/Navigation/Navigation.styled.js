@@ -1,4 +1,10 @@
 import styled, { keyframes } from 'styled-components';
+import { Box } from '@smooth-ui/core-sc';
+
+export const NavWrapper = styled(Box)`
+  transform: translate(0, ${props => props.offset});
+  transition: transform 150ms linear;
+`;
 
 export const NavList = styled.ul`
   display: flex;
@@ -64,7 +70,7 @@ export const Logo = styled.img`
     width: 65px;
   }
 
-  :active {
+  &:hover {
     animation: ${rotationIn} 0.4s linear;
   }
 `;

@@ -50,7 +50,7 @@ const Home = () => (
           display="flex"
           alignItems="center"
           justifyContent="center"
-          mb={30}
+          mb={15}
         >
           <Styled.SocialLink 
             href="https://www.linkedin.com/in/ivan-špoljarić-2206a184
