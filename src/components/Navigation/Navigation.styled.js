@@ -26,7 +26,6 @@ export const NavList = styled.ul`
   a {
     text-decoration: none;
     color: rgba(250, 250, 250, 0.6);
-    letter-spacing: 1px;
   }
 
   li {

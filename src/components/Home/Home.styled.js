@@ -21,6 +21,20 @@ export const Heading = styled.h1`
   }
 `;
 
+export const SocialParagraph = styled.p`
+  text-align: center;
+  font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (992 - 320)));
+
+  @media (min-width: 992px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 12px;
+  }
+
+`;
+
 export const SocialLink = styled.a`
   width: 8%;
   max-width: 30px;

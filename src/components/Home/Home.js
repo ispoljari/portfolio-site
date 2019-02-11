@@ -46,6 +46,9 @@ const Home = () => (
         my={0}
         mx="auto"
       >
+        <Styled.SocialParagraph>
+          Connect with me
+        </Styled.SocialParagraph>
         <Box
           display="flex"
           alignItems="center"
