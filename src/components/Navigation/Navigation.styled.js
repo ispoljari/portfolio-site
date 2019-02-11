@@ -3,7 +3,7 @@ import { Box } from '@smooth-ui/core-sc';
 
 export const NavWrapper = styled(Box)`
   transform: translate(0, ${props => props.offset});
-  transition: transform 150ms linear;
+  transition: transform 300ms linear;
 `;
 
 export const NavList = styled.ul`
