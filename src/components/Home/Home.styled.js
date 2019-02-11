@@ -4,7 +4,7 @@ export const Heading = styled.h1`
   margin: 0;
   line-height: 1.5;
   font-size: calc(30px + (64 - 30) * ((100vw - 320px) / (992 - 320)));
-  padding-top: 18vh;
+  padding-top: 19vh;
   padding-bottom: 20px;
   letter-spacing: 2px;
 
@@ -21,8 +21,8 @@ export const Heading = styled.h1`
   }
 `
 export const SocialLink = styled.a`
-  width: 10%;
-  max-width: 40px;
+  width: 8%;
+  max-width: 35px;
   margin-right: 30px;
 
   img {
