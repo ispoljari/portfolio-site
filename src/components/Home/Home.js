@@ -1,10 +1,11 @@
 import React from 'react';
 
 import { Box, Row, Col } from '@smooth-ui/core-sc';
-import * as Styled from './Home.styled';
+import * as Styled from './Home.style';
 import github from '../../svg/github.svg';
 import linkedin from '../../svg/linkedin.svg';
 import medium from '../../svg/medium.svg';
+import gmail from '../../svg/gmail.svg';
 
 const Home = () => (
   <React.Fragment>  
@@ -36,7 +37,7 @@ const Home = () => (
     </Row>
     <Row
       mx={0}
-      mt={{xs: "6vh", xl: "9vh"}}
+      mt={{xs: "4vh", lg: "7vh"}}
       px={15}
     >
       <Col
@@ -53,6 +54,7 @@ const Home = () => (
           display="flex"
           alignItems="center"
           justifyContent="center"
+          position="relative"
           mb={15}
         >
           <Styled.SocialLink 
@@ -84,6 +86,14 @@ const Home = () => (
             <img
               src={medium} 
               alt="Medium logo"
+            />
+          </Styled.SocialLink >
+          <Styled.SocialLink  
+            href="mailto:ivanspoljaric22@gmail.com?subject=Bussines proposal"
+          >
+            <img
+              src={gmail} 
+              alt="Gmail logo"
             />
           </Styled.SocialLink >
         </Box>

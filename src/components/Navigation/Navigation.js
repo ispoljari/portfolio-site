@@ -2,7 +2,7 @@ import React from 'react';
 import { Box } from '@smooth-ui/core-sc';
 import { Link } from 'react-router-dom'; 
 
-import * as Styled from './Navigation.styled';
+import * as Styled from './Navigation.style';
 import logo from '../../svg/logo.svg';
 
 const Navigation = ({ offset }) => (

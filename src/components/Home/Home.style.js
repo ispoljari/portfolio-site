@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Heading = styled.h1`
   margin: 0;
   line-height: 1.5;
-  font-size: calc(30px + (64 - 30) * ((100vw - 320px) / (992 - 320)));
+  font-size: calc(28px + (64 - 28) * ((100vw - 320px) / (992 - 320)));
   padding-top: 19vh;
   padding-bottom: 20px;
   letter-spacing: 2px;
@@ -13,7 +13,7 @@ export const Heading = styled.h1`
   }
 
   @media (max-width: 320px) {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   span {
@@ -39,6 +39,8 @@ export const SocialLink = styled.a`
   width: 8%;
   max-width: 30px;
   margin-right: 28px;
+  position: relative;
+  top: 1px;
 
   @media (min-width: 576px) {
     max-width: 35px;
@@ -48,9 +50,22 @@ export const SocialLink = styled.a`
     margin-right: 45px;
   }
 
-
   img {
     width: 100%;
+  }
+
+  :nth-child(3) {
+    top: 3px;
+  }
+
+  :nth-child(4) {
+    width: 9%;
+    max-width: 35px;
+    top: 3px;
+
+    @media (min-width: 576px) {
+      max-width: 40px;
+    }
   }
 
   :last-of-type {
