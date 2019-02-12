@@ -5,9 +5,8 @@ import { Link } from 'react-router-dom';
 import * as Styled from './Navigation.style';
 import logo from '../../svg/logo.svg';
 
-const Navigation = ({ offset }) => (
-  <Styled.NavWrapper
-    offset={offset ? '-100px' : '0px'}
+const Navigation = () => (
+  <Box
     width="100%"
     position="fixed"
     right={0}
@@ -43,7 +42,7 @@ const Navigation = ({ offset }) => (
         </li>
       </Styled.NavList>
     </Box>
-  </Styled.NavWrapper>
+  </Box>
 );
 
 export default Navigation;
