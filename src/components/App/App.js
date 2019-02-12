@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col } from '@smooth-ui/core-sc';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import { Home, Navigation, About, Portfolio } from '../index';
 import { hideLoader, FONT_LATO, FONT_PLAYFAIR } from '../../util';
@@ -43,23 +44,42 @@ class App extends Component {
             px={0}
             mx={0}
             >
-            <Router>
-              <Row
-                mx={0}
-                px={15}
+            <Row
+              mx={0}
+              px={15}
               >
-                <Col
-                  px={0}
+              <Col
+                px={0}
                 >
-                  <Navigation />
-                  <Switch>
-                    <Route exact path="/" component={Home}/>
-                    <Route path="/about" component={About}/>
-                    <Route path="/portfolio" component={Portfolio}/>
-                  </Switch>
-                </Col>
-              </Row>
-            </Router>
+                <Router>
+                  <React.Fragment>
+                    <Navigation />
+                    <TransitionGroup>
+                      <CSSTransition
+                        key={this.props.location}
+                        timeout={{ enter: 300, exit: 300}}
+                      >
+                        <Switch>
+                          <Route 
+                            exact 
+                            path="/" 
+                            component={Home}
+                          />
+                          <Route 
+                            path="/about" 
+                            component={About}
+                          />
+                          <Route 
+                            path="/portfolio" 
+                            component={Portfolio}
+                          />
+                        </Switch>
+                      </CSSTransition>
+                    </TransitionGroup>
+                  </React.Fragment>
+                </Router>
+              </Col>
+            </Row>
           </Grid>  
         </Styled.InitialFadeInBox>
       </React.Fragment>
