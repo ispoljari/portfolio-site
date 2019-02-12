@@ -2,6 +2,6 @@
 
 Curently in development ...
 
-[https://ivan-spoljaric-portfolio-site.netlify.com](https://ivan-spoljaric-portfolio-site.netlify.com)
+[https://www.ispoljaric.com/](https://www.ispoljaric.com/)
 
 Powered by; React, React Router & Styled Components
