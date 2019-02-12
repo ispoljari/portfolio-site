@@ -39,9 +39,9 @@ class App extends Component {
     });
   }
 
-  componentWillMount = () => {
-    window.addEventListener('scroll', this.handleScroll);
-  }
+  // componentWillMount = () => {
+  //   window.addEventListener('scroll', this.handleScroll);
+  // }
 
   componentDidMount() {
     if (externalFontsLoadingComplete()) {
@@ -49,9 +49,9 @@ class App extends Component {
     }
   };
 
-  componentWillUnmount = () => {
-    window.removeEventListener('scroll', this.handleScroll);
-  }
+  // componentWillUnmount = () => {
+  //   window.removeEventListener('scroll', this.handleScroll);
+  // }
 
   render() {
     const { visible, offset } = this.state;
