@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Grid, Row, Col } from '@smooth-ui/core-sc';
 import { BrowserRouter as Router } from 'react-router-dom';
 
+import GlobalStyle from '../../global.style';
 import { Pages, Navigation } from '../index';
 import { hideLoader, FONT_LATO, FONT_PLAYFAIR } from '../../util';
 import * as Styled from './App.style';
@@ -35,6 +36,7 @@ class App extends Component {
 
     return (
       <React.Fragment>
+        <GlobalStyle/>
         <Styled.InitialFadeInBox
           visible={visible}
           >

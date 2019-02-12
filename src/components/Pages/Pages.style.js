@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 export const RoutesTransitionWrapper = styled.div`
    .fade-enter {
         opacity: 0.01;
@@ -8,7 +7,7 @@ export const RoutesTransitionWrapper = styled.div`
 
     .fade-enter.fade-enter-active {
         opacity: 1;
-        transition: opacity 300ms ease-in;
+        transition: opacity 200ms ease-in;
     }
     
     .fade-exit {
@@ -17,7 +16,7 @@ export const RoutesTransitionWrapper = styled.div`
       
     .fade-exit.fade-exit-active {
         opacity: 0.01;
-        transition: opacity 300ms ease-in;
+        transition: opacity 200ms ease-in;
     }
 
     div.transition-group {
