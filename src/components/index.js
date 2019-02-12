@@ -1,3 +1,4 @@
+export { default as Pages } from './Pages/Pages';
 export { default as Navigation } from './Navigation/Navigation';
 export { default as App } from './App/App';
 export { default as Home } from './Home/Home';

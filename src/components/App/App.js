@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col } from '@smooth-ui/core-sc';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-import { Home, Navigation, About, Portfolio } from '../index';
+import { Pages, Navigation } from '../index';
 import { hideLoader, FONT_LATO, FONT_PLAYFAIR } from '../../util';
 import * as Styled from './App.style';
 
@@ -51,31 +50,10 @@ class App extends Component {
               <Col
                 px={0}
                 >
-                <Router>
+                <Router> 
                   <React.Fragment>
                     <Navigation />
-                    <TransitionGroup>
-                      <CSSTransition
-                        key={this.props.location}
-                        timeout={{ enter: 300, exit: 300}}
-                      >
-                        <Switch>
-                          <Route 
-                            exact 
-                            path="/" 
-                            component={Home}
-                          />
-                          <Route 
-                            path="/about" 
-                            component={About}
-                          />
-                          <Route 
-                            path="/portfolio" 
-                            component={Portfolio}
-                          />
-                        </Switch>
-                      </CSSTransition>
-                    </TransitionGroup>
+                    <Pages />
                   </React.Fragment>
                 </Router>
               </Col>

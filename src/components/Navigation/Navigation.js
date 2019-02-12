@@ -10,6 +10,7 @@ const Navigation = () => (
     width="100%"
     position="fixed"
     right={0}
+    zIndex={100}
   >
     <Box
       display="flex"
