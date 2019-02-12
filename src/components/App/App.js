@@ -3,7 +3,7 @@ import { Grid, Row, Col } from '@smooth-ui/core-sc';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import { Home, Navigation, About, Portfolio } from '../index';
-import { hideLoader, externalFontsLoadingComplete } from '../../util';
+import { hideLoader, FONT_LATO, FONT_PLAYFAIR } from '../../util';
 import * as Styled from './App.style';
 
 class App extends Component {
@@ -19,9 +19,15 @@ class App extends Component {
   };
 
   componentDidMount() {
-    if (externalFontsLoadingComplete()) {
-      this.execAfterFontLoadEval();
-    }
+    Promise.all([FONT_LATO.load(), FONT_PLAYFAIR.load()]) 
+      .then(() => {
+        // If google fonts have successfully loaded, show main screen
+        this.execAfterFontLoadEval();
+      })
+      .catch(() => {
+        // If google fonts have not successfully loaded, show main screen anyway, but with fallback fonts specified in global styles
+        this.execAfterFontLoadEval();
+      });
   };
 
   render() {

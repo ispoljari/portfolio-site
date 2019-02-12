@@ -89,7 +89,7 @@ const Home = () => (
             />
           </Styled.SocialLink >
           <Styled.SocialLink  
-            href="mailto:ivanspoljaric22@gmail.com?subject=Bussines proposal"
+            href="mailto:ivanspoljaric22@gmail.com?subject=Business proposal"
           >
             <img
               src={gmail} 

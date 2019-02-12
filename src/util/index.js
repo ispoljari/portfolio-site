@@ -28,19 +28,11 @@ const hideLoader = () => {
 
 const FONT_LATO = new FontFaceObserver('Lato');
 const FONT_PLAYFAIR = new FontFaceObserver('Playfair Display');
-const externalFontsLoadingComplete = () => {
-  return Promise.all([FONT_LATO.load(), FONT_PLAYFAIR.load()])
-    .then(() => {
-      return true;
-    })
-    .catch(() => {
-      return true;
-    });
-}
 
 export {
   animateBackground,
   showLoader,
   hideLoader,
-  externalFontsLoadingComplete
+  FONT_LATO,
+  FONT_PLAYFAIR
 };
