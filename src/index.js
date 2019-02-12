@@ -8,7 +8,7 @@ import { Normalize } from 'styled-normalize';
 ReactDOM.render(
   <React.Fragment>
     <Normalize />
-    <GlobalStyle />
+    <GlobalStyle/>
     <App />
   </React.Fragment>,
   document.getElementById('root')

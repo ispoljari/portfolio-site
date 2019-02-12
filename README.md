@@ -1,3 +1,3 @@
 # My personal portfolio site
 
-## Curently in development
+Curently in development ...
