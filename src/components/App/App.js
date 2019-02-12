@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col } from '@smooth-ui/core-sc';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import { Home, Navigation, About, Portfolio } from '../index';
 import { hideLoader, FONT_LATO, FONT_PLAYFAIR } from '../../util';
@@ -52,9 +52,11 @@ class App extends Component {
                   px={0}
                 >
                   <Navigation />
-                  <Route exact path="/" component={Home}/>
-                  <Route path="/about" component={About}/>
-                  <Route path="/portfolio" component={Portfolio}/>
+                  <Switch>
+                    <Route exact path="/" component={Home}/>
+                    <Route path="/about" component={About}/>
+                    <Route path="/portfolio" component={Portfolio}/>
+                  </Switch>
                 </Col>
               </Row>
             </Router>
