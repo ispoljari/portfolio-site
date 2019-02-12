@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Portfolio = () => (
-  <h2>Portfolio</h2>
+  <h2 style={{paddingTop: '100px'}}>Portfolio</h2>
 );
 
 export default Portfolio;
