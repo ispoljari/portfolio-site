@@ -3,13 +3,13 @@ import { Box } from '@smooth-ui/core-sc';
 import { Link } from 'react-router-dom'; 
 
 import * as Styled from './Navigation.style';
-import logo from '../../svg/logo.svg';
 
-const Navigation = () => (
+const Navigation = ({ logo }) => (
   <Box
     width="100%"
     position="fixed"
     right={0}
+    zIndex={100}
   >
     <Box
       display="flex"

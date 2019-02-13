@@ -1,7 +1,14 @@
 import React from 'react';
+import { Box } from '@smooth-ui/core-sc';
+
+import * as Styled from './Portfolio.style';
 
 const Portfolio = () => (
-  <h2 style={{paddingTop: '100px'}}>Portfolio</h2>
+  <Box>
+    <Styled.Parapgraph>
+      Portfolio
+    </Styled.Parapgraph>
+  </Box>
 );
 
 export default Portfolio;

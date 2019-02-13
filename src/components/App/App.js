@@ -1,15 +1,51 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col } from '@smooth-ui/core-sc';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
 
-import { Home, Navigation, About, Portfolio } from '../index';
-import { hideLoader, FONT_LATO, FONT_PLAYFAIR } from '../../util';
+import GlobalStyle from '../../global.style';
 import * as Styled from './App.style';
+import { Pages, Navigation } from '../index';
+import { hideLoader, FONT_LATO, FONT_PLAYFAIR } from '../../util';
+import lightLogo from '../../svg/logo.svg';
+import darkLogo from '../../svg/logoD.svg';
+
+
+const theme = {
+  dark: {
+    backgroundColor: '#191919',
+    portfolioBoxBackground: 'white',
+    portfolioBoxColor: 'black',    
+    color: 'rgba(250, 250, 250, 0.6)'
+  },
+  light: {
+    backgroundColor: 'white',
+    portfolioBoxBackground: 'black',
+    portfolioBoxColor: '#ececec',    
+    color: '#2d2d2d'
+  }
+}
 
 class App extends Component {
   state = {
     visible: false,
+    theme: theme.dark,
+    logo: lightLogo
   };
+
+  changeTheme = ({ pathname: page }) => {
+    if (this.state.theme !== theme.dark && (page === '/' || page === '/about')) {
+      this.setState({
+        theme: theme.dark,
+        logo: lightLogo
+      });
+    } else if (this.state.theme !== theme.light && page === '/portfolio') {
+      this.setState({
+        theme: theme.light,
+        logo: darkLogo
+      });
+    }
+  }
 
   execAfterFontLoadEval = () => {
     hideLoader();
@@ -31,19 +67,22 @@ class App extends Component {
   };
 
   render() {
-    const { visible } = this.state;
+    const { visible, theme, logo } = this.state;
 
     return (
-      <React.Fragment>
-        <Styled.InitialFadeInBox
-          visible={visible}
+      <ThemeProvider 
+        theme={theme}
+      >
+        <React.Fragment>
+          <GlobalStyle />
+          <Styled.InitialFadeInBox
+            visible={visible}
           >
-          <Grid 
-            fluid
-            px={0}
-            mx={0}
+            <Grid 
+              fluid
+              px={0}
+              mx={0}
             >
-            <Router>
               <Row
                 mx={0}
                 px={15}
@@ -51,16 +90,22 @@ class App extends Component {
                 <Col
                   px={0}
                 >
-                  <Navigation />
-                  <Route exact path="/" component={Home}/>
-                  <Route path="/about" component={About}/>
-                  <Route path="/portfolio" component={Portfolio}/>
+                  <Router> 
+                    <React.Fragment>
+                      <Navigation 
+                        logo={logo}
+                      />
+                      <Pages 
+                        changeTheme={location => this.changeTheme(location)}
+                      />
+                    </React.Fragment>
+                  </Router>
                 </Col>
               </Row>
-            </Router>
-          </Grid>  
-        </Styled.InitialFadeInBox>
-      </React.Fragment>
+            </Grid>  
+          </Styled.InitialFadeInBox>
+        </React.Fragment>
+      </ThemeProvider>
     );
   }
 }

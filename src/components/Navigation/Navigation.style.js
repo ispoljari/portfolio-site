@@ -19,7 +19,7 @@ export const NavList = styled.ul`
   
   a {
     text-decoration: none;
-    color: rgba(250, 250, 250, 0.6);
+    color: ${props => props.theme.color}
   }
 
   li {
@@ -30,13 +30,13 @@ export const NavList = styled.ul`
       margin-right: 40px;
   }
 
-    :last-of-type {
-      margin-right: 0;
-      padding: 10px;
-      background-color: #fff;
+  :last-of-type {
+    margin-right: 0;
+    padding: 10px;
+    background-color: ${props => props.theme.portfolioBoxBackground};
 
       a {
-        color: black;
+        color: ${props => props.theme.portfolioBoxColor}
       }
     }
   }
