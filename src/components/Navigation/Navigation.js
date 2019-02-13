@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import * as Styled from './Navigation.style';
 
-const Navigation = ({ changeTheme, logo }) => (
+const Navigation = ({ logo }) => (
   <Box
     width="100%"
     position="fixed"
@@ -18,7 +18,6 @@ const Navigation = ({ changeTheme, logo }) => (
     >
       <Link 
         to="/"
-        onClick={() => changeTheme('home')}
       >
         <Styled.Logo
           src={logo} 
@@ -29,7 +28,6 @@ const Navigation = ({ changeTheme, logo }) => (
         <li>
           <Link 
             to="/about"
-            onClick={() => changeTheme('about')}
             >
             About
           </Link>
@@ -38,7 +36,6 @@ const Navigation = ({ changeTheme, logo }) => (
           <Link 
             to="/portfolio"
             color="black"
-            onClick={() => changeTheme('portfolio')}
           >
             Portfolio
           </Link>

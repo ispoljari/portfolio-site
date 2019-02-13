@@ -33,13 +33,13 @@ class App extends Component {
     logo: lightLogo
   };
 
-  changeTheme = page => {
-    if (this.state.theme !== theme.dark && (page === 'home' || page === 'about')) {
+  changeTheme = ({ pathname: page }) => {
+    if (this.state.theme !== theme.dark && (page === '/' || page === '/about')) {
       this.setState({
         theme: theme.dark,
         logo: lightLogo
       });
-    } else if (this.state.theme !== theme.light && page === 'portfolio') {
+    } else if (this.state.theme !== theme.light && page === '/portfolio') {
       this.setState({
         theme: theme.light,
         logo: darkLogo
@@ -93,10 +93,11 @@ class App extends Component {
                   <Router> 
                     <React.Fragment>
                       <Navigation 
-                        changeTheme={page => this.changeTheme(page)}
                         logo={logo}
                       />
-                      <Pages />
+                      <Pages 
+                        changeTheme={location => this.changeTheme(location)}
+                      />
                     </React.Fragment>
                   </Router>
                 </Col>
