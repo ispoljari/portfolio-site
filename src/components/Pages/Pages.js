@@ -12,7 +12,7 @@ const Pages = ({ location }) => (
     >
       <CSSTransition
         key={location.key}
-        timeout={{ enter: 150, exit: 150 }}
+        timeout={{ enter: 200, exit: 100 }}
         classNames="fade"
       >
         <section
