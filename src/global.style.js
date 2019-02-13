@@ -6,6 +6,7 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${props => props.theme.backgroundColor};
     color: rgba(250, 250, 250, 0.6);
     letter-spacing: 1px;
+    -webkit-font-smoothing: antialiased;
   }
 
   h1 {
