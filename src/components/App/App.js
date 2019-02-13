@@ -23,11 +23,16 @@ class App extends Component {
     theme: theme.dark
   };
 
-  toggleTheme =() => {
-    console.log('hello');
-    this.setState(state => ({
-      theme: state.theme === theme.dark ? theme.light : theme.dark
-    }))
+  changeTheme = page => {
+    if (this.state.theme !== theme.dark && (page === 'home' || page === 'about')) {
+      this.setState({
+        theme: theme.dark
+      });
+    } else if (this.state.theme !== theme.light && page === 'portfolio') {
+      this.setState({
+        theme: theme.light
+      });
+    }
   }
 
   execAfterFontLoadEval = () => {
@@ -76,7 +81,7 @@ class App extends Component {
                   <Router> 
                     <React.Fragment>
                       <Navigation 
-                        changeTheme={this.toggleTheme}
+                        changeTheme={page => this.changeTheme(page)}
                       />
                       <Pages />
                     </React.Fragment>

@@ -19,7 +19,7 @@ const Navigation = ({ changeTheme }) => (
     >
       <Link 
         to="/"
-        onClick={changeTheme}
+        onClick={() => changeTheme('home')}
       >
         <Styled.Logo
           src={logo} 
@@ -30,6 +30,7 @@ const Navigation = ({ changeTheme }) => (
         <li>
           <Link 
             to="/about"
+            onClick={() => changeTheme('about')}
             >
             About
           </Link>
@@ -38,7 +39,7 @@ const Navigation = ({ changeTheme }) => (
           <Link 
             to="/portfolio"
             color="black"
-            onClick={changeTheme}
+            onClick={() => changeTheme('portfolio')}
           >
             Portfolio
           </Link>
