@@ -9,22 +9,7 @@ import { Pages, Navigation } from '../index';
 import { hideLoader, FONT_LATO, FONT_PLAYFAIR } from '../../util';
 import lightLogo from '../../svg/logo.svg';
 import darkLogo from '../../svg/logoD.svg';
-
-
-const theme = {
-  dark: {
-    backgroundColor: '#191919',
-    portfolioBoxBackground: 'white',
-    portfolioBoxColor: 'black',    
-    color: 'rgba(250, 250, 250, 0.6)'
-  },
-  light: {
-    backgroundColor: 'white',
-    portfolioBoxBackground: 'black',
-    portfolioBoxColor: '#ececec',    
-    color: '#2d2d2d'
-  }
-}
+import theme from '../../themes';
 
 class App extends Component {
   state = {
@@ -36,13 +21,13 @@ class App extends Component {
   changeTheme = ({ pathname: page }) => {
     if (this.state.theme !== theme.dark && (page === '/' || page === '/about')) {
       this.setState({
-        theme: theme.dark,
-        logo: lightLogo
+        logo: lightLogo,
+        theme: theme.dark
       });
     } else if (this.state.theme !== theme.light && page === '/portfolio') {
       this.setState({
-        theme: theme.light,
-        logo: darkLogo
+        logo: darkLogo,
+        theme: theme.light
       });
     }
   }
