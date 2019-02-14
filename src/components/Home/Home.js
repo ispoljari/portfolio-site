@@ -29,6 +29,8 @@ const Home = () => {
       <Row
         mx={0}
         px={15}
+        as="header"
+        role="banner"
       >
         <Col
           px={0}
@@ -56,6 +58,8 @@ const Home = () => {
         mx={0}
         mt={{xs: "4vh", lg: "7vh"}}
         px={15}
+        as="section"
+        role="region"
       >
         <Col
           px={0}

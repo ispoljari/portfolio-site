@@ -22,7 +22,7 @@ class Pages extends Component {
             timeout={{ enter: 300, exit: 150 }}
             classNames="fade"
           >
-            <main
+            <div
               className="route-section"
               role="main"
             >
@@ -45,7 +45,7 @@ class Pages extends Component {
                   component={Portfolio}
                 />
               </Switch>
-            </main>
+            </div>
           </CSSTransition>
         </TransitionGroup>
       </Styled.RoutesTransitionWrapper>

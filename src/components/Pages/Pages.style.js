@@ -23,7 +23,7 @@ export const RoutesTransitionWrapper = styled.div`
       position: relative;
     }
 
-    section.route-section {
+    div.route-section {
       position: absolute;
       width: 100%;
       top: 0;
