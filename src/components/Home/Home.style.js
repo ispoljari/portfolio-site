@@ -49,12 +49,6 @@ export const SocialLink = styled.a`
     transition: transform 0s;
   }
 
-  :focus {
-    border: 1px solid green;
-    outline-style: solid;
-    outline-color: green;
-  }
-
   @media (min-width: 576px) {
     max-width: 35px;
   }

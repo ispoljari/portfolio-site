@@ -21,13 +21,6 @@ export const NavList = styled.ul`
   a {
     text-decoration: none;
     color: ${props => props.theme.color};
-    outline: none;
-
-    :focus {
-      border: 1px solid green;
-      outline-style: solid;
-      outline-color: green;
-    }
   }
 
   li {
@@ -60,15 +53,16 @@ export const NavList = styled.ul`
 `;
 
 export const LogoLink = styled(Link)`
-  :focus {
-    border: 1px solid green;
-    outline-style: solid;
-    outline-color: green;
-  }
-
   img {
     width: 50px;
     padding: 20px;
+
+    transition: transform 0.4s cubic-bezier(1,.26,0,.88);
+
+    :active {
+      transform: rotate(360deg);
+      transition: transform 0s;
+    }
   
     @media (min-width: 576px) {
       width: 60px;
