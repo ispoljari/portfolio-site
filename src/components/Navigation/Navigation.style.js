@@ -19,25 +19,34 @@ export const NavList = styled.ul`
   
   a {
     text-decoration: none;
-    color: ${props => props.theme.color}
+    color: ${props => props.theme.color};
   }
 
   li {
     margin-right: 20px;
     padding: 0px;
 
-    @media (min-width: 576px) {
-      margin-right: 40px;
-  }
+    :nth-child(n+1) {
+      transition: transform 0.4s ease;
+  
+      :active {
+        transform: scale(1.3);
+        transition: transform 0s;
+      }
+    }
 
-  :last-of-type {
-    margin-right: 0;
-    padding: 10px;
-    background-color: ${props => props.theme.portfolioBoxBackground};
+    :last-of-type {
+      margin-right: 0;
+      padding: 10px;
+      background-color: ${props => props.theme.portfolioBoxBackground};
 
       a {
         color: ${props => props.theme.portfolioBoxColor}
       }
+    }
+
+    @media (min-width: 576px) {
+      margin-right: 40px;
     }
   }
 `;
