@@ -16,14 +16,14 @@ const Navigation = ({ logo }) => (
       justifyContent="space-between"
       alignItems="center"
     >
-      <Link 
+      <Styled.LogoLink
         to="/"
       >
-        <Styled.Logo
+        <img
           src={logo} 
           alt="Black and white logo icon depicting the solar system."
         />
-      </Link>
+      </Styled.LogoLink>
       <Styled.NavList>
         <li>
           <Link 

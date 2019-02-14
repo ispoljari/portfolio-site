@@ -42,11 +42,17 @@ export const SocialLink = styled.a`
   position: relative;
   top: 1px;
 
-  transition: transform 0.4s ease;
+  transition: transform 0.4s ease-in-out;
   
   :active {
     transform: scale(1.3);
     transition: transform 0s;
+  }
+
+  :focus {
+    border: 1px solid green;
+    outline-style: solid;
+    outline-color: green;
   }
 
   @media (min-width: 576px) {
