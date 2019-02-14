@@ -10,6 +10,8 @@ const Navigation = ({ logo }) => (
     position="fixed"
     right={0}
     zIndex={100}
+    as="header"
+    role="banner"
   >
     <Box
       display="flex"
