@@ -42,6 +42,13 @@ export const SocialLink = styled.a`
   position: relative;
   top: 1px;
 
+  transition: transform 0.4s ease;
+  
+  :active {
+    transform: scale(1.3);
+    transition: transform 0s;
+  }
+
   @media (min-width: 576px) {
     max-width: 35px;
   }
