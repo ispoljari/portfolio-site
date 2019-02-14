@@ -60,7 +60,7 @@ export const LogoLink = styled(Link)`
     transition: transform 0.4s cubic-bezier(1,.26,0,.88);
 
     :active {
-      transform: rotate(360deg);
+      transform: rotate(-360deg);
       transition: transform 0s;
     }
   
