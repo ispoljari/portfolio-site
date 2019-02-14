@@ -24,7 +24,6 @@ class Pages extends Component {
           >
             <div
               className="route-section"
-              role="main"
             >
               <Switch 
                 location={location}
