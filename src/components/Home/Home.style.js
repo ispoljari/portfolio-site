@@ -14,8 +14,13 @@ export const Heading = styled.h1`
     font-size: 26px;
   }
 
-  span {
+  span,
+  span a {
     color: #fff;
+  }
+
+  span a:hover {
+    color: turquoise;
   }
 `;
 
