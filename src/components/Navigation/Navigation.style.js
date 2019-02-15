@@ -21,6 +21,9 @@ export const NavList = styled.ul`
   a {
     text-decoration: none;
     color: ${props => props.theme.color};
+    /* remove blue highlight when clicking quickly on mobile chrome */
+    user-select: none;  
+    -webkit-tap-highlight-color: transparent;
   }
 
   li {
@@ -31,7 +34,7 @@ export const NavList = styled.ul`
       transition: transform 0.4s ease-in-out;
   
       :active {
-        transform: scale(1.3);
+        transform: scale(1.2);
         transition: transform 0s;
       }
     }
@@ -53,6 +56,10 @@ export const NavList = styled.ul`
 `;
 
 export const LogoLink = styled(Link)`
+  /* remove blue highlight when clicking quickly on mobile chrome */
+  user-select: none;  
+  -webkit-tap-highlight-color: transparent;
+
   img {
     width: 50px;
     padding: 20px;
