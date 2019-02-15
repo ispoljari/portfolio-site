@@ -7,27 +7,25 @@ import GlobalStyle from '../../global.style';
 import * as Styled from './App.style';
 import { Pages, Navigation } from '../index';
 import { hideLoader, FONT_LATO, FONT_PLAYFAIR } from '../../util';
-import lightLogo from '../../svg/logo.svg';
-import darkLogo from '../../svg/logoD.svg';
 import theme from '../../themes';
 
 class App extends Component {
   state = {
     visible: false,
     theme: theme.dark,
-    logo: lightLogo
+    logo: 'light'
   };
 
   changeTheme = ({ pathname: page }) => {
-    if (this.state.theme !== theme.dark && (page === '/' || page === '/about')) {
+    if (this.state.theme !== theme.dark && page === '/') {
       this.setState({
-        logo: lightLogo,
-        theme: theme.dark
+        logo: 'light',
+        theme: theme.dark,
       });
-    } else if (this.state.theme !== theme.light && page === '/portfolio') {
+    } else if (this.state.theme !== theme.light && (page === '/about' || page === '/portfolio')) {
       this.setState({
-        logo: darkLogo,
-        theme: theme.light
+        logo: 'dark',
+        theme: theme.light,
       });
     }
   }
@@ -81,7 +79,7 @@ class App extends Component {
                         logo={logo}
                       />
                       <Pages 
-                        changeTheme={location => this.changeTheme(location)}
+                        changeTheme={this.changeTheme}
                       />
                     </React.Fragment>
                   </Router>

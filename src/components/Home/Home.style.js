@@ -4,7 +4,6 @@ export const Heading = styled.h1`
   margin: 0;
   line-height: 1.5;
   font-size: calc(26px + (64 - 26) * ((100vw - 320px) / (1700 - 320)));
-  padding-bottom: 20px;
   letter-spacing: 2px;
 
   @media (min-width: 1700px) {
@@ -15,8 +14,13 @@ export const Heading = styled.h1`
     font-size: 26px;
   }
 
-  span {
+  span,
+  span a {
     color: #fff;
+  }
+
+  span a:hover {
+    color: turquoise;
   }
 `;
 

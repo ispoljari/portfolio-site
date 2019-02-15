@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 import { Link } from 'react-router-dom'; 
 
 export const NavList = styled.ul`
@@ -6,6 +7,8 @@ export const NavList = styled.ul`
   align-items: center;
   justify-content: flex-end;
   padding: 20px;
+  background-color: ${props => props.theme.navBackground};
+  border-radius: 5px 0 0 5px;
   margin: 0;
   list-style: none;
   font-size: calc(18px + (26 - 18) * ((100vw - 320px) / (1700 - 320)));
@@ -19,8 +22,8 @@ export const NavList = styled.ul`
   }
   
   a {
+    color: ${props => props.theme.navLinkColor};
     text-decoration: none;
-    color: ${props => props.theme.color};
     /* remove blue highlight when clicking quickly on mobile chrome */
     user-select: none;  
     -webkit-tap-highlight-color: transparent;
@@ -39,14 +42,28 @@ export const NavList = styled.ul`
       }
     }
 
+    :nth-child(1) {
+      a {
+        color: ${props => props.page === '/about' ? 'turquoise' : props.theme.navLinkColor};
+
+        :hover {
+          color: turquoise;
+        }
+      }
+    }
+
+    :nth-child(2) {
+      a {
+        color: ${props => props.page === '/portfolio' ? 'turquoise' : props.theme.navLinkColor};
+
+        :hover {
+          color: turquoise;
+        }
+      }
+    }
+
     :last-of-type {
       margin-right: 0;
-      padding: 10px;
-      background-color: ${props => props.theme.portfolioBoxBackground};
-
-      a {
-        color: ${props => props.theme.portfolioBoxColor}
-      }
     }
 
     @media (min-width: 576px) {
@@ -60,9 +77,20 @@ export const LogoLink = styled(Link)`
   user-select: none;  
   -webkit-tap-highlight-color: transparent;
 
-  img {
+  svg {
+    height: 50px;
     width: 50px;
     padding: 20px;
+
+    .logo-fill {
+      fill: ${props => props.page === '/' ? 'turquoise' : props.logo};
+    }
+
+    :hover {
+      .logo-fill {
+        fill: turquoise;
+      }
+    }
 
     transition: transform 0.4s cubic-bezier(.54,.84,.44,.67);
 
@@ -72,10 +100,12 @@ export const LogoLink = styled(Link)`
     }
   
     @media (min-width: 576px) {
+      height: 60px;
       width: 60px;
     }
   
     @media (min-width: 992px) {
+      height: 65px;
       width: 65px;
     }
   }
