@@ -2,6 +2,7 @@ import React from 'react';
 import { Box } from '@smooth-ui/core-sc';
 import { Link } from 'react-router-dom'; 
 
+import { Logo } from '../index';
 import * as Styled from './Navigation.style';
 
 const Navigation = ({ logo }) => (
@@ -20,11 +21,9 @@ const Navigation = ({ logo }) => (
     >
       <Styled.LogoLink
         to="/"
+        logo={logo}
       >
-        <img
-          src={logo} 
-          alt="Black and white logo icon depicting the solar system."
-        />
+        <Logo />
       </Styled.LogoLink>
       <Styled.NavList>
         <li>
@@ -37,7 +36,6 @@ const Navigation = ({ logo }) => (
         <li>
           <Link 
             to="/portfolio"
-            color="black"
           >
             Portfolio
           </Link>

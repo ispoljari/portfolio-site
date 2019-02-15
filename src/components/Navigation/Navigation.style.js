@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 import { Link } from 'react-router-dom'; 
 
 export const NavList = styled.ul`
@@ -21,8 +22,8 @@ export const NavList = styled.ul`
   }
   
   a {
-    text-decoration: none;
     color: ${props => props.theme.navLinkColor};
+    text-decoration: none;
     /* remove blue highlight when clicking quickly on mobile chrome */
     user-select: none;  
     -webkit-tap-highlight-color: transparent;
@@ -56,9 +57,14 @@ export const LogoLink = styled(Link)`
   user-select: none;  
   -webkit-tap-highlight-color: transparent;
 
-  img {
+  svg {
+    height: 50px;
     width: 50px;
     padding: 20px;
+
+    .logo-fill {
+      fill: ${props => props.logo === 'light' ? 'white' : 'black'};
+    }
 
     transition: transform 0.4s cubic-bezier(.54,.84,.44,.67);
 
@@ -68,10 +74,12 @@ export const LogoLink = styled(Link)`
     }
   
     @media (min-width: 576px) {
+      height: 60px;
       width: 60px;
     }
   
     @media (min-width: 992px) {
+      height: 65px;
       width: 65px;
     }
   }

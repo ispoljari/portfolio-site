@@ -7,26 +7,24 @@ import GlobalStyle from '../../global.style';
 import * as Styled from './App.style';
 import { Pages, Navigation } from '../index';
 import { hideLoader, FONT_LATO, FONT_PLAYFAIR } from '../../util';
-import lightLogo from '../../svg/logo.svg';
-import darkLogo from '../../svg/logoD.svg';
 import theme from '../../themes';
 
 class App extends Component {
   state = {
     visible: false,
     theme: theme.dark,
-    logo: lightLogo
+    logo: 'light'
   };
 
   changeTheme = ({ pathname: page }) => {
     if (this.state.theme !== theme.dark && page === '/') {
       this.setState({
-        logo: lightLogo,
+        logo: 'light',
         theme: theme.dark
       });
     } else if (this.state.theme !== theme.light && (page === '/about' || page === '/portfolio')) {
       this.setState({
-        logo: darkLogo,
+        logo: 'dark',
         theme: theme.light
       });
     }
