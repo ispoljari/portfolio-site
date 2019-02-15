@@ -42,6 +42,26 @@ export const NavList = styled.ul`
       }
     }
 
+    :nth-child(1) {
+      a {
+        color: ${props => props.page === '/about' ? 'turquoise' : props.theme.navLinkColor};
+
+        :hover {
+          color: turquoise;
+        }
+      }
+    }
+
+    :nth-child(2) {
+      a {
+        color: ${props => props.page === '/portfolio' ? 'turquoise' : props.theme.navLinkColor};
+
+        :hover {
+          color: turquoise;
+        }
+      }
+    }
+
     :last-of-type {
       margin-right: 0;
     }

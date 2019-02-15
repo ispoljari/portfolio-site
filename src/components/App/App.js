@@ -20,12 +20,12 @@ class App extends Component {
     if (this.state.theme !== theme.dark && page === '/') {
       this.setState({
         logo: 'light',
-        theme: theme.dark
+        theme: theme.dark,
       });
     } else if (this.state.theme !== theme.light && (page === '/about' || page === '/portfolio')) {
       this.setState({
         logo: 'dark',
-        theme: theme.light
+        theme: theme.light,
       });
     }
   }
@@ -79,7 +79,7 @@ class App extends Component {
                         logo={logo}
                       />
                       <Pages 
-                        changeTheme={location => this.changeTheme(location)}
+                        changeTheme={this.changeTheme}
                       />
                     </React.Fragment>
                   </Router>
