@@ -40,6 +40,8 @@ export const SocialLink = styled.a`
   margin-right: 25px;
   position: relative;
   top: 1px;
+  user-select: none;  
+  -webkit-tap-highlight-color: transparent;
 
   @media (min-width: 1700px) {
     max-width: 30px;
@@ -59,7 +61,7 @@ export const SocialLink = styled.a`
 
   transition: transform 0.4s ease-in-out;
   :active {
-    transform: scale(1.3);
+    transform: scale(1.2);
     transition: transform 0s;
   }
 
