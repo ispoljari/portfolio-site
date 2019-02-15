@@ -29,17 +29,21 @@ const Home = () => {
       <Row
         mx={0}
         px={15}
-        as="header"
-        role="banner"
       >
         <Col
           px={0}
-          maxWidth="1100px"
-          width="100%"
+          xs={12}
+          sm={10}
+          osm={1}
+          lg={8}
+          olg={2}
           my={0}
           mx="auto"
         >
-          <Box>
+          <Box
+            as="header"
+            role="banner"
+          >
             <Styled.Heading>
               Hello World. 
               <br/> 
@@ -56,10 +60,8 @@ const Home = () => {
       </Row>
       <Row
         mx={0}
-        mt={{xs: "4vh", lg: "7vh"}}
+        mt={{xs: "4vh", lg: "6vh"}}
         px={15}
-        as="section"
-        role="region"
       >
         <Col
           px={0}
@@ -77,6 +79,8 @@ const Home = () => {
             justifyContent="center"
             position="relative"
             mb={15}
+            as="section"
+            role="region"
           >
             <Styled.SocialLink 
               href="https://www.linkedin.com/in/ivan-špoljarić-2206a184

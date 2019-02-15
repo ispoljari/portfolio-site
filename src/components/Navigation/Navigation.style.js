@@ -8,9 +8,9 @@ export const NavList = styled.ul`
   padding: 20px;
   margin: 0;
   list-style: none;
-  font-size: calc(18px + (26 - 18) * ((100vw - 320px) / (992 - 320)));
+  font-size: calc(18px + (26 - 18) * ((100vw - 320px) / (1700 - 320)));
 
-  @media (min-width: 992px) {
+  @media (min-width: 1700px) {
     font-size: 26px;
   }
 
@@ -57,7 +57,7 @@ export const LogoLink = styled(Link)`
     width: 50px;
     padding: 20px;
 
-    transition: transform 0.4s cubic-bezier(1,.26,0,.88);
+    transition: transform 0.4s cubic-bezier(.54,.84,.44,.67);
 
     :active {
       transform: rotate(-360deg);
