@@ -83,7 +83,13 @@ export const LogoLink = styled(Link)`
     padding: 20px;
 
     .logo-fill {
-      fill: ${props => props.logo === 'light' ? 'white' : 'black'};
+      fill: ${props => props.page === '/' ? 'turquoise' : props.logo};
+    }
+
+    :hover {
+      .logo-fill {
+        fill: turquoise;
+      }
     }
 
     transition: transform 0.4s cubic-bezier(.54,.84,.44,.67);
