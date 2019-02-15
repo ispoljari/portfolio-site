@@ -1,6 +1,6 @@
 import React from 'react';
-
 import { Box, Row, Col } from '@smooth-ui/core-sc';
+
 import * as Styled from './Home.style';
 import github from '../../svg/github.svg';
 import linkedin from '../../svg/linkedin.svg';
@@ -9,7 +9,7 @@ import gmail from '../../svg/gmail.svg';
 
 const Home = () => {
 
-  // add a small delay to link opening so that the :active scale(1.3) text transformation becomes visible
+  // add a small delay to link opening so that the :active scale(1.2) text transformation becomes visible
   const delayLinkOpen = (e) => {
     e.preventDefault();
     const href = e.target.parentElement.href;
@@ -29,6 +29,7 @@ const Home = () => {
       <Row
         mx={0}
         px={15}
+        pt="19vh"
       >
         <Col
           px={0}
@@ -51,7 +52,7 @@ const Home = () => {
               <br/>
               I'm a <span>Web Developer</span>
               <br/>
-              and a technology enthusiast,
+              and a technology enthusiast
               <br/>
               from Zagreb, Croatia.
             </Styled.Heading>
