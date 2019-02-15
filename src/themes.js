@@ -1,15 +1,13 @@
 const theme = {
   dark: {
     backgroundColor: '#191919',
-    portfolioBoxBackground: 'white',
-    portfolioBoxColor: 'black',    
-    color: 'rgba(250, 250, 250, 0.6)'
+    navBackground: 'white',
+    navLinkColor: '#191919',
   },
   light: {
     backgroundColor: 'white',
-    portfolioBoxBackground: 'black',
-    portfolioBoxColor: '#ececec',    
-    color: '#2d2d2d'
+    navBackground: '#191919',
+    navLinkColor: 'white',   
   }
 };
 

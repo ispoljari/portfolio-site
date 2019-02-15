@@ -10,7 +10,8 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
   }
 
-  h1 {
+  h1,
+  h2 {
     font-family: 'Playfair Display', 'Palatino', 'Times New Roman', Times, serif;
   }
 `;

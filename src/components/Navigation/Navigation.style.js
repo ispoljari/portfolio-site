@@ -6,6 +6,8 @@ export const NavList = styled.ul`
   align-items: center;
   justify-content: flex-end;
   padding: 20px;
+  background-color: ${props => props.theme.navBackground};
+  border-radius: 5px 0 0 5px;
   margin: 0;
   list-style: none;
   font-size: calc(18px + (26 - 18) * ((100vw - 320px) / (1700 - 320)));
@@ -20,7 +22,7 @@ export const NavList = styled.ul`
   
   a {
     text-decoration: none;
-    color: ${props => props.theme.color};
+    color: ${props => props.theme.navLinkColor};
     /* remove blue highlight when clicking quickly on mobile chrome */
     user-select: none;  
     -webkit-tap-highlight-color: transparent;
@@ -41,12 +43,6 @@ export const NavList = styled.ul`
 
     :last-of-type {
       margin-right: 0;
-      padding: 10px;
-      background-color: ${props => props.theme.portfolioBoxBackground};
-
-      a {
-        color: ${props => props.theme.portfolioBoxColor}
-      }
     }
 
     @media (min-width: 576px) {

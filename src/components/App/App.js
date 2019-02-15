@@ -19,12 +19,12 @@ class App extends Component {
   };
 
   changeTheme = ({ pathname: page }) => {
-    if (this.state.theme !== theme.dark && (page === '/' || page === '/about')) {
+    if (this.state.theme !== theme.dark && page === '/') {
       this.setState({
         logo: lightLogo,
         theme: theme.dark
       });
-    } else if (this.state.theme !== theme.light && page === '/portfolio') {
+    } else if (this.state.theme !== theme.light && (page === '/about' || page === '/portfolio')) {
       this.setState({
         logo: darkLogo,
         theme: theme.light

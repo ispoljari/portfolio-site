@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Row, Col } from '@smooth-ui/core-sc';
 
-// impor
+import * as Styled from './About.style';
 
 const About = () => (
   <Row
@@ -24,7 +24,11 @@ const About = () => (
         as="main"
         role="main"
       >
-        <h2>About</h2>
+        <Styled.Quote>
+          Web development is my passion.
+          <br />
+          Engineering is my profession.
+        </Styled.Quote>
       </Box>
     </Col>
   </Row>
