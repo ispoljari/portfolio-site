@@ -4,7 +4,6 @@ export const Heading = styled.h1`
   margin: 0;
   line-height: 1.5;
   font-size: calc(26px + (64 - 26) * ((100vw - 320px) / (1700 - 320)));
-  padding-bottom: 20px;
   letter-spacing: 2px;
 
   @media (min-width: 1700px) {

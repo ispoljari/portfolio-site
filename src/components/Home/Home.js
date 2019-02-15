@@ -30,6 +30,7 @@ const Home = () => {
         mx={0}
         px={15}
         pt="19vh"
+        pb="20px"
       >
         <Col
           px={0}
