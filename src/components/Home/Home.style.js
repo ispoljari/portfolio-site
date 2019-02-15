@@ -36,13 +36,13 @@ export const SocialParagraph = styled.p`
 `;
 
 export const SocialLink = styled.a`
-  width: calc(20px + (32 - 20) * ((100vw - 320px) / (1700 - 320)));
+  width: calc(20px + (30 - 20) * ((100vw - 320px) / (1700 - 320)));
   margin-right: 25px;
   position: relative;
   top: 1px;
 
   @media (min-width: 1700px) {
-    max-width: 32px;
+    max-width: 30px;
   }
 
   @media (max-width: 320px) {
@@ -72,11 +72,11 @@ export const SocialLink = styled.a`
   }
 
   :nth-child(4) {
-    width: calc(23px + (37 - 23) * ((100vw - 320px) / (1700 - 320)));
+    width: calc(23px + (35 - 23) * ((100vw - 320px) / (1700 - 320)));
     top: 3px;
 
     @media (min-width: 1700px) {
-      max-width: 37px;
+      max-width: 35px;
     }
 
     @media (max-width: 320px) {
