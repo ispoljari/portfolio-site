@@ -45,13 +45,13 @@ const Home = () => {
             role="banner"
           >
             <Styled.Heading>
-              Hello World. 
+              Hello World, 
               <br/> 
-              My name is Ivan Špoljarić,
+              my name is Ivan Špoljarić.
               <br/>
-              and I'm a 
-              <br/> 
-              <span>Web Developer</span>
+              I'm a <span>Web Developer</span>
+              <br/>
+              and a technology enthusiast,
               <br/>
               from Zagreb, Croatia.
             </Styled.Heading>
@@ -60,7 +60,7 @@ const Home = () => {
       </Row>
       <Row
         mx={0}
-        mt={{xs: "4vh", lg: "6vh"}}
+        mt={{xs: "2vh", md: "6vh"}}
         px={15}
       >
         <Col
