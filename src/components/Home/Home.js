@@ -48,13 +48,14 @@ const Home = () => {
             <Styled.Heading>
               Hello World, 
               <br/> 
-              my name is Ivan Špoljarić.
-              <br/>
+              my name is Ivan Špoljarić.&nbsp;
+              <br className="break-large"/>
               I'm&nbsp;
-              <br className="break-word"/>
+              <br className="break-small"/>
               <TextLoop
                 interval={[
                   2300, 
+                  3600,
                   3600,
                   3600,
                   3600,

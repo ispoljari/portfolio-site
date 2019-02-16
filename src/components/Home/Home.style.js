@@ -15,8 +15,18 @@ export const Heading = styled.h1`
   }
 
   @media (min-width: 450px){
-    .break-word {
+    .break-small {
       display: none;
+    }
+  }
+
+  .break-large {
+    display: none;
+  }
+
+  @media (min-width: 450px){
+    .break-large {
+      display: block;
     }
   }
 
