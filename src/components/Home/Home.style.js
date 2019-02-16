@@ -57,11 +57,11 @@ export const SocialLink = styled.a`
   -webkit-tap-highlight-color: transparent;
 
   @media (min-width: 1700px) {
-    max-width: 30px;
+    width: 30px;
   }
 
   @media (max-width: 320px) {
-    font-size: 20px;
+    width: 20px;
   }
 
   @media (min-width: 768px) {
@@ -78,13 +78,10 @@ export const SocialLink = styled.a`
     transition: transform 0s;
   }
 
-  img {
-    width: 100%;
-  }
-
   :hover {
     .linkedin-fill,
-    .medium-fill {
+    .medium-fill,
+    .gmail-fill {
       fill: turquoise;
     }
 
@@ -98,20 +95,20 @@ export const SocialLink = styled.a`
     width: 100%;
   }
 
-  :nth-child(3) {
-    top: 3px;
+  :nth-child(3),
+  :nth-child(4) {
+    top: 2px;
   }
 
   :nth-child(4) {
-    width: calc(23px + (35 - 23) * ((100vw - 320px) / (1700 - 320)));
-    top: 3px;
+    width: calc(22px + (36 - 22) * ((100vw - 320px) / (1700 - 320)));
 
     @media (min-width: 1700px) {
-      max-width: 35px;
+      width: 36px;
     }
 
     @media (max-width: 320px) {
-      font-size: 23px;
+      width: 22px;
     }
 
   }

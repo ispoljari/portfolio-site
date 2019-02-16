@@ -2,17 +2,14 @@ import React from 'react';
 import { Box, Row, Col } from '@smooth-ui/core-sc';
 
 import * as Styled from './Home.style';
-import { Linkedin, Github, Medium } from '../index';
-
-import medium from '../../svg/medium.svg';
-import gmail from '../../svg/gmail.svg';
+import { Linkedin, Github, Medium, Gmail } from '../index';
 
 const Home = () => {
 
   // add a small delay to link opening so that the :active scale(1.2) text transformation becomes visible
   const delayLinkOpen = (e) => {
     e.preventDefault();
-    const href = e.target.parentElement.href || e.target.href;
+    const href = e.target.href;
     const email = href.includes('mailto') ? true : false;
 
     setTimeout(function() {
@@ -116,10 +113,7 @@ const Home = () => {
               href="mailto:ivanspoljaric22@gmail.com?subject=Business proposal"
               onClick={delayLinkOpen}
             >
-              <img
-                src={gmail} 
-                alt="Gmail logo"
-              />
+              <Gmail />
             </Styled.SocialLink >
           </Box>
         </Col>
