@@ -14,6 +14,12 @@ export const Heading = styled.h1`
     font-size: 26px;
   }
 
+  @media (min-width: 450px){
+    .break-word {
+      display: none;
+    }
+  }
+
   span,
   span a {
     color: #fff;

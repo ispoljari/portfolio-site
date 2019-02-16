@@ -13,7 +13,7 @@ const About = () => (
   >
     <Col
       px={0}
-      xs={12}
+      xs={11}
       sm={10}
       osm={1}
       lg={8}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Row, Col } from '@smooth-ui/core-sc';
+import TextLoop from 'react-text-loop';
 
 import * as Styled from './Home.style';
 import { Linkedin, Github, Medium, Gmail } from '../index';
@@ -32,7 +33,7 @@ const Home = () => {
       >
         <Col
           px={0}
-          xs={12}
+          xs={11}
           sm={10}
           osm={1}
           lg={8}
@@ -49,31 +50,61 @@ const Home = () => {
               <br/> 
               my name is Ivan Špoljarić.
               <br/>
-              I'm a&nbsp;
-              <span>
-                Web Developer
-              </span>
-              <span>
-                Spotify Addict
-              </span>
-              <span>
-                Coffee Lover
-              </span>
-              <span>
-                Netlix Binger
-              </span>
-              <span>
-                Electrical Engineer
-              </span>
-              <span>
-                Technology Enthusiast
-              </span>
-              <span>
-                Proud Father
-              </span>
-              <span>
-                Super Nintendo Fan
-              </span>
+              I'm&nbsp;
+              <br className="break-word"/>
+              <TextLoop
+                interval={[
+                  2300, 
+                  3600,
+                  3600,
+                  3600,
+                  3600,
+                  3600,
+                  3600,
+                  3600,
+                  3600,
+                  3600,
+                  3600]}
+                springConfig={{ stiffness: 30, damping: 10 }}
+                mask
+              >
+                <span>
+                  a Web Developer
+                </span>
+                <span>
+                  an Elec. Engineer
+                </span>
+                <span>
+                  a Spotify Addict
+                </span>
+                <span>
+                  a Coffee Lover
+                </span>
+                <span>
+                  a Netlix Binger
+                </span>
+                <span>
+                  a Star Wars Fan
+                </span>
+                <span>
+                  a Tech Geek
+                </span>
+                <span>
+                  a Proud Father
+                </span>
+                <span>
+                  a Nintendo Player
+                </span>
+                <span>
+                  a Cona Biker
+                </span>
+                <span>
+                  a Book Worm
+                </span>
+                <span>
+                  a Polymath
+                </span>
+              </TextLoop>
               <br/>
               from&nbsp;
               <span>
