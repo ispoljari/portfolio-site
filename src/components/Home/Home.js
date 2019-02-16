@@ -53,6 +53,27 @@ const Home = () => {
               <span>
                 Web Developer
               </span>
+              <span>
+                Spotify Addict
+              </span>
+              <span>
+                Coffee Lover
+              </span>
+              <span>
+                Netlix Binger
+              </span>
+              <span>
+                Electrical Engineer
+              </span>
+              <span>
+                Technology Enthusiast
+              </span>
+              <span>
+                Proud Father
+              </span>
+              <span>
+                Super Nintendo Fan
+              </span>
               <br/>
               from&nbsp;
               <span>
