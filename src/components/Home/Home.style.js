@@ -19,8 +19,10 @@ export const Heading = styled.h1`
     color: #fff;
   }
 
-  .city-name a {
+  span a {
     display: inline-block;
+    user-select: none;  
+    -webkit-tap-highlight-color: transparent;
     transition: transform 0.4s ease-in-out;
 
     :active {
