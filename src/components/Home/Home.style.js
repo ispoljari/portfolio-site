@@ -78,6 +78,11 @@ export const SocialLink = styled.a`
     transition: transform 0s;
   }
 
+  /* Make sure nothing inside the a tag has pointer events, so clicks on the a tag will always be found on that element */
+  > * {
+    pointer-events: none;
+  }
+
   :hover {
     .linkedin-fill,
     .medium-fill,

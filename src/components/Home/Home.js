@@ -9,6 +9,7 @@ const Home = () => {
   // add a small delay to link opening so that the :active scale(1.2) text transformation becomes visible
   const delayLinkOpen = (e) => {
     e.preventDefault();
+    e.stopPropagation();
     const href = e.target.href;
     const email = href.includes('mailto') ? true : false;
 
