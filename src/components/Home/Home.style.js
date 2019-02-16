@@ -86,15 +86,15 @@ export const SocialLink = styled.a`
     .linkedin-fill {
       fill: turquoise;
     }
+
+    .github-stroke {
+      stroke: turquoise;
+    }
   }
 
   svg {
     height: 100%;
     width: 100%;
-
-    .linkedin-fill {
-      fill: white;
-    }
   }
 
   :nth-child(3) {

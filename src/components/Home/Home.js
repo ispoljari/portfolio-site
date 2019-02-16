@@ -2,9 +2,8 @@ import React from 'react';
 import { Box, Row, Col } from '@smooth-ui/core-sc';
 
 import * as Styled from './Home.style';
-import { Linkedin } from '../index';
+import { Linkedin, Github } from '../index';
 
-import github from '../../svg/github.svg';
 import medium from '../../svg/medium.svg';
 import gmail from '../../svg/gmail.svg';
 
@@ -105,10 +104,7 @@ const Home = () => {
               href="https://github.com/ispoljari"
               onClick={delayLinkOpen}
             >
-              <img
-                src={github} 
-                alt="Github logo"
-              />
+              <Github />
             </Styled.SocialLink >
             <Styled.SocialLink  
               href="https://medium.com/@ivanspoljaric22"
