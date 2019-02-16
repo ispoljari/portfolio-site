@@ -7,7 +7,7 @@ const About = () => (
   <Row
     mx={0}
     px={15}
-    pt="19vh"
+    pt="20vh"
     pb="20px"
   >
     <Col

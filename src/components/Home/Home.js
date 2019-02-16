@@ -12,7 +12,7 @@ const Home = () => {
   // add a small delay to link opening so that the :active scale(1.2) text transformation becomes visible
   const delayLinkOpen = (e) => {
     e.preventDefault();
-    const href = e.target.parentElement.href;
+    const href = e.target.parentElement.href || e.target.href;
     const email = href.includes('mailto') ? true : false;
 
     setTimeout(function() {
@@ -29,7 +29,7 @@ const Home = () => {
       <Row
         mx={0}
         px={15}
-        pt="19vh"
+        pt={{xs:"120px", sm:"130px", lg:"140px", xl:"155px"}}
         pb="20px"
       >
         <Col
@@ -55,11 +55,12 @@ const Home = () => {
               <br/>
               and a technology enthusiast
               <br/>
-              <span >
+              <span
+                className="city-name"
+              >
                 <a
                   href="https://www.google.com/maps/place/Zagreb/@45.8401104,15.8242483,11z/data=!3m1!4b1!4m5!3m4!1s0x4765d692c902cc39:0x3a45249628fbc28a!8m2!3d45.8150108!4d15.9819189"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  onClick={delayLinkOpen}
                 >
                   from Zagreb.
                 </a>
@@ -70,7 +71,7 @@ const Home = () => {
       </Row>
       <Row
         mx={0}
-        mt={{xs: "2vh", md: "6vh"}}
+        mt={{xs: "20px", md: "35px", lg:"45px"}}
         px={15}
       >
         <Col

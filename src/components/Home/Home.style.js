@@ -19,6 +19,16 @@ export const Heading = styled.h1`
     color: #fff;
   }
 
+  .city-name a {
+    display: inline-block;
+    transition: transform 0.4s ease-in-out;
+
+    :active {
+      transform: scale(1.2);
+      transition: transform 0s;
+    }
+  }
+
   span a:hover {
     color: turquoise;
   }

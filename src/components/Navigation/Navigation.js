@@ -23,7 +23,6 @@ const Navigation = ({ logo, location }) => (
       <Styled.LogoLink
         to="/"
         logo={logo === 'light' ? 'white' : 'black'}
-        page={location.pathname}
       >
         <Logo />
       </Styled.LogoLink>

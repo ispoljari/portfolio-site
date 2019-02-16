@@ -6,7 +6,7 @@ export const NavList = styled.ul`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 20px;
+  padding: 13px 25px;
   background-color: ${props => props.theme.navBackground};
   border-radius: 5px 0 0 5px;
   margin: 0;
@@ -34,11 +34,14 @@ export const NavList = styled.ul`
     padding: 0px;
 
     :nth-child(n+1) {
-      transition: transform 0.4s ease-in-out;
-  
-      :active {
-        transform: scale(1.2);
-        transition: transform 0s;
+      a {
+        display: inline-block;
+        transition: transform 0.4s ease-in-out;
+    
+        :active {
+          transform: scale(1.2);
+          transition: transform 0s;
+        }
       }
     }
 
@@ -83,13 +86,7 @@ export const LogoLink = styled(Link)`
     padding: 20px;
 
     .logo-fill {
-      fill: ${props => props.page === '/' ? 'turquoise' : props.logo};
-    }
-
-    :hover {
-      .logo-fill {
-        fill: turquoise;
-      }
+      fill: ${props => props.logo};
     }
 
     transition: transform 0.4s cubic-bezier(.54,.84,.44,.67);
