@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Row, Col } from '@smooth-ui/core-sc';
 
 import * as Styled from './About.style';
+import family from '../../img/family.png';
 
 const About = () => (
   <Row
@@ -25,8 +26,25 @@ const About = () => (
         role="main"
       >
         <Styled.Quote>
+          My family is my strength.
+        </Styled.Quote>
+        <img 
+          src={family} 
+          alt="My wife, son and myself"
+          style={
+            {
+              display: 'block',
+              margin: '0 auto',
+              marginBottom: '30px',
+              width: '80%',
+              maxWidth: '750px'
+            }
+          }
+        />
+        <Styled.Quote>
           Web development is my passion.
-          <br />
+        </Styled.Quote>
+        <Styled.Quote>
           Engineering is my profession.
         </Styled.Quote>
       </Box>
