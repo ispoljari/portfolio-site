@@ -82,6 +82,21 @@ export const SocialLink = styled.a`
     width: 100%;
   }
 
+  :hover {
+    .linkedin-fill {
+      fill: turquoise;
+    }
+  }
+
+  svg {
+    height: 100%;
+    width: 100%;
+
+    .linkedin-fill {
+      fill: white;
+    }
+  }
+
   :nth-child(3) {
     top: 3px;
   }

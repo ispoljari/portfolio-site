@@ -6,3 +6,4 @@ export { default as Matrix } from './Matrix/Matrix';
 export { default as About } from './About/About';
 export { default as Portfolio } from './Portfolio/Portfolio';
 export { default as Logo } from './Logo/Logo';
+export { default as Linkedin } from './Social/Linkedin';

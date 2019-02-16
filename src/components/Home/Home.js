@@ -2,8 +2,9 @@ import React from 'react';
 import { Box, Row, Col } from '@smooth-ui/core-sc';
 
 import * as Styled from './Home.style';
+import { Linkedin } from '../index';
+
 import github from '../../svg/github.svg';
-import linkedin from '../../svg/linkedin.svg';
 import medium from '../../svg/medium.svg';
 import gmail from '../../svg/gmail.svg';
 
@@ -98,10 +99,7 @@ const Home = () => {
               "
               onClick={delayLinkOpen}
             >
-              <img 
-                src={linkedin} 
-                alt="Linkedin logo"
-              />
+              <Linkedin />
             </Styled.SocialLink >
             <Styled.SocialLink  
               href="https://github.com/ispoljari"
