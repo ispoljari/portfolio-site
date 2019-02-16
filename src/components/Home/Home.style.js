@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Heading = styled.h1`
   margin: 0;
   line-height: 1.5;
-  font-size: calc(26px + (64 - 26) * ((100vw - 320px) / (1700 - 320)));
+  font-size: calc(28px + (64 - 28) * ((100vw - 320px) / (1700 - 320)));
   letter-spacing: 2px;
 
   @media (min-width: 1700px) {
@@ -11,7 +11,7 @@ export const Heading = styled.h1`
   }
 
   @media (max-width: 320px) {
-    font-size: 26px;
+    font-size: 28px;
   }
 
   @media (min-width: 450px){

@@ -33,7 +33,7 @@ const Home = () => {
       >
         <Col
           px={0}
-          xs={11}
+          xs={12}
           sm={10}
           osm={1}
           lg={8}
@@ -46,9 +46,10 @@ const Home = () => {
             role="banner"
           >
             <Styled.Heading>
-              Hello World, 
-              <br/> 
-              my name is Ivan Špoljarić.&nbsp;
+              Hello World,&nbsp;
+              <br className="break-large"/>
+              my name is
+              Ivan Špoljarić.&nbsp;
               <br className="break-large"/>
               I'm&nbsp;
               <br className="break-small"/>
