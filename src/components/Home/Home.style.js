@@ -83,7 +83,8 @@ export const SocialLink = styled.a`
   }
 
   :hover {
-    .linkedin-fill {
+    .linkedin-fill,
+    .medium-fill {
       fill: turquoise;
     }
 

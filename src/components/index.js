@@ -8,3 +8,4 @@ export { default as Portfolio } from './Portfolio/Portfolio';
 export { default as Logo } from './Logo/Logo';
 export { default as Linkedin } from './Social/Linkedin';
 export { default as Github} from './Social/Github';
+export { default as Medium} from './Social/Medium';
