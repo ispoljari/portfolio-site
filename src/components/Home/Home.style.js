@@ -2,17 +2,6 @@ import styled from 'styled-components';
 
 export const Heading = styled.h1`
   margin: 0;
-  line-height: 1.7;
-  font-size: calc(28px + (64 - 28) * ((100vw - 320px) / (1700 - 320)));
-  letter-spacing: 2px;
-
-  @media (min-width: 1700px) {
-    font-size: 64px;
-  }
-
-  @media (max-width: 320px) {
-    font-size: 28px;
-  }
 
   @media (min-width: 450px){
     .break-small {

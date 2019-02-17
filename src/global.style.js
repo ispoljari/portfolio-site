@@ -13,6 +13,17 @@ const GlobalStyle = createGlobalStyle`
   h1,
   h2 {
     font-family: 'Playfair Display', 'Palatino', 'Times New Roman', Times, serif;
+    font-size: calc(28px + (64 - 28) * ((100vw - 320px) / (1700 - 320))) !important;
+    line-height: 1.7 !important;
+    letter-spacing: 2px !important;
+
+    @media (min-width: 1700px) {
+      font-size: 64px !important;
+    }
+
+    @media (max-width: 320px) {
+      font-size: 28px !important;
+    }
   }
 `;
 
