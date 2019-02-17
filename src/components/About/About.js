@@ -26,7 +26,13 @@ const About = () => (
         role="main"
       >
         <Styled.Quote>
-          My family is my strength.
+          Web development is my passion.
+        </Styled.Quote>
+        <Styled.Quote>
+          Engineering is my profession.
+        </Styled.Quote>
+        <Styled.Quote>
+          Family is my strength.
         </Styled.Quote>
         <img 
           src={family} 
@@ -41,12 +47,6 @@ const About = () => (
             }
           }
         />
-        <Styled.Quote>
-          Web development is my passion.
-        </Styled.Quote>
-        <Styled.Quote>
-          Engineering is my profession.
-        </Styled.Quote>
       </Box>
     </Col>
   </Row>

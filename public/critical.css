@@ -11,7 +11,7 @@ body {
 }
 
 .loader {
-  position: absolute;
+  position: fixed;
   top: calc(50% - 5em);
   left: calc(50% - 5em);
   opacity: 1;
