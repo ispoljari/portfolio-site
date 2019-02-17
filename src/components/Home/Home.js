@@ -46,27 +46,15 @@ const Home = () => {
             role="banner"
           >
             <Styled.Heading>
-              Hello World,&nbsp;
+              Hello World.&nbsp;
               <br className="break-large"/>
-              my name is
+              My name is
               Ivan Špoljarić.&nbsp;
               <br className="break-large"/>
               I'm&nbsp;
               <br className="break-small"/>
               <TextLoop
-                interval={[
-                  2300, 
-                  3600,
-                  3600,
-                  3600,
-                  3600,
-                  3600,
-                  3600,
-                  3600,
-                  3600,
-                  3600,
-                  3600,
-                  3600]}
+                interval={3500}
                 springConfig={{ stiffness: 30, damping: 10 }}
                 mask
               >
@@ -83,10 +71,10 @@ const Home = () => {
                   a Coffee Lover
                 </span>
                 <span>
-                  a Netlix Binger
+                  a Netflix Binger
                 </span>
                 <span>
-                  a Star Wars Fan
+                  a SciFi Fan
                 </span>
                 <span>
                   a Tech Geek
@@ -95,16 +83,22 @@ const Home = () => {
                   a Proud Father
                 </span>
                 <span>
-                  a Nintendo Player
+                  a Jedi Knight
                 </span>
                 <span>
-                  a Cona Biker
+                  a Nintendo Owner
+                </span>
+                <span>
+                  a Kona Biker
                 </span>
                 <span>
                   a Book Worm
                 </span>
                 <span>
-                  a Polymath
+                  a PC Gamer
+                </span>
+                <span>
+                  a Legend
                 </span>
               </TextLoop>
               <br/>
