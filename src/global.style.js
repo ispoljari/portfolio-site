@@ -14,6 +14,7 @@ const GlobalStyle = createGlobalStyle`
   h2,
   h3 {
     font-family: 'Playfair Display', 'Palatino', 'Times New Roman', Times, serif;
+    letter-spacing: 1px !important;
     margin: 0 !important;
   }
 
