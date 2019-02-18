@@ -23,6 +23,7 @@ export const NavList = styled.ul`
   
   a {
     color: ${props => props.theme.navLinkColor};
+    letter-spacing: 1px;
     text-decoration: none;
     /* remove blue highlight when clicking quickly on mobile chrome */
     user-select: none;  
