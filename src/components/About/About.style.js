@@ -14,4 +14,14 @@ export const Paragraph = styled.p`
   @media (max-width: 320px) {
     font-size: 16px;
   }
+
+  a {
+    user-select: none;  
+    -webkit-tap-highlight-color: transparent;
+    color: inherit;
+
+    :hover {
+      color: turquoise;
+    }
+  }
 `;

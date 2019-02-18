@@ -29,10 +29,26 @@ const hideLoader = () => {
 const FONT_LATO = new FontFaceObserver('Lato');
 const FONT_PLAYFAIR = new FontFaceObserver('Playfair Display');
 
+const delayLinkOpen = e => {
+  e.preventDefault();
+  e.stopPropagation();
+  const href = e.target.href;
+  const email = href.includes('mailto') ? true : false;
+
+  setTimeout(function() {
+    if (!email) {
+      window.open(href, '_blank');
+    } else {
+      window.location.href = href;
+    }
+  }, 300);
+}
+
 export {
   animateBackground,
   showLoader,
   hideLoader,
   FONT_LATO,
-  FONT_PLAYFAIR
+  FONT_PLAYFAIR,
+  delayLinkOpen
 };
