@@ -54,7 +54,7 @@ const About = () => (
          justifyContent={{xs: 'left', md: "center"}}
         >
           <Styled.SectionHeading>
-            Web development is my passion
+            My passion is web development
           </Styled.SectionHeading>
         </Col>
         <Col
@@ -80,7 +80,7 @@ const About = () => (
           justifyContent={{xs: 'left', md: "center"}}
         >
           <h2>
-            Engineering is my profession
+            My profession is engineering
           </h2>  
         </Col>
         <Col
@@ -109,7 +109,7 @@ const About = () => (
           justifyContent={{xs: 'left', md: "center"}}
         >
           <Styled.SectionHeading>
-           Family is my strength
+           My strength is my family
           </Styled.SectionHeading>  
         </Col>
         <Col
@@ -136,7 +136,7 @@ const About = () => (
       >
         <Col>
           <h2>
-            Mindfullness is my way of life
+            Mindfull existence
           </h2>  
           <Styled.Paragraph>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum

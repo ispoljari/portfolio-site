@@ -4,7 +4,6 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Lato', Arial, Helvetica, sans-serif;
     line-height: 1.6 !important;
-    letter-spacing: 1px;
     background-color: ${props => props.theme.backgroundColor};
     transition: background-color 300ms linear;
     color: ${props => props.theme.color};
@@ -29,18 +28,6 @@ const GlobalStyle = createGlobalStyle`
 
     @media (max-width: 320px) {
       font-size: 28px !important;
-    }
-  }
-
-  h3 {
-    font-size: calc(24px + (60 - 24) * ((100vw - 320px) / (1700 - 320))) !important;
-  
-    @media (min-width: 1700px) {
-      font-size: 60px !important;
-    }
-
-    @media (max-width: 320px) {
-      font-size: 24px !important;
     }
   }
 `;
