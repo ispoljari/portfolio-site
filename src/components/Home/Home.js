@@ -89,16 +89,13 @@ const Home = () => {
                   a Nintendo Owner
                 </span>
                 <span>
-                  a Kona Biker
+                  a Kona Rider
                 </span>
                 <span>
                   a Book Worm
                 </span>
                 <span>
                   a PC Gamer
-                </span>
-                <span>
-                  a Legend
                 </span>
               </TextLoop>
               <br/>
