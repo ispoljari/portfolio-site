@@ -35,7 +35,11 @@ const About = () => (
           </h2>  
           <Styled.Paragraph>
             'Pozdrav' means 'Hello' in Croatian. My name is Ivan, and I'm 29 years old. 
+            <br/>
+            <br/>
             I invite you to browse through my bio to find out more about me, my interests and skills. You can  check out some of my projects in the portfolio section. I developed a few pretty cool apps which I think you'll like. Also, take a look at my Medium account where I publish web-dev related articles.
+            <br/>
+            <br/>
             I'm currently looking for work, so feel free to contact me any time. Thanks for visiting my website and have a nice day.
           </Styled.Paragraph>
         </Col>
