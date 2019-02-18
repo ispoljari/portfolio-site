@@ -54,7 +54,7 @@ const Home = () => {
               I'm&nbsp;
               <br className="break-small"/>
               <TextLoop
-                interval={3500}
+                interval={2800}
                 springConfig={{ stiffness: 30, damping: 10 }}
                 mask
               >
@@ -122,7 +122,7 @@ const Home = () => {
           mx="auto"
         >
           <Styled.SocialParagraph>
-           Connect with me :)
+           Connect with me
           </Styled.SocialParagraph>
           <Box
             display="flex"

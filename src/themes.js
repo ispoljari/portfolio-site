@@ -3,7 +3,7 @@ const theme = {
     backgroundColor: '#191919',
     navBackground: 'white',
     navLinkColor: '#191919',
-    color: 'rgba(250, 250, 250, 0.6)'
+    color: 'rgba(250, 250, 250, 0.7)'
   },
   light: {
     backgroundColor: 'white',
