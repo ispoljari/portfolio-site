@@ -94,9 +94,6 @@ const Home = () => {
                 <span>
                   a Book Worm
                 </span>
-                <span>
-                  a PC Gamer
-                </span>
               </TextLoop>
               <br/>
               from&nbsp;
@@ -125,7 +122,7 @@ const Home = () => {
           mx="auto"
         >
           <Styled.SocialParagraph>
-            Connect with me
+           Connect with me :)
           </Styled.SocialParagraph>
           <Box
             display="flex"

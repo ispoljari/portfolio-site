@@ -3,11 +3,13 @@ const theme = {
     backgroundColor: '#191919',
     navBackground: 'white',
     navLinkColor: '#191919',
+    color: 'rgba(250, 250, 250, 0.6)'
   },
   light: {
     backgroundColor: 'white',
     navBackground: '#191919',
-    navLinkColor: 'white',   
+    navLinkColor: 'white',  
+    color: 'black'
   }
 };
 

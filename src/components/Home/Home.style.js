@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 export const Heading = styled.h1`
-  margin: 0;
-
   @media (min-width: 450px){
     .break-small {
       display: none;
@@ -43,9 +41,9 @@ export const Heading = styled.h1`
 
 export const SocialParagraph = styled.p`
   text-align: center;
-  font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1200 - 320)));
+  font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1700 - 320)));
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1700px) {
     font-size: 18px;
   }
 
