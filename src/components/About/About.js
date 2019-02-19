@@ -27,7 +27,7 @@ const About = () => (
         role="main"
       >
         <Row
-          mb={50}
+          mb={{xs:"20px", sm:"30px", lg:"40px", xl:"50px"}}
         >
           <Col 
           >
@@ -35,39 +35,12 @@ const About = () => (
               Pozdrav
             </Styled.SectionHeading>  
             <Styled.Paragraph>
-              'Pozdrav' means 'Hello' in Croatian. My name is Ivan, and I'm 29 years old. 
-              I invite you to browse through this section to find out more about me, my interests, professional experience and technical skills. 
-              <br/>
-              <br/>
-              You can check out some of my projects in the <Link 
-                to="/portfolio">portfolio section
-              </Link>.&nbsp;
-              I developed a few nice apps which I hope you'll like. 
-              Also, you can&nbsp;
-              <a 
-                href="https://medium.com/@ivanspoljaric22"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                follow me on Medium
-              </a>&nbsp;
-              where I plan to publish web dev related articles on a regular basis.
-              <br/>
-              <br/>
-              I'm currently looking for work, so feel free to contact me at&nbsp;
-              <a 
-                href="mailto:ivanspoljaric22@gmail.com?subject=Business proposal"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                ivanspoljaric22@gmail.com
-              </a>.&nbsp;
-              Thanks for visiting my website and have a nice day.
+              'Pozdrav' means 'Hello' in Croatian. <span role="img" aria-label="hand wave emoji">👋</span> My name is Ivan, and I'm 29 years old. I invite you to browse through this section to find out more about me, my interests, professional experience and technical skills. Thanks for visiting and have a nice day. 
             </Styled.Paragraph>
           </Col>
         </Row>
         <Row
-        mb={50}
+        mb={{xs:"20px", sm:"30px", lg:"40px", xl:"50px"}}
         borderRadius={5}
         backgroundColor="#191919"
         p={20}
@@ -75,6 +48,7 @@ const About = () => (
           <Col
           xs={12}
           md={6}
+          xl={5}
           display="flex"
           alignItems="center"
           justifyContent={{xs: 'left', md: "center"}}
@@ -88,28 +62,26 @@ const About = () => (
           <Col
           xs={12}
           md={6}
+          xl={7}
           >
             <Styled.Paragraph
               white
             >
-              Ever since I was a little kid, I've been inquisitive about the world. 
+              Ever since I was a little kid, I always preffered the science subjects in school. During those formative years, except spending my time just being a kid, I enjoyed learning mathematics, physics and coming up with all sorts of conceptual problems that sharpened my critical thinking skills.
               <br/>
-              <br/>
-              That's why I always preffered the science subjects in school. During those formative years, I took most educational pleasure from learning mathematics and physics. 
-              Sometimes, during intervals of great boredom, I would come up with strange conceptual problems to preoccupate my mind. Such as, how much time would I need to get to the grocery store if I was reduced to the size of an ant. WTF, right? 🤦 
-              <br/>
-              <br/>
-              I also enjoyed every computer programming class I had throughout my education. They introduced me into the world of coding. I made my first, small app in 5th grade of primary school. It was written in QBasic and based on the popular TV Show "Who wants to be a Millionare". 💵
+              <br/> 
+              I also loved the programming classes. They introduced me to the world of coding. I made my first, small app in 5th grade of primary school. It was written in QBasic and based on the popular TV Show "Who wants to be a Millionare".
             </Styled.Paragraph>
           </Col>
         </Row>
         <Row
-        mb={50}
+        mb={{xs:"20px", sm:"30px", lg:"40px", xl:"50px"}}        
         borderRadius={5}
         >
           <Col
           xs={12}
           md={6}
+          xl={5}
           display="flex"
           alignItems="center"
           justifyContent={{xs: 'left', md: "center"}}
@@ -121,6 +93,7 @@ const About = () => (
           <Col
           xs={12}
           md={6}
+          xl={7}
           >
             <Styled.Paragraph>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
@@ -128,7 +101,7 @@ const About = () => (
           </Col>
         </Row>
         <Row
-          mb={50}
+          mb={{xs:"20px", sm:"30px", lg:"40px", xl:"50px"}}          
           borderRadius={5}
           backgroundColor="#191919"
           p={20}
@@ -136,6 +109,7 @@ const About = () => (
           <Col
             xs={12}
             md={6}
+            xl={5}
             display="flex"
             alignItems="center"
             justifyContent={{xs: 'left', md: "center"}}
@@ -143,12 +117,13 @@ const About = () => (
             <Styled.SectionHeading
               white
             >
-              Decision to become a Web Developer
+              Web Development became a passion
             </Styled.SectionHeading>  
           </Col>
           <Col
             xs={12}
             md={6}
+            xl={7}
           >
             <Styled.Paragraph
               white
@@ -158,24 +133,25 @@ const About = () => (
           </Col>
         </Row>
         <Row
-          mb={50}
+          mb={{xs:"20px", sm:"30px", lg:"40px", xl:"50px"}}          
           borderRadius={5}
-          p={20}
         >
           <Col
             xs={12}
             md={6}
+            xl={5}
             display="flex"
             alignItems="center"
             justifyContent={{xs: 'left', md: "center"}}
           >
             <Styled.SectionHeading>
-            My strength is my family
+            A source of strength
             </Styled.SectionHeading>  
           </Col>
           <Col
             xs={12}
             md={6}
+            xl={7}
             mt={{xs:"20px", md:"0"}}
           >
             <img 
@@ -190,6 +166,23 @@ const About = () => (
                 }
               }
             />     
+          </Col>
+        </Row>
+        <Row
+          mb={10}
+        >
+          <Col 
+          >
+            <Styled.Paragraph>
+              I'm currently looking for dev. work, so feel free to contact me at&nbsp;
+              <a 
+                href="mailto:ivanspoljaric22@gmail.com?subject=Business proposal"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ivanspoljaric22@gmail.com
+              </a>.
+            </Styled.Paragraph>
           </Col>
         </Row>
       </Box>
