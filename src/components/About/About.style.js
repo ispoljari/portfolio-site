@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
 export const SectionHeading = styled.h2`
-  color: white;
+  width: 90%;
+  max-width: 450px;
+  color: ${props => props.white ? 'white' : '#191919'};
 `;
 
 export const Paragraph = styled.p`
