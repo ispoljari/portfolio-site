@@ -68,8 +68,8 @@ const About = () => (
         </Row>
         <Row
         mb={50}
-        backgroundColor="#191919"
         borderRadius={5}
+        backgroundColor="#191919"
         p={20}
         >
           <Col
@@ -92,17 +92,20 @@ const About = () => (
             <Styled.Paragraph
               white
             >
-              I've always been very inquisitive about the world. That is why I preffered the science subjects in school. I found most of my educational pleasure in learning mathematics and physics.
+              Ever since I was a little kid, I've been inquisitive about the world. 
               <br/>
               <br/>
-              I also enjoyed the computer programming classes. They introduced me into the world of coding. I made my first small QBasic app in 5th grade of primary school. It was based on the popular TV Show "Who wants to be a Millionare". 
+              That's why I always preffered the science subjects in school. During those formative years, I took most educational pleasure from learning mathematics and physics. 
+              Sometimes, during intervals of great boredom, I would come up with strange conceptual problems to preoccupate my mind. Such as, how much time would I need to get to the grocery store if I was reduced to the size of an ant. WTF, right? 🤦 
+              <br/>
+              <br/>
+              I also enjoyed every computer programming class I had throughout my education. They introduced me into the world of coding. I made my first, small app in 5th grade of primary school. It was written in QBasic and based on the popular TV Show "Who wants to be a Millionare". 💵
             </Styled.Paragraph>
           </Col>
         </Row>
         <Row
         mb={50}
         borderRadius={5}
-        p={20}
         >
           <Col
           xs={12}
@@ -112,7 +115,7 @@ const About = () => (
           justifyContent={{xs: 'left', md: "center"}}
           >
             <Styled.SectionHeading>
-              My passion is web development
+              Engineering became a profession
             </Styled.SectionHeading>
           </Col>
           <Col
@@ -120,7 +123,7 @@ const About = () => (
           md={6}
           >
             <Styled.Paragraph>
-            I've come along way since dabbling with QBasic in primary school. I've written programs in low-level languages such as C (mostly for embedded systems), as well as in high-level languages such as Javascript or Python. The most important mindset shift has 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
             </Styled.Paragraph>
           </Col>
         </Row>
@@ -140,20 +143,18 @@ const About = () => (
             <Styled.SectionHeading
               white
             >
-              My profession is engineering
+              Decision to become a Web Developer
             </Styled.SectionHeading>  
           </Col>
           <Col
             xs={12}
             md={6}
           >
-          <Styled.Paragraph
-            white
-          >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            <Styled.Paragraph
+              white
+            >
+              I've come along way since dabbling with QBasic in primary school. I've written programs in low-level languages such as C (mostly for embedded systems), as well as in high-level languages such as Javascript or Python. The most important mindset shift has 
             </Styled.Paragraph>
-          </Col>
-          <Col>
           </Col>
         </Row>
         <Row
