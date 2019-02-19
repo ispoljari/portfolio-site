@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Row, Col } from '@smooth-ui/core-sc';
-import { Link } from 'react-router-dom'; 
+import {BarChart} from 'react-easy-chart';
 
 import * as Styled from './About.style';
 import family from '../../img/family.png';
@@ -32,10 +32,16 @@ const About = () => (
           <Col 
           >
             <Styled.SectionHeading>
-              Pozdrav
+              Pozdrav&nbsp;
+              <span 
+                role="img" 
+                aria-label="hand wave emoji"
+              >
+                  👋
+              </span>
             </Styled.SectionHeading>  
             <Styled.Paragraph>
-              'Pozdrav' means 'Hello' in Croatian. <span role="img" aria-label="hand wave emoji">👋</span> My name is Ivan, and I'm 29 years old. I invite you to browse through this section to find out more about me, my interests, professional experience and technical skills. Thanks for visiting and have a nice day. 
+              'Pozdrav' means 'Hello' in Croatian. My name is Ivan, and I'm 29 years old. I invite you to browse through this section to find out more about me, my interests, professional experience and technical skills. Thanks for visiting and have a nice day. 
             </Styled.Paragraph>
           </Col>
         </Row>
@@ -57,7 +63,13 @@ const About = () => (
             >
               Curious&nbsp;
               <br className="break-large"/>
-              Coder
+              Mind&nbsp;
+              <span 
+                role="img" 
+                aria-label="curious face emoji"
+              >
+                  🤔
+              </span>
             </Styled.SectionHeading>
           </Col>
           <Col
@@ -88,7 +100,13 @@ const About = () => (
             <Styled.SectionHeading>
               Web&nbsp;
               <br className="break-large"/>
-              Developer 
+              Developer&nbsp;
+              <span 
+                role="img" 
+                aria-label="curious face emoji"
+              >
+                👨‍💻
+              </span>
             </Styled.SectionHeading>
           </Col>
           <Col
@@ -96,7 +114,10 @@ const About = () => (
           md={8}
           >
             <Styled.Paragraph>
-              I've come along way from my QBasic school days. I've learned how to writte programs in low-level languages such as C (mostly for embedded systems), as well as in high-level languages such as Javascript or Python. I know how to develop modern, dynamic, responsive, progressive, a11y, fast web apps using the MERN stack. Here are some my skills
+              I've come along way from my QBasic school days. I've learned how to writte programs in low-level languages such as C (mostly for embedded systems), as well as in high-level languages such as Javascript or Python. I know how to develop modern, dynamic, responsive, progressive, a11y, fast web apps using the MERN stack. Here are some my skills:
+              {/* <BarChart
+                data={}
+              /> */}
             </Styled.Paragraph>
           </Col>
         </Row>
@@ -118,7 +139,13 @@ const About = () => (
             >
               Elec.&nbsp; 
               <br className="break-large"/>
-              Engineer
+              Engineer&nbsp;
+              <span 
+                role="img" 
+                aria-label="curious face emoji"
+              >
+                ⚡
+              </span>
             </Styled.SectionHeading>  
           </Col>
           <Col
@@ -128,10 +155,13 @@ const About = () => (
             <Styled.Paragraph
               white
             >
-              I knew I wanted to pursue an engineering degree while I was stil in elementary school. I have a practicaly oriented mindset and an affinity towards problem solving, so it always seemed like a natural fit.
+              I knew I wanted to pursue an engineering degree while I was stil in elementary school. I have a practicaly oriented mindset and an affinity towards problem solving, so it always seemed like a natural choice.
               <br/>
               <br/> 
-              I obtained a masters degree in electrical engineering, with a focus towards automation and electrical machine design. It is a very challenging and interesting technical field in which I had the opportunity to work for a couple of years. I designed power transformers and complex automation systems. I've programmed PLC's and commissioned large industrial facilities such as sawmills and tobaco warehouses. 
+              I obtained a masters degree in electrical engineering, with a focus towards automation and electrical machine design. It is a very challenging and interesting technical field in which I had the opportunity to work for a couple of years. 
+              <br/>
+              <br/> 
+              I designed power transformers and complex automation systems. I've programmed PLC's and commissioned large industrial facilities such as sawmills and tobaco warehouses. 
 
             </Styled.Paragraph>
           </Col>
@@ -150,7 +180,7 @@ const About = () => (
             <Styled.SectionHeading>
               Father,&nbsp; 
               <br className="break-large"/>
-              Husband
+              Husband 👪
             </Styled.SectionHeading>  
           </Col>
           <Col

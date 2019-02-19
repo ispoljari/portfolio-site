@@ -13,7 +13,7 @@ const Navigation = ({ logo, location }) => (
     position="fixed"
     left={0}
     zIndex={100}
-    p={10}
+    p={20}
     as="nav"
     role="navigation"
   >
