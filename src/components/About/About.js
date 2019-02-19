@@ -1,6 +1,5 @@
 import React from 'react';
 import { Box, Row, Col } from '@smooth-ui/core-sc';
-import {BarChart} from 'react-easy-chart';
 
 import * as Styled from './About.style';
 import family from '../../img/family.png';
@@ -114,10 +113,7 @@ const About = () => (
           md={8}
           >
             <Styled.Paragraph>
-              I've come along way from my QBasic school days. I've learned how to writte programs in low-level languages such as C (mostly for embedded systems), as well as in high-level languages such as Javascript or Python. I know how to develop modern, dynamic, responsive, progressive, a11y, fast web apps using the MERN stack. Here are some my skills:
-              {/* <BarChart
-                data={}
-              /> */}
+              I've come along way from my QBasic school days. I've learned how to writte programs in low-level languages such as C (mostly for embedded systems), as well as in high-level languages such as Javascript or Python. I know how to develop modern, dynamic, responsive, progressive, a11y, fast web apps using the MERN stack.
             </Styled.Paragraph>
           </Col>
         </Row>
