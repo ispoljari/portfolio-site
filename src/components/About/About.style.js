@@ -2,6 +2,16 @@ import styled from 'styled-components';
 
 export const SectionHeading = styled.h2`
   color: ${props => props.white ? 'white' : '#191919'};
+
+  .break-large {
+    display: none;
+  }
+
+  @media (min-width: 768px){
+    .break-large {
+      display: block;
+    }
+  }
 `;
 
 export const Paragraph = styled.p`

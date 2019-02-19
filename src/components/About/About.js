@@ -27,7 +27,7 @@ const About = () => (
         role="main"
       >
         <Row
-          mb={{xs:"20px", sm:"30px", lg:"40px", xl:"50px"}}
+          mb={{xs:"30px", sm:"40px", lg:"50px", xl:"60px"}}
         >
           <Col 
           >
@@ -40,15 +40,14 @@ const About = () => (
           </Col>
         </Row>
         <Row
-        mb={{xs:"20px", sm:"30px", lg:"40px", xl:"50px"}}
+        mb={{xs:"30px", sm:"40px", lg:"50px", xl:"60px"}}
         borderRadius={5}
         backgroundColor="#191919"
         p={20}
         >
           <Col
           xs={12}
-          md={6}
-          xl={5}
+          md={4}
           display="flex"
           alignItems="center"
           justifyContent={{xs: 'left', md: "center"}}
@@ -56,13 +55,14 @@ const About = () => (
             <Styled.SectionHeading
               white
             >
-              Coding from an early childhood
+              Curious&nbsp;
+              <br className="break-large"/>
+              Coder
             </Styled.SectionHeading>
           </Col>
           <Col
           xs={12}
-          md={6}
-          xl={7}
+          md={8}
           >
             <Styled.Paragraph
               white
@@ -75,41 +75,40 @@ const About = () => (
           </Col>
         </Row>
         <Row
-        mb={{xs:"20px", sm:"30px", lg:"40px", xl:"50px"}}        
+        mb={{xs:"30px", sm:"40px", lg:"50px", xl:"60px"}}        
         borderRadius={5}
         >
           <Col
           xs={12}
-          md={6}
-          xl={5}
+          md={4}
           display="flex"
           alignItems="center"
           justifyContent={{xs: 'left', md: "center"}}
           >
             <Styled.SectionHeading>
-              Engineering became a profession
+              Web&nbsp;
+              <br className="break-large"/>
+              Developer 
             </Styled.SectionHeading>
           </Col>
           <Col
           xs={12}
-          md={6}
-          xl={7}
+          md={8}
           >
             <Styled.Paragraph>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+              I've come along way from my QBasic school days. I've learned how to writte programs in low-level languages such as C (mostly for embedded systems), as well as in high-level languages such as Javascript or Python. I know how to develop modern, dynamic, responsive, progressive, a11y, fast web apps using the MERN stack. Here are some my skills
             </Styled.Paragraph>
           </Col>
         </Row>
         <Row
-          mb={{xs:"20px", sm:"30px", lg:"40px", xl:"50px"}}          
+          mb={{xs:"30px", sm:"40px", lg:"50px", xl:"60px"}}          
           borderRadius={5}
           backgroundColor="#191919"
           p={20}
         >
           <Col
             xs={12}
-            md={6}
-            xl={5}
+            md={4}
             display="flex"
             alignItems="center"
             justifyContent={{xs: 'left', md: "center"}}
@@ -117,41 +116,46 @@ const About = () => (
             <Styled.SectionHeading
               white
             >
-              Web Development became a passion
+              Elec.&nbsp; 
+              <br className="break-large"/>
+              Engineer
             </Styled.SectionHeading>  
           </Col>
           <Col
             xs={12}
-            md={6}
-            xl={7}
+            md={8}
           >
             <Styled.Paragraph
               white
             >
-              I've come along way since dabbling with QBasic in primary school. I've written programs in low-level languages such as C (mostly for embedded systems), as well as in high-level languages such as Javascript or Python. The most important mindset shift has 
+              I knew I wanted to pursue an engineering degree while I was stil in elementary school. I have a practicaly oriented mindset and an affinity towards problem solving, so it always seemed like a natural fit.
+              <br/>
+              <br/> 
+              I obtained a masters degree in electrical engineering, with a focus towards automation and electrical machine design. It is a very challenging and interesting technical field in which I had the opportunity to work for a couple of years. I designed power transformers and complex automation systems. I've programmed PLC's and commissioned large industrial facilities such as sawmills and tobaco warehouses. 
+
             </Styled.Paragraph>
           </Col>
         </Row>
         <Row
-          mb={{xs:"20px", sm:"30px", lg:"40px", xl:"50px"}}          
+          mb={{xs:"30px", sm:"40px", lg:"50px", xl:"60px"}}          
           borderRadius={5}
         >
           <Col
             xs={12}
-            md={6}
-            xl={5}
+            md={4}
             display="flex"
             alignItems="center"
             justifyContent={{xs: 'left', md: "center"}}
           >
             <Styled.SectionHeading>
-            A source of strength
+              Father,&nbsp; 
+              <br className="break-large"/>
+              Husband
             </Styled.SectionHeading>  
           </Col>
           <Col
             xs={12}
-            md={6}
-            xl={7}
+            md={8}
             mt={{xs:"20px", md:"0"}}
           >
             <img 
@@ -169,9 +173,10 @@ const About = () => (
           </Col>
         </Row>
         <Row
-          mb={10}
+          mb={{xs:"20px", sm:"30px", lg:"40px", xl:"50px"}}
         >
           <Col 
+            xs={12}
           >
             <Styled.Paragraph>
               I'm currently looking for dev. work, so feel free to contact me at&nbsp;
