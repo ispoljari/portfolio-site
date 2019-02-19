@@ -42,7 +42,7 @@ const About = () => (
             You can check out some of my projects in the <Link 
               to="/portfolio">portfolio section
             </Link>.&nbsp;
-            I developed a few pretty cool apps which I think you'll like. 
+            I developed a few nice apps which I hope you'll like. 
             Also, you can&nbsp;
             <a 
               href="https://medium.com/@ivanspoljaric22"

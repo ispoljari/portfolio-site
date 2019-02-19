@@ -76,6 +76,7 @@ export const NavList = styled.ul`
 `;
 
 export const LogoLink = styled(Link)`
+  display: inline-flex;
   /* remove blue highlight when clicking quickly on mobile chrome */
   user-select: none;  
   -webkit-tap-highlight-color: transparent;
