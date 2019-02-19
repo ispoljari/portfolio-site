@@ -54,12 +54,13 @@ const About = () => (
             where I plan to publish web dev related articles on a regular basis.
             <br/>
             <br/>
-            I'm currently looking for work, so feel free to <a 
+            I'm currently looking for work, so feel free to contact me at&nbsp;
+            <a 
               href="mailto:ivanspoljaric22@gmail.com?subject=Business proposal"
               target="_blank"
               rel="noopener noreferrer"
             >
-              contact me any time
+              ivanspoljaric22@gmail.com
             </a>.&nbsp;
             Thanks for visiting my website and have a nice day.
           </Styled.Paragraph>
