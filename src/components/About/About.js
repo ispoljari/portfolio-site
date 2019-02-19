@@ -40,7 +40,7 @@ const About = () => (
               </span>
             </Styled.SectionHeading>  
             <Styled.Paragraph>
-              'Pozdrav' means 'Hello' in Croatian. My name is Ivan, and I'm 29 years old. I invite you to browse through this section to find out more about me, my interests, professional experience and technical skills. Thanks for visiting and have a nice day. 
+              'Pozdrav' means 'Hello' in Croatian. My name is Ivan, and I'm 29 years old. I invite you to browse through my site to find out more about me, my interests, work experience, portfolio projects and technical skills. Thanks for visiting and have a nice day. 
             </Styled.Paragraph>
           </Col>
         </Row>
@@ -78,10 +78,10 @@ const About = () => (
             <Styled.Paragraph
               white
             >
-              Ever since I was a little kid, I always preffered the science subjects in school. During those formative years, except spending my time just being a kid, I enjoyed learning mathematics, physics and coming up with all sorts of conceptual problems that sharpened my critical thinking skills.
+              I started to code very early in my life. I developed my first app in 5th grade of primary school. It was written in QBasic and based on the popular TV Show "Who wants to be a Millionare".
               <br/>
               <br/> 
-              I also loved the programming classes. They introduced me to the world of coding. I made my first, small app in 5th grade of primary school. It was written in QBasic and based on the popular TV Show "Who wants to be a Millionare".
+              Ever since I was a little kid, I was very inquisitive about the world. I used to come up with all sorts of conceptual problems that sharpened my critical thinking skills. During my education I enjoyed learning mathematics, physics and programming.
             </Styled.Paragraph>
           </Col>
         </Row>
@@ -113,7 +113,10 @@ const About = () => (
           md={8}
           >
             <Styled.Paragraph>
-              I've come along way from my QBasic school days. I've learned how to writte programs in low-level languages such as C (mostly for embedded systems), as well as in high-level languages such as Javascript or Python. I know how to develop modern, dynamic, responsive, progressive, a11y, fast web apps using the MERN stack.
+              I became passionate about Web Development after I graduated college. I learned a lot in the last few years, like how to develop modern web apps with the MERN stack. So I know my way around the server-side, although I feel more comfortable working on the client-side. 
+              <br/>
+              <br/> 
+              I know a lot of cool stuff related to web development like NodeJS, ExpressJS, MongoDB, jQuery, React, Redux, Bootstrap, Mocha, Chai, Enzyme, HTML, CSS, CSS-in-JS, TDD, responsive design, progressive enhancement, graceful degradation, a11y, mobile-first design, declarative vs. imperative programming, continuous integration, code transpiling, code preprocessing or postprocessing, module bundling, RESTful architecture, API's etc.  
             </Styled.Paragraph>
           </Col>
         </Row>
@@ -151,14 +154,10 @@ const About = () => (
             <Styled.Paragraph
               white
             >
-              I knew I wanted to pursue an engineering degree while I was stil in elementary school. I have a practicaly oriented mindset and an affinity towards problem solving, so it always seemed like a natural choice.
+              I obtained a Masters Degree in electrical engineering, with a focus towards automation and electrical machine design. 
               <br/>
               <br/> 
-              I obtained a masters degree in electrical engineering, with a focus towards automation and electrical machine design. It is a very challenging and interesting technical field in which I had the opportunity to work for a couple of years. 
-              <br/>
-              <br/> 
-              I designed power transformers and complex automation systems. I've programmed PLC's and commissioned large industrial facilities such as sawmills and tobaco warehouses. 
-
+              It is a very challenging and interesting technical field in which I had the opportunity to work for a couple of years. I designed power transformers and complex automation systems. I've programmed PLC's and commissioned large industrial facilities such as sawmills and tobaco warehouses. 
             </Styled.Paragraph>
           </Col>
         </Row>
