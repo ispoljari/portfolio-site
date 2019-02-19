@@ -9,9 +9,11 @@ import * as Styled from './Navigation.style';
 const Navigation = ({ logo, location }) => (
   <Box
     width="100%"
+    maxWidth="450px"
     position="fixed"
-    right={0}
+    left={0}
     zIndex={100}
+    p={20}
     as="nav"
     role="navigation"
   >
