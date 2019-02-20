@@ -13,7 +13,6 @@ const Navigation = ({ logo, location }) => (
     position="fixed"
     left={0}
     zIndex={100}
-    p={20}
     as="nav"
     role="navigation"
   >
@@ -21,6 +20,7 @@ const Navigation = ({ logo, location }) => (
       display="flex"
       justifyContent="space-between"
       alignItems="center"
+      p="20px 0 20px 20px"
     >
       <Styled.LogoLink
         to="/"

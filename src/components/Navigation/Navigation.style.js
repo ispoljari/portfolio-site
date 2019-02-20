@@ -8,7 +8,6 @@ export const NavList = styled.ul`
   justify-content: flex-end;
   padding: 13px 25px;
   background-color: ${props => props.theme.navBackground};
-  border-radius: 5px;
   margin: 0;
   list-style: none;
   font-size: calc(18px + (26 - 18) * ((100vw - 320px) / (1700 - 320)));
