@@ -119,10 +119,10 @@ const About = () => (
               <Styled.Paragraph
                 white
               >
-                I started to code very early in my life. I developed my first app in 5th grade of primary school. It was written in QBasic and based on the popular TV Show "Who wants to be a Millionare".
+                I started to code very early in my life. I developed my first app in 5th grade of primary school. It was written in QBasic and based on the popular TV Show "Who wants to be a "Millionaire".
                 <br/>
                 <br/> 
-                Ever since I was a little kid, I was very curious about the world. During my education I enjoyed learning mathematics, physics and programming. Besides my school interests, I loved learning about Dinosaurs and Astronomy.
+                Ever since I was a little kid, I was very curious about the world. My favorite subjects in school were mathematics, physics, and programming. I also loved learning about Greek mythology, dinosaurs, and astronomy.
               </Styled.Paragraph>
             </Col>
           </Row>
@@ -168,7 +168,7 @@ const About = () => (
             md={8}
             >
               <Styled.Paragraph>
-                I became passionate about Web development after I graduated from college. I started spending a lot of my time online, on websites like TechCrunch and HackerNews. Seeing all those cool apps, inovative startups, bold enterpreneurs and brilliant developers changing our technological landscape on a daily basis, awoke a strong desire in me to join that movement,  and be a part of the disruption.
+                I became passionate about Web development after I graduated from college. I started spending a lot of my time online, on websites like TechCrunch and HackerNews. Seeing all those cool apps, innovative startups, bold entrerpreneurs and brilliant developers changing our technological landscape on a daily basis, awoke a strong desire in me to join that movement,  and be a part of the disruption.
                 <br/>
                 <br/> 
                 That's when I decided to start learning all I can about Web development. And I've come a long way in the last 2 years. I've learned how to develop modern web apps using the MERN stack. I know my way around the server-side as well as the client-side. 
@@ -226,10 +226,10 @@ const About = () => (
               <Styled.Paragraph
                 white
               >
-                I obtained a Masters Degree in electrical engineering, with a focus towards automation and electrical machine design. 
+                I obtained a masters degree in electrical engineering, with specializations in industrial automation and electrical machine design. Both very interesting and useful fields of engineering. 
                 <br/>
                 <br/> 
-                It is a very challenging and interesting technical field in which I had the opportunity to work for a couple of years. I designed power transformers and complex automation systems. I've programmed PLC's and commissioned large industrial facilities such as sawmills and tobaco warehouses. 
+               I had the opportunity to work in the manufacturing industry for a couple of years. I designed power transformers and complex automation systems. I've programmed PLC's and commissioned large industrial facilities such as sawmills and tobacco warehouses. 
               </Styled.Paragraph>
             </Col>
           </Row>
@@ -331,18 +331,18 @@ const About = () => (
               <Styled.Paragraph
                 white
               >
-                The most inspiring words I ever heard come from the mind of Carl Sagan, a beautiful human being who also wrote one of my favorite SciFi novels called "Contact". His reflections are inspired by a photograph of our planet made by the Voyager 1 space probe as it was leaving our solar system. Today the photograph is famously known as the "Pale Blue Dot". 
+                 The most inspiring words I ever heard come from the mind of Carl Sagan. He also wrote one of my favorite SciFi novels called "Contact". His reflections are inspired by a photograph of our planet, made by the Voyager 1 space probe as it was leaving our solar system. The photograph is famously known as the "Pale Blue Dot". 
                 <br />
                 <br />              
-                The text is to long to copy here, so here's&nbsp;
+                The text is too long to copy here, so here's&nbsp;
                 <a 
                   href="https://www.youtube.com/watch?v=GO5FwsblpT8"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  a video
+                  a link to a video
                 </a>&nbsp;
-                of him reading those words, as seen in the last scene of the 2014's "Cosmos: A SpaceTime Odyssey" documentary. Every time I watch it I get goosebumps. It inspires in me both humility and hope for a better tommorow.
+                with him reading  those words, as seen in the last scene of the 2014's "Cosmos: A SpaceTime Odyssey" documentary. Every time I watch it I get goosebumps. It inspires in me both humility and hope for a better tomorrow.
               </Styled.Paragraph>
             </Col>
           </Row>
