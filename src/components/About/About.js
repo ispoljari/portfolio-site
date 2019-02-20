@@ -40,13 +40,23 @@ const About = () => (
               </span>
             </Styled.SectionHeading>  
             <Styled.Paragraph>
-              'Pozdrav' means 'Hello' in Croatian. My name is Ivan, and I'm 29 years old. I invite you to browse through my site to find out more about me, my interests, work experience, portfolio projects and technical skills. Thanks for visiting and have a nice day. 
+              'Pozdrav' means 'Hello' in Croatian. Thanks for visiting my website. My name is Ivan, and I'm 29 years old. If you are interested in finding out more about me, my interests, projects or skills, please browse around.
+              <br/> 
+              <br/> 
+
+              I've built this site using react, react-router and styled components.&nbsp;
+              <a 
+                href="https://github.com/ispoljari/portfolio-site"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Checkout the code
+              </a>.
             </Styled.Paragraph>
           </Col>
         </Row>
         <Row
         mb={{xs:"30px", sm:"40px", lg:"50px", xl:"60px"}}
-        borderRadius={5}
         backgroundColor="#191919"
         p={20}
         >
@@ -81,13 +91,12 @@ const About = () => (
               I started to code very early in my life. I developed my first app in 5th grade of primary school. It was written in QBasic and based on the popular TV Show "Who wants to be a Millionare".
               <br/>
               <br/> 
-              Ever since I was a little kid, I was very inquisitive about the world. I used to come up with all sorts of conceptual problems that sharpened my critical thinking skills. During my education I enjoyed learning mathematics, physics and programming.
+              Ever since I was a little kid, I was very curious about the world. During my education I enjoyed learning mathematics, physics and programming. Besides my school interests, I loved learning about Dinosaurs and Astronomy.
             </Styled.Paragraph>
           </Col>
         </Row>
         <Row
-        mb={{xs:"30px", sm:"40px", lg:"50px", xl:"60px"}}        
-        borderRadius={5}
+        mb={{xs:"30px", sm:"40px", lg:"50px", xl:"60px"}}    
         >
           <Col
           xs={12}
@@ -113,16 +122,18 @@ const About = () => (
           md={8}
           >
             <Styled.Paragraph>
-              I became passionate about Web Development after I graduated college. I learned a lot in the last few years, like how to develop modern web apps with the MERN stack. So I know my way around the server-side, although I feel more comfortable working on the client-side. 
+              I became passionate about Web development after I graduated college. I started spending a lot of my time online, on websites like TechCrunch and HackerNews. Seeing all those cool apps,  inovative startups, bold enterpreneurs and brilliant developers changing our technological landscape on a daily basis, something awoke in me. A strong  desire to join them and to be a part of the disruption.
               <br/>
               <br/> 
-              I know a lot of cool stuff related to web development like NodeJS, ExpressJS, MongoDB, jQuery, React, Redux, Bootstrap, Mocha, Chai, Enzyme, HTML, CSS, CSS-in-JS, TDD, responsive design, progressive enhancement, graceful degradation, a11y, mobile-first design, declarative vs. imperative programming, continuous integration, code transpiling, code preprocessing or postprocessing, module bundling, RESTful architecture, API's etc.  
+              That's when I decided to start learning all I can about Web development. And I've come a long way in the last 2 years. I've learned how to develop modern web apps using the MERN stack. I know my way around the server-side as well as the client-side. 
+              <br/>
+              <br/> 
+              There's a lot of other cool stuff related to web development that I know like NodeJS, ExpressJS, MongoDB, jQuery, React, Redux, Bootstrap, Mocha, Chai, Enzyme, HTML, CSS, CSS-in-JS, TDD, responsive design, progressive enhancement, graceful degradation, a11y, mobile-first design, continuous integration, code transpiling, module bundling, RESTful architecture, API's and more.  
             </Styled.Paragraph>
           </Col>
         </Row>
         <Row
-          mb={{xs:"30px", sm:"40px", lg:"50px", xl:"60px"}}          
-          borderRadius={5}
+          mb={{xs:"30px", sm:"40px", lg:"50px", xl:"60px"}}  
           backgroundColor="#191919"
           p={20}
         >
@@ -162,8 +173,7 @@ const About = () => (
           </Col>
         </Row>
         <Row
-          mb={{xs:"30px", sm:"40px", lg:"50px", xl:"60px"}}          
-          borderRadius={5}
+          mb={{xs:"30px", sm:"40px", lg:"50px", xl:"60px"}}  
         >
           <Col
             xs={12}
@@ -195,6 +205,54 @@ const About = () => (
                 }
               }
             />     
+          </Col>
+        </Row>
+        <Row
+        mb={{xs:"30px", sm:"40px", lg:"50px", xl:"60px"}}
+        backgroundColor="#191919"
+        p={20}   
+        >
+          <Col
+          xs={12}
+          md={4}
+          display="flex"
+          alignItems="center"
+          justifyContent={{xs: 'left', md: "center"}}
+          >
+            <Styled.SectionHeading
+              white
+            >
+              Favorite&nbsp;
+              <br className="break-large"/>
+              Quote&nbsp;
+              <span 
+                role="img" 
+                aria-label="planet earth emoji"
+              >
+                🌍
+              </span>
+            </Styled.SectionHeading>
+          </Col>
+          <Col
+          xs={12}
+          md={8}
+          >
+            <Styled.Paragraph
+              white
+            >
+              The most inspiring words I ever heard come from the mind of Carl Sagan, a beautiful human being who also wrote one of my favorite books called "Contact". His reflections are inspired by a photograph of our planet made by the Voyager 1 space probe as it was leaving our solar system. Today the photograph is famously known as the "Pale Blue Dot". 
+              <br />
+              <br />              
+              The text is to long to copy here, so here's&nbsp;
+              <a 
+                href="https://www.youtube.com/watch?v=GO5FwsblpT8"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                a video
+              </a>&nbsp;
+              of him reading those words, as seen in the last scene of the 2014's "Cosmos: A SpaceTime Odyssey" documentary. Every time I watch it I get goosebumps. It inspires in me both humility and hope for a better tommorow.
+            </Styled.Paragraph>
           </Col>
         </Row>
         <Row
