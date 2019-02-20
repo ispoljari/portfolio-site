@@ -29,8 +29,8 @@ const About = () => (
       >
         <ScrollAnimation
           animateIn="fadeInDown"
-          offset={200}
-          duration={1.5}
+          offset={0}
+          duration={1}
           animateOnce
         >
           <Row
@@ -38,15 +38,23 @@ const About = () => (
           >
             <Col 
             >
-              <Styled.SectionHeading>
-                Pozdrav&nbsp;
-                <span 
-                  role="img" 
-                  aria-label="hand wave emoji"
-                >
-                    👋
-                </span>
-              </Styled.SectionHeading>  
+              <ScrollAnimation
+                animateIn="fadeInDown"
+                offset={0}
+                duration={1}
+                delay={500}
+                animateOnce
+              >
+                <Styled.SectionHeading>
+                  Pozdrav&nbsp;
+                  <span 
+                    role="img" 
+                    aria-label="hand wave emoji"
+                  >
+                      👋
+                  </span>
+                </Styled.SectionHeading>
+              </ScrollAnimation>
               <Styled.Paragraph>
                 'Pozdrav' means 'Hello' in Croatian. Thanks for visiting my website. My name is Ivan, and I'm 29 years old. If you are interested in finding out more about me, my interests, projects or skills, please browse around.
                 <br/> 
@@ -66,7 +74,7 @@ const About = () => (
         </ScrollAnimation>
         <ScrollAnimation
           animateIn="fadeInLeft"
-          offset={200}
+          offset={150}
           duration={1}
           animateOnce
         >
@@ -82,19 +90,27 @@ const About = () => (
             alignItems="center"
             justifyContent={{xs: 'left', md: "center"}}
             >
-              <Styled.SectionHeading
-                white
+              <ScrollAnimation
+                animateIn="fadeInLeft"
+                offset={50}
+                duration={1}
+                delay={500}
+                animateOnce
               >
-                Curious&nbsp;
-                <br className="break-large"/>
-                Mind&nbsp;
-                <span 
-                  role="img" 
-                  aria-label="curious face emoji"
+                <Styled.SectionHeading
+                  white
                 >
-                    🤔
-                </span>
-              </Styled.SectionHeading>
+                  Curious&nbsp;
+                  <br className="break-large"/>
+                  Mind&nbsp;
+                  <span 
+                    role="img" 
+                    aria-label="curious face emoji"
+                  >
+                      🤔
+                  </span>
+                </Styled.SectionHeading>
+              </ScrollAnimation>
             </Col>
             <Col
             xs={12}
@@ -113,7 +129,7 @@ const About = () => (
         </ScrollAnimation>
         <ScrollAnimation
           animateIn="fadeInRight"
-          offset={200}
+          offset={50}
           duration={1}
           animateOnce
         >
@@ -127,17 +143,25 @@ const About = () => (
             alignItems="center"
             justifyContent={{xs: 'left', md: "center"}}
             >
-              <Styled.SectionHeading>
-                Web&nbsp;
-                <br className="break-large"/>
-                Developer&nbsp;
-                <span 
-                  role="img" 
-                  aria-label="curious face emoji"
-                >
-                  👨‍💻
-                </span>
-              </Styled.SectionHeading>
+              <ScrollAnimation
+                animateIn="fadeInRight"
+                offset={50}
+                duration={1}
+                delay={500}
+                animateOnce
+              >
+                <Styled.SectionHeading>
+                  Web&nbsp;
+                  <br className="break-large"/>
+                  Developer&nbsp;
+                  <span 
+                    role="img" 
+                    aria-label="curious face emoji"
+                  >
+                    👨‍💻
+                  </span>
+                </Styled.SectionHeading>
+              </ScrollAnimation>
             </Col>
             <Col
             xs={12}
@@ -157,7 +181,7 @@ const About = () => (
         </ScrollAnimation>
         <ScrollAnimation
           animateIn="fadeInLeft"
-          offset={200}
+          offset={50}
           duration={1}
           animateOnce
         >
@@ -173,19 +197,27 @@ const About = () => (
               alignItems="center"
               justifyContent={{xs: 'left', md: "center"}}
             >
-              <Styled.SectionHeading
-                white
+              <ScrollAnimation
+                animateIn="fadeInLeft"
+                offset={50}
+                duration={1}
+                delay={500}
+                animateOnce
               >
-                Elec.&nbsp; 
-                <br className="break-large"/>
-                Engineer&nbsp;
-                <span 
-                  role="img" 
-                  aria-label="curious face emoji"
+                <Styled.SectionHeading
+                  white
                 >
-                  ⚡
-                </span>
-              </Styled.SectionHeading>  
+                  Elec.&nbsp; 
+                  <br className="break-large"/>
+                  Engineer&nbsp;
+                  <span 
+                    role="img" 
+                    aria-label="curious face emoji"
+                  >
+                    ⚡
+                  </span>
+                </Styled.SectionHeading>  
+              </ScrollAnimation>
             </Col>
             <Col
               xs={12}
@@ -204,7 +236,7 @@ const About = () => (
         </ScrollAnimation>
         <ScrollAnimation
           animateIn="fadeInRight"
-          offset={200}
+          offset={50}
           duration={1}
           animateOnce
         >
@@ -218,11 +250,19 @@ const About = () => (
               alignItems="center"
               justifyContent={{xs: 'left', md: "center"}}
             >
-              <Styled.SectionHeading>
-                Father,&nbsp; 
-                <br className="break-large"/>
-                Husband 👪
-              </Styled.SectionHeading>  
+              <ScrollAnimation
+                animateIn="fadeInRight"
+                offset={50}
+                duration={1}
+                delay={500}
+                animateOnce
+              >
+                <Styled.SectionHeading>
+                  Father,&nbsp; 
+                  <br className="break-large"/>
+                  Husband 👪
+                </Styled.SectionHeading>  
+              </ScrollAnimation>
             </Col>
             <Col
               xs={12}
@@ -246,7 +286,7 @@ const About = () => (
         </ScrollAnimation>
         <ScrollAnimation
           animateIn="fadeInLeft"
-          offset={200}
+          offset={50}
           duration={1}
           animateOnce
         >
@@ -262,19 +302,27 @@ const About = () => (
             alignItems="center"
             justifyContent={{xs: 'left', md: "center"}}
             >
-              <Styled.SectionHeading
-                white
+               <ScrollAnimation
+                animateIn="fadeInLeft"
+                offset={50}
+                duration={1}
+                delay={500}
+                animateOnce
               >
-                Favorite&nbsp;
-                <br className="break-large"/>
-                Quote&nbsp;
-                <span 
-                  role="img" 
-                  aria-label="planet earth emoji"
+                <Styled.SectionHeading
+                  white
                 >
-                  🌍
-                </span>
-              </Styled.SectionHeading>
+                  Favorite&nbsp;
+                  <br className="break-large"/>
+                  Quote&nbsp;
+                  <span 
+                    role="img" 
+                    aria-label="planet earth emoji"
+                  >
+                    🌍
+                  </span>
+                </Styled.SectionHeading>
+              </ScrollAnimation>
             </Col>
             <Col
             xs={12}
@@ -301,7 +349,7 @@ const About = () => (
         </ScrollAnimation>
         <ScrollAnimation
           animateIn="fadeInUp"
-          offset={100}
+          offset={50}
           duration={1}
           animateOnce
         >
