@@ -240,7 +240,7 @@ const About = () => (
             <Styled.Paragraph
               white
             >
-              The most inspiring words I ever heard come from the mind of Carl Sagan, a beautiful human being who also wrote one of my favorite books called "Contact". His reflections are inspired by a photograph of our planet made by the Voyager 1 space probe as it was leaving our solar system. Today the photograph is famously known as the "Pale Blue Dot". 
+              The most inspiring words I ever heard come from the mind of Carl Sagan, a beautiful human being who also wrote one of my favorite SciFi novels called "Contact". His reflections are inspired by a photograph of our planet made by the Voyager 1 space probe as it was leaving our solar system. Today the photograph is famously known as the "Pale Blue Dot". 
               <br />
               <br />              
               The text is to long to copy here, so here's&nbsp;
