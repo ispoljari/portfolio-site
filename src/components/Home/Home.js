@@ -35,7 +35,7 @@ const Home = () => (
             Ivan Špoljarić.&nbsp;
             <br className="break-large"/>
             I'm&nbsp;
-            <br className="break-small"/>
+            <br className="break-under-xs"/>
             <TextLoop
               interval={2800}
               springConfig={{ stiffness: 30, damping: 10 }}
@@ -77,8 +77,8 @@ const Home = () => (
               <span>
                 a Book Worm
               </span>
-            </TextLoop>
-            <br/>
+            </TextLoop>&nbsp;
+            <br className="break-under-xl"/>
             from&nbsp;
             <span>
               <a

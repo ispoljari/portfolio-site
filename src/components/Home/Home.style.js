@@ -2,7 +2,13 @@ import styled from 'styled-components';
 
 export const Heading = styled.h1`
   @media (min-width: 450px){
-    .break-small {
+    .break-under-xs {
+      display: none;
+    }
+  }
+
+  @media (min-width: 1400px){
+    .break-under-xl {
       display: none;
     }
   }

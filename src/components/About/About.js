@@ -66,7 +66,7 @@ const About = () => (
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Checkout the code
+                  Check out the code
                 </a>.
               </Styled.Paragraph>
             </Col>
@@ -168,7 +168,7 @@ const About = () => (
             md={8}
             >
               <Styled.Paragraph>
-                I became passionate about Web development after I graduated college. I started spending a lot of my time online, on websites like TechCrunch and HackerNews. Seeing all those cool apps,  inovative startups, bold enterpreneurs and brilliant developers changing our technological landscape on a daily basis, something awoke in me. A strong  desire to join them and to be a part of the disruption.
+                I became passionate about Web development after I graduated from college. I started spending a lot of my time online, on websites like TechCrunch and HackerNews. Seeing all those cool apps, inovative startups, bold enterpreneurs and brilliant developers changing our technological landscape on a daily basis, awoke a strong desire in me to join that movement,  and be a part of the disruption.
                 <br/>
                 <br/> 
                 That's when I decided to start learning all I can about Web development. And I've come a long way in the last 2 years. I've learned how to develop modern web apps using the MERN stack. I know my way around the server-side as well as the client-side. 
@@ -363,8 +363,6 @@ const About = () => (
                 I'm currently looking for dev. work, so feel free to contact me at&nbsp;
                 <a 
                   href="mailto:ivanspoljaric22@gmail.com?subject=Business proposal"
-                  target="_blank"
-                  rel="noopener noreferrer"
                 >
                   ivanspoljaric22@gmail.com
                 </a>.
