@@ -74,7 +74,7 @@ const About = () => (
         </ScrollAnimation>
         <ScrollAnimation
           animateIn="fadeInLeft"
-          offset={150}
+          offset={50}
           duration={1}
           animateOnce
         >
