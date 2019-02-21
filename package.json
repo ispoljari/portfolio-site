@@ -9,6 +9,7 @@
     "react": "^16.8.1",
     "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.8.1",
+    "react-responsive-carousel": "^3.1.47",
     "react-router-dom": "^4.3.1",
     "react-scripts": "^2.1.5",
     "react-text-loop": "^2.0.1",
