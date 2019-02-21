@@ -24,9 +24,37 @@ const Portfolio = () => (
         as="main"
         role="main"
       >
-        <Styled.Parapgraph>
-          Portfolio
-        </Styled.Parapgraph>
+        <Row
+          mb={{xs:"30px", sm:"40px", lg:"50px", xl:"60px"}}
+          backgroundColor="#191919"
+          p={20}
+        >
+          <Col
+            xs={12}
+            md={4}
+            display="flex"
+            alignItems="center"
+            justifyContent={{xs: 'left', md: "center"}}
+          >
+            <Styled.SectionHeading
+              white
+            >
+              The Run&nbsp;
+              <br className="break-large"/>
+              Tracker App
+            </Styled.SectionHeading>
+          </Col>
+          <Col
+            xs={12}
+            md={8}
+            >
+              <Styled.Paragraph
+                white
+              >
+                App description
+              </Styled.Paragraph>
+            </Col>
+        </Row>
       </Box>
     </Col>
   </Row>
