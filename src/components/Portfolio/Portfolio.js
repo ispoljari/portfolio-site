@@ -1,7 +1,13 @@
 import React from 'react';
 import { Row, Col, Box } from '@smooth-ui/core-sc';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
 import * as Styled from './Portfolio.style';
+import addRun from '../../img/run-tracker/add-run.png';
+import chooseAvatar from '../../img/run-tracker/choose-avatar.png';
+import editRun from '../../img/run-tracker/edit-run.png';
+import mainFeed from '../../img/run-tracker/main-feed.png';
 
 const Portfolio = () => (
   <Row
@@ -26,34 +32,45 @@ const Portfolio = () => (
       >
         <Row
           mb={{xs:"30px", sm:"40px", lg:"50px", xl:"60px"}}
-          backgroundColor="#191919"
-          p={20}
         >
           <Col
-            xs={12}
-            md={4}
-            display="flex"
-            alignItems="center"
-            justifyContent={{xs: 'left', md: "center"}}
+            // xs={12}
+            // md={4}
+            // display="flex"
+            // alignItems="center"
+            // justifyContent={{xs: 'left', md: "center"}}
           >
-            <Styled.SectionHeading
-              white
-            >
-              The Run&nbsp;
-              <br className="break-large"/>
-              Tracker App
+            <Styled.SectionHeading>
+              Run Tracker
             </Styled.SectionHeading>
+            <Styled.Paragraph>
+              App description
+            </Styled.Paragraph>
           </Col>
           <Col
             xs={12}
             md={8}
+          >
+            <Carousel
+              showArrows
+              showIndicators
+              swipeable
+              showThumbs={false}
             >
-              <Styled.Paragraph
-                white
-              >
-                App description
-              </Styled.Paragraph>
-            </Col>
+              <div>
+                <img src={mainFeed} />
+              </div>
+              <div>
+                <img src={addRun} />
+              </div>
+              <div>
+                <img src={chooseAvatar} />
+              </div>
+              <div>
+                <img src={editRun} />
+              </div>
+            </Carousel>
+          </Col>
         </Row>
       </Box>
     </Col>
