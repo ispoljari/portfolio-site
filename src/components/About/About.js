@@ -74,7 +74,7 @@ const About = () => (
         </ScrollAnimation>
         <ScrollAnimation
           animateIn="fadeInLeft"
-          offset={250}
+          offset={150}
           duration={0.5}
           animateOnce
         >
@@ -92,7 +92,7 @@ const About = () => (
             >
               <ScrollAnimation
                 animateIn="fadeInLeft"
-                offset={250}
+                offset={150}
                 duration={0.5}
                 delay={500}
                 animateOnce
@@ -122,14 +122,14 @@ const About = () => (
                 I started to code very early in my life. I developed my first app in 5th grade of primary school. It was written in QBasic and based on the popular TV Show "Who wants to be a "Millionaire".
                 <br/>
                 <br/> 
-                Ever since I was a little kid, I was very curious about the world. My favorite subjects in school were mathematics, physics, and programming. I also loved learning about Greek mythology, dinosaurs, and astronomy.
+                Ever since I was a little kid, I was very curious about the world. My favorite subjects in school were mathematics, physics, and programming. I also loved learning about astronomy.
               </Styled.Paragraph>
             </Col>
           </Row>
         </ScrollAnimation>
         <ScrollAnimation
           animateIn="fadeInRight"
-          offset={250}
+          offset={150}
           duration={0.5}
           animateOnce
         >
@@ -145,7 +145,7 @@ const About = () => (
             >
               <ScrollAnimation
                 animateIn="fadeInRight"
-                offset={250}
+                offset={150}
                 duration={0.5}
                 delay={500}
                 animateOnce
@@ -168,20 +168,17 @@ const About = () => (
             md={8}
             >
               <Styled.Paragraph>
-                I became passionate about Web development after I graduated from college. I started spending a lot of my time online, on websites like TechCrunch and HackerNews. Seeing all those cool apps, innovative startups, bold entrerpreneurs and brilliant developers changing our technological landscape on a daily basis, awoke a strong desire in me to join that movement,  and be a part of the disruption.
+                I became passionate about Web development after I graduated from college. I started spending a lot of my time online, on websites like TechCrunch and HackerNews. Seeing all those cool apps, innovative startups, bold entrerpreneurs and brilliant developers changing our technological landscape on a daily basis, awoke a strong desire in me to join that movement and be a part of the disruption.
                 <br/>
                 <br/> 
-                That's when I decided to start learning all I can about Web development. And I've come a long way in the last 2 years. I've learned how to develop modern web apps using the MERN stack. I know my way around the server-side as well as the client-side. 
-                <br/>
-                <br/> 
-                There's a lot of other cool stuff related to web development that I know like NodeJS, ExpressJS, MongoDB, jQuery, React, Redux, Bootstrap, Mocha, Chai, Enzyme, HTML, CSS, CSS-in-JS, TDD, responsive design, progressive enhancement, graceful degradation, a11y, mobile-first design, continuous integration, code transpiling, module bundling, RESTful architecture, API's and more.  
+                So in the last 2 years I learned a lot of cool stuff like NodeJS, ExpressJS, MongoDB, jQuery, React, Redux, Bootstrap, Mocha, Chai, Enzyme, HTML, CSS, CSS-in-JS, TDD, responsive design, progressive enhancement, graceful degradation, a11y, mobile-first design, continuous integration, code transpiling, module bundling, RESTful architecture, API's and more.  
               </Styled.Paragraph>
             </Col>
           </Row>
         </ScrollAnimation>
         <ScrollAnimation
           animateIn="fadeInLeft"
-          offset={250}
+          offset={150}
           duration={0.5}
           animateOnce
         >
@@ -199,7 +196,7 @@ const About = () => (
             >
               <ScrollAnimation
                 animateIn="fadeInLeft"
-                offset={250}
+                offset={150}
                 duration={0.5}
                 delay={500}
                 animateOnce
@@ -226,17 +223,14 @@ const About = () => (
               <Styled.Paragraph
                 white
               >
-                I obtained a masters degree in electrical engineering, with specializations in industrial automation and electrical machine design. Both very interesting and useful fields of engineering. 
-                <br/>
-                <br/> 
-               I had the opportunity to work in the manufacturing industry for a couple of years. I designed power transformers and complex automation systems. I've programmed PLC's and commissioned large industrial facilities such as sawmills and tobacco warehouses. 
+                I obtained a masters degree in electrical engineering with specializations in industrial automation and electrical machine design. I had the opportunity to work in the manufacturing industry for a couple of years. I designed power transformers, automation systems, programmed PLC's and commissioned large industrial facilities such as sawmills and tobacco warehouses. 
               </Styled.Paragraph>
             </Col>
           </Row>
         </ScrollAnimation>
         <ScrollAnimation
           animateIn="fadeInRight"
-          offset={250}
+          offset={150}
           duration={0.5}
           animateOnce
         >
@@ -252,7 +246,7 @@ const About = () => (
             >
               <ScrollAnimation
                 animateIn="fadeInRight"
-                offset={250}
+                offset={150}
                 duration={0.5}
                 delay={500}
                 animateOnce
@@ -286,7 +280,7 @@ const About = () => (
         </ScrollAnimation>
         <ScrollAnimation
           animateIn="fadeInLeft"
-          offset={250}
+          offset={150}
           duration={0.5}
           animateOnce
         >
@@ -304,7 +298,7 @@ const About = () => (
             >
                <ScrollAnimation
                 animateIn="fadeInLeft"
-                offset={250}
+                offset={150}
                 duration={0.5}
                 delay={500}
                 animateOnce
