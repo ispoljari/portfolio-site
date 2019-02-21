@@ -168,7 +168,7 @@ const About = () => (
             md={8}
             >
               <Styled.Paragraph>
-                I became passionate about Web development after I graduated from college. I started spending a lot of my time online, on websites like TechCrunch and HackerNews. Seeing all those cool apps, innovative startups, bold entrerpreneurs and brilliant developers changing our technological landscape on a daily basis, awoke a strong desire in me to join that movement and be a part of the disruption.
+                I became passionate about Web development after I graduated from college. I started spending a lot of my time online, on websites like TechCrunch and Hacker News. Seeing all those cool apps, innovative startups, bold entrerpreneurs and brilliant developers changing our technological landscape on a daily basis, awoke a strong desire in me to join that movement and be a part of the disruption.
                 <br/>
                 <br/> 
                 So in the last 2 years I learned a lot of cool stuff like NodeJS, ExpressJS, MongoDB, jQuery, React, Redux, Bootstrap, Mocha, Chai, Enzyme, HTML, CSS, CSS-in-JS, TDD, responsive design, progressive enhancement, graceful degradation, a11y, mobile-first design, continuous integration, code transpiling, module bundling, RESTful architecture, API's and more.  
