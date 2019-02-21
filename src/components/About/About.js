@@ -30,7 +30,7 @@ const About = () => (
         <ScrollAnimation
           animateIn="fadeInDown"
           offset={0}
-          duration={1}
+          duration={0.5}
           animateOnce
         >
           <Row
@@ -41,7 +41,7 @@ const About = () => (
               <ScrollAnimation
                 animateIn="fadeInDown"
                 offset={0}
-                duration={1}
+                duration={0.5}
                 delay={500}
                 animateOnce
               >
@@ -74,8 +74,8 @@ const About = () => (
         </ScrollAnimation>
         <ScrollAnimation
           animateIn="fadeInLeft"
-          offset={50}
-          duration={1}
+          offset={250}
+          duration={0.5}
           animateOnce
         >
           <Row
@@ -92,8 +92,8 @@ const About = () => (
             >
               <ScrollAnimation
                 animateIn="fadeInLeft"
-                offset={50}
-                duration={1}
+                offset={250}
+                duration={0.5}
                 delay={500}
                 animateOnce
               >
@@ -129,8 +129,8 @@ const About = () => (
         </ScrollAnimation>
         <ScrollAnimation
           animateIn="fadeInRight"
-          offset={50}
-          duration={1}
+          offset={250}
+          duration={0.5}
           animateOnce
         >
           <Row
@@ -145,8 +145,8 @@ const About = () => (
             >
               <ScrollAnimation
                 animateIn="fadeInRight"
-                offset={50}
-                duration={1}
+                offset={250}
+                duration={0.5}
                 delay={500}
                 animateOnce
               >
@@ -181,8 +181,8 @@ const About = () => (
         </ScrollAnimation>
         <ScrollAnimation
           animateIn="fadeInLeft"
-          offset={50}
-          duration={1}
+          offset={250}
+          duration={0.5}
           animateOnce
         >
           <Row
@@ -199,8 +199,8 @@ const About = () => (
             >
               <ScrollAnimation
                 animateIn="fadeInLeft"
-                offset={50}
-                duration={1}
+                offset={250}
+                duration={0.5}
                 delay={500}
                 animateOnce
               >
@@ -236,8 +236,8 @@ const About = () => (
         </ScrollAnimation>
         <ScrollAnimation
           animateIn="fadeInRight"
-          offset={50}
-          duration={1}
+          offset={250}
+          duration={0.5}
           animateOnce
         >
           <Row
@@ -252,8 +252,8 @@ const About = () => (
             >
               <ScrollAnimation
                 animateIn="fadeInRight"
-                offset={50}
-                duration={1}
+                offset={250}
+                duration={0.5}
                 delay={500}
                 animateOnce
               >
@@ -286,8 +286,8 @@ const About = () => (
         </ScrollAnimation>
         <ScrollAnimation
           animateIn="fadeInLeft"
-          offset={50}
-          duration={1}
+          offset={250}
+          duration={0.5}
           animateOnce
         >
           <Row
@@ -304,8 +304,8 @@ const About = () => (
             >
                <ScrollAnimation
                 animateIn="fadeInLeft"
-                offset={50}
-                duration={1}
+                offset={250}
+                duration={0.5}
                 delay={500}
                 animateOnce
               >
@@ -350,7 +350,7 @@ const About = () => (
         <ScrollAnimation
           animateIn="fadeInUp"
           offset={50}
-          duration={1}
+          duration={0.5}
           animateOnce
         >
           <Row
