@@ -10,3 +10,4 @@ export { default as Linkedin } from './Social/Linkedin';
 export { default as Github} from './Social/Github';
 export { default as Medium} from './Social/Medium';
 export { default as Gmail} from './Social/Gmail';
+export { default as Javascript} from './Tech/Javascript';

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Box } from '@smooth-ui/core-sc';
 
 export const Paragraph = styled.p`
   color: ${props => props.white ? 'rgba(250,250,250,0.7)' : 'rgba(25, 25, 25, 0.8)'};
@@ -25,14 +26,11 @@ export const Paragraph = styled.p`
 
 export const SectionHeading = styled.h2`
   color: ${props => props.white ? 'white' : '#191919'};
+`;
 
-  .break-large {
-    display: none;
-  }
-
-  @media (min-width: 768px){
-    .break-large {
-      display: block;
-    }
+export const UsedTech = styled(Box)`
+  svg {
+    width: 30px;
+    height: 30px;
   }
 `;
