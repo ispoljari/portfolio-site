@@ -5,6 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 
 import * as Styled from './Portfolio.style';
 import runTrackerPosts from '../../img/run-tracker/posts.png';
+import newsDigestResults from '../../img/news-digest/search-results.png';
 import { Javascript, Html, Css, Node, Mongodb } from '../index';
 import { delayLinkOpen } from '../../util/index';
 
@@ -80,6 +81,62 @@ const Portfolio = () => (
               </a>
               <a 
                 href="https://pure-peak-20096.herokuapp.com/"
+                onClick={delayLinkOpen}
+              >
+                View Project
+              </a>
+            </Styled.ProjectLinks>
+          </Col>
+        </Row>
+        <Row
+          mb={{xs:"30px", sm:"40px", lg:"50px", xl:"60px"}}
+        >
+          <Col
+            xs={12}
+            mb={{xs:"15px", xl:"0px"}}
+            xl={6}
+            display= "flex"
+            alignItems= "flex-end"
+          >
+            <img 
+              src={newsDigestResults} 
+              alt="Run Tracker app screenshot"
+              style={{
+                width:"100%",
+                display: "block",
+                margin: "0 auto",
+                borderRadius: "5px"
+              }}
+            />
+          </Col>
+          <Col
+            xs={12}
+            xl={6}
+            pl={{xl:"30px"}}
+          >          
+            <Styled.SectionHeading>
+              News Digest
+            </Styled.SectionHeading>
+            <Styled.UsedTech
+              display="flex"
+              mt="5px"
+            >
+              <Javascript />
+              <Html />
+              <Css />
+            </Styled.UsedTech>
+            <Styled.Paragraph>
+            The app allows users to log their running activity and share it with others on the platform. The design is retro-cartoonish, inspired by glitch.com.
+            </Styled.Paragraph>
+            <Styled.ProjectLinks>
+              <a 
+                href="https://github.com/ispoljari/news-digest-app"
+                onClick={delayLinkOpen}
+              >
+                View Code
+              </a>
+              <a 
+                href="https://ispoljari.github.io/news-digest-app/"
                 onClick={delayLinkOpen}
               >
                 View Project
