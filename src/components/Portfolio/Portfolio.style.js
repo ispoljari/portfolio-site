@@ -32,13 +32,23 @@ export const UsedTech = styled(Box)`
   svg {
     width: calc(20px + (30 - 20) * ((100vw - 320px) / (1700 - 320)));
     height: calc(20px + (30 - 20) * ((100vw - 320px) / (1700 - 320)));
-  }
+    margin-right: 5px;
 
-  @media (min-width: 1700px) {
-    width: 30px;
-  }
+    @media (min-width: 992px) {
+      margin-right: 10px;
+    }
+   
 
-  @media (max-width: 320px) {
-    width: 20px;
+    :last-of-type {
+      margin-right: 0;
+    }
+
+    @media (min-width: 1700px) {
+      width: 30px;
+    }
+  
+    @media (max-width: 320px) {
+      width: 20px;
+    }
   }
 `;
