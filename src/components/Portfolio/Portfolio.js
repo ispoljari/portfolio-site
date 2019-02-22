@@ -48,7 +48,7 @@ const Portfolio = () => (
           <Col
             xs={12}
             xl={5}
-            pl="30px"
+            pl={{xl:"30px"}}
           >          
             <Styled.SectionHeading>
               Run Tracker
