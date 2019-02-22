@@ -197,7 +197,7 @@ const Portfolio = () => (
                 View Code
               </a>
               <a 
-                href="https://the-recipe-builder-app.netlify.com"
+                href="https://limitless-cove-25974.herokuapp.com/"
                 onClick={delayLinkOpen}
               >
                 View Project
