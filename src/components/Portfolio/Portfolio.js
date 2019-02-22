@@ -7,7 +7,7 @@ import * as Styled from './Portfolio.style';
 import runTrackerPosts from '../../img/run-tracker/posts.png';
 import newsDigestResults from '../../img/news-digest/search-results.png';
 import recipesResults from '../../img/recipe-builder/headline.png';
-import { Javascript, Html, Css, Node, Mongodb, Jquery } from '../index';
+import { Javascript, Html, Css, Node, Mongodb, Jquery, ReactIcon } from '../index';
 import { delayLinkOpen } from '../../util/index';
 
 const Portfolio = () => (
@@ -182,7 +182,7 @@ const Portfolio = () => (
               mt="5px"
             >
               <Javascript />
-              <Jquery />
+              <ReactIcon />
               <Html />
               <Css />
             </Styled.UsedTech>

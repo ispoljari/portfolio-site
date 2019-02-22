@@ -16,4 +16,4 @@ export { default as Css} from './Tech/Css';
 export { default as Node} from './Tech/Node';
 export { default as Mongodb} from './Tech/Mongodb';
 export { default as Jquery} from './Tech/Jquery';
-export { default as ReactIcon} from './Tech/ReactIcon';
+export { default as ReactIcon} from './Tech/React';
