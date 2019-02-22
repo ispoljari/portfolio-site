@@ -13,3 +13,4 @@ export { default as Gmail} from './Social/Gmail';
 export { default as Javascript} from './Tech/Javascript';
 export { default as Html} from './Tech/Html';
 export { default as Css} from './Tech/Css';
+export { default as Node} from './Tech/Node';
