@@ -34,7 +34,7 @@ const Portfolio = () => (
           <Col
             xs={12}
             mb={{xs:"20px", xl:"0px"}}
-            xl={7}
+            xl={6}
           >
             <img 
               src={running} 
@@ -42,30 +42,60 @@ const Portfolio = () => (
               style={{
                 width:"100%",
                 display: "block",
-                margin: "0 auto"
+                margin: "0 auto",
+                borderRadius: "5px"
               }}
             />
           </Col>
           <Col
             xs={12}
-            xl={5}
+            xl={6}
             pl={{xl:"30px"}}
           >          
             <Styled.SectionHeading>
               Run Tracker
             </Styled.SectionHeading>
             <Styled.UsedTech
+              display="flex"
               mt="5px"
             >
               <Javascript />
               <Html />
               <Css />
-              <Mongodb />
               <Node />
+              <Mongodb />
             </Styled.UsedTech>
             <Styled.Paragraph>
-            This app is intended for anyone who whishes to log their running activity and share them with other users on the platform. I wanted to make the design wacky and retro, so I took the inspiration from glitch.com
+            This app is intended for anyone who whishes to log their running activity and share it with other users on the platform. I wanted the app design to be funny and sort of retro-cartoonish, so I took some inspiration from glitch.com.
             </Styled.Paragraph>
+            <div>
+              <a 
+                href="#1"
+                style={{
+                  display: "inline-block",
+                  marginRight: "10px",
+                  color: "white",
+                  backgroundColor: "#191919",
+                  textDecoration: "none",
+                  padding: "10px"
+                }}
+              >
+                View Code
+              </a>
+              <a 
+                href="#2"
+                style={{
+                  display: "inline-block",
+                  marginRight: "10px",
+                  color: "rgba(25,25,25,0.8)",
+                  border: "1px solid rgba(25,25,25,0.8)",
+                  textDecoration: "none",
+                  padding: "10px"
+                }}
+              >
+                View Project
+              </a>
+            </div>
           </Col>
         </Row>
       </Box>
