@@ -5,7 +5,7 @@ import { ThemeProvider } from 'styled-components';
 
 import GlobalStyle from '../../global.style';
 import * as Styled from './App.style';
-import { Pages, Navigation } from '../index';
+import { Pages, Navigation, ScrollToTop } from '../index';
 import { hideLoader, FONT_LATO, FONT_PLAYFAIR } from '../../util';
 import theme from '../../themes';
 
@@ -74,14 +74,14 @@ class App extends Component {
                   px={0}
                 >
                   <Router> 
-                    <React.Fragment>
+                    <ScrollToTop>
                       <Navigation 
                         logo={logo}
                       />
                       <Pages 
                         changeTheme={this.changeTheme}
                       />
-                    </React.Fragment>
+                    </ScrollToTop>
                   </Router>
                 </Col>
               </Row>
