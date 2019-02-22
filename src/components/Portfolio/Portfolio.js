@@ -5,7 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 
 import * as Styled from './Portfolio.style';
 import running from '../../img/run-tracker/running.jpg';
-import { Javascript, Html, Css, Node } from '../index';
+import { Javascript, Html, Css, Node, Mongodb } from '../index';
 
 const Portfolio = () => (
   <Row
@@ -60,6 +60,7 @@ const Portfolio = () => (
               <Javascript />
               <Html />
               <Css />
+              <Mongodb />
               <Node />
             </Styled.UsedTech>
             <Styled.Paragraph>

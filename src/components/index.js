@@ -14,3 +14,4 @@ export { default as Javascript} from './Tech/Javascript';
 export { default as Html} from './Tech/Html';
 export { default as Css} from './Tech/Css';
 export { default as Node} from './Tech/Node';
+export { default as Mongodb} from './Tech/Mongodb';
