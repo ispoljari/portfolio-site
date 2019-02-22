@@ -57,17 +57,6 @@ const About = () => (
               </ScrollAnimation>
               <Styled.Paragraph>
                 'Pozdrav' means 'Hello' in Croatian. Thanks for visiting my website. My name is Ivan, and I'm 29 years old. If you are interested in finding out more about me, my interests, projects or skills, please browse around.
-                <br/> 
-                <br/> 
-
-                I've built this site using react, react-router and styled components.&nbsp;
-                <a 
-                  href="https://github.com/ispoljari/portfolio-site"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Check out the code
-                </a>.
               </Styled.Paragraph>
             </Col>
           </Row>
@@ -354,7 +343,8 @@ const About = () => (
               xs={12}
             >
               <Styled.Paragraph>
-                I'm currently looking for dev. work, so feel free to contact me at&nbsp;
+                <b>I'm currently looking for dev. work!</b> 
+                <br />
                 <a 
                   href="mailto:ivanspoljaric22@gmail.com?subject=Business proposal"
                 >
