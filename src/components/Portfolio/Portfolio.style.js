@@ -25,7 +25,7 @@ export const Paragraph = styled.p`
 `;
 
 export const SectionHeading = styled.h2`
-  color: red;
+  color: black;
 `;
 
 export const UsedTech = styled(Box)`
@@ -88,5 +88,21 @@ export const ProjectLinks = styled(Box)`
     :last-of-type {
       margin-right: 0;
     }
+  }
+`;
+
+export const Hr = styled.hr`
+  margin-bottom: 30px;
+
+  @media (min-width: 576px) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: 992px) {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: 1200px) {
+    display: none;
   }
 `;

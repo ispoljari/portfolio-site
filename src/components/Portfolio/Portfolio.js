@@ -88,6 +88,7 @@ const Portfolio = () => (
             </Styled.ProjectLinks>
           </Col>
         </Row>
+        <Styled.Hr />
         <Row
           mb={{xs:"30px", sm:"40px", lg:"50px", xl:"60px"}}
         >
@@ -127,7 +128,7 @@ const Portfolio = () => (
               <Css />
             </Styled.UsedTech>
             <Styled.Paragraph>
-            The app allows users to log their running activity and share it with others on the platform. The design is retro-cartoonish, inspired by glitch.com.
+            With this app the user can search through millions of articles from various news sources and blogs, and filter them by selecting different categories.
             </Styled.Paragraph>
             <Styled.ProjectLinks>
               <a 
