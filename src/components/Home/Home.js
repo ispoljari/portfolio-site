@@ -63,9 +63,6 @@ const Home = () => (
                 a Tech Geek
               </span>
               <span>
-                a Proud Father
-              </span>
-              <span>
                 a Jedi Knight
               </span>
               <span>
