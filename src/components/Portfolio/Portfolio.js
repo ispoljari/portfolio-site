@@ -35,6 +35,8 @@ const Portfolio = () => (
             xs={12}
             mb={{xs:"20px", xl:"0px"}}
             xl={6}
+            display= "flex"
+            alignItems= "flex-end"
           >
             <img 
               src={running} 
@@ -68,34 +70,18 @@ const Portfolio = () => (
             <Styled.Paragraph>
             This app is intended for anyone who whishes to log their running activity and share it with other users on the platform. I wanted the app design to be funny and sort of retro-cartoonish, so I took some inspiration from glitch.com.
             </Styled.Paragraph>
-            <div>
+            <Styled.ProjectLinks>
               <a 
                 href="#1"
-                style={{
-                  display: "inline-block",
-                  marginRight: "10px",
-                  color: "white",
-                  backgroundColor: "#191919",
-                  textDecoration: "none",
-                  padding: "10px"
-                }}
               >
                 View Code
               </a>
               <a 
                 href="#2"
-                style={{
-                  display: "inline-block",
-                  marginRight: "10px",
-                  color: "rgba(25,25,25,0.8)",
-                  border: "1px solid rgba(25,25,25,0.8)",
-                  textDecoration: "none",
-                  padding: "10px"
-                }}
               >
                 View Project
               </a>
-            </div>
+            </Styled.ProjectLinks>
           </Col>
         </Row>
       </Box>

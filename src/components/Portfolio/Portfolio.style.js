@@ -30,9 +30,9 @@ export const SectionHeading = styled.h2`
 
 export const UsedTech = styled(Box)`
   svg {
-    width: calc(20px + (30 - 20) * ((100vw - 320px) / (1700 - 320)));
-    height: calc(20px + (30 - 20) * ((100vw - 320px) / (1700 - 320)));
-    margin-right: 5px;
+    width: calc(20px + (25 - 20) * ((100vw - 320px) / (1700 - 320)));
+    height: calc(20px + (25 - 20) * ((100vw - 320px) / (1700 - 320)));
+    margin-right: 10px;
 
     @media (min-width: 992px) {
       margin-right: 10px;
@@ -44,11 +44,39 @@ export const UsedTech = styled(Box)`
     }
 
     @media (min-width: 1700px) {
-      width: 30px;
+      width: 25px;
     }
   
     @media (max-width: 320px) {
       width: 20px;
+    }
+  }
+`;
+
+export const ProjectLinks = styled(Box)`
+  a {
+    font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1700 - 320)));
+
+    @media (min-width: 1700px) {
+      font-size: 20px;
+    }
+
+    @media (max-width: 320px) {
+      font-size: 16px;
+    }
+
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+    background-color: #191919;
+    text-decoration: none;
+    padding: 10px;
+
+    :last-of-type {
+      background-color: white;
+      margin-right: 0;
+      color: rgba(25,25,25,0.8);
+      border: 1px solid rgba(25,25,25,0.8);
     }
   }
 `;
