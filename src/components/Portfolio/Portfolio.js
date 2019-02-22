@@ -1,7 +1,8 @@
 import React from 'react';
 import { Row, Col, Box } from '@smooth-ui/core-sc';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
+import ScrollAnimation from 'react-animate-on-scroll';
+// import { Carousel } from 'react-responsive-carousel';
 
 import * as Styled from './Portfolio.style';
 import runTrackerPosts from '../../img/run-tracker/posts.png';
@@ -31,180 +32,201 @@ const Portfolio = () => (
         as="main"
         role="main"
       >
-        <Row
-          mb={{xs:"30px", sm:"40px", lg:"50px", xl:"80px"}}
+        <ScrollAnimation
+          animateIn="fadeInDown"
+          offset={0}
+          duration={0.5}
+          animateOnce
         >
-          <Col
-            xs={12}
-            mb={{xs:"15px", xl:"0px"}}
-            xl={6}
-            display= "flex"
-            alignItems= "flex-end"
+          <Row
+            mb={{xs:"30px", sm:"40px", lg:"50px", xl:"80px"}}
           >
-            <img 
-              src={runTrackerPosts} 
-              alt="Run Tracker app screenshot"
-              style={{
-                width:"100%",
-                display: "block",
-                margin: "0 auto",
-                borderRadius: "5px"
-              }}
-            />
-          </Col>
-          <Col
-            xs={12}
-            xl={6}
-            pl={{xl:"30px"}}
-          >          
-            <Styled.SectionHeading>
-              Run Tracker
-            </Styled.SectionHeading>
-            <Styled.UsedTech
-              display="flex"
-              mt="5px"
+            <Col
+              xs={12}
+              mb={{xs:"15px", xl:"0px"}}
+              xl={6}
+              display= "flex"
+              alignItems= "flex-end"
             >
-              <Javascript />
-              <Html />
-              <Css />
-              <Node />
-              <Mongodb />
-            </Styled.UsedTech>
-            <Styled.Paragraph>
-            The app allows users to log their running activity and share it with others on the platform. The design is retro-cartoonish, inspired by glitch.com.
-            </Styled.Paragraph>
-            <Styled.ProjectLinks>
-              <a 
-                href="https://github.com/ispoljari/run-tracker-app"
-                onClick={delayLinkOpen}
+              <img 
+                src={runTrackerPosts} 
+                alt="Run Tracker app screenshot"
+                style={{
+                  width:"100%",
+                  display: "block",
+                  margin: "0 auto",
+                  borderRadius: "5px"
+                }}
+              />
+            </Col>
+            <Col
+              xs={12}
+              xl={6}
+              pl={{xl:"30px"}}
+            >          
+              <Styled.SectionHeading>
+                Run Tracker
+              </Styled.SectionHeading>
+              <Styled.UsedTech
+                display="flex"
+                mt="5px"
               >
-                View Code
-              </a>
-              <a 
-                href="https://pure-peak-20096.herokuapp.com/"
-                onClick={delayLinkOpen}
-              >
-                View Project
-              </a>
-            </Styled.ProjectLinks>
-          </Col>
-        </Row>
-        <Styled.Hr />
-        <Row
-          mb={{xs:"30px", sm:"40px", lg:"50px", xl:"80px"}}
+                <Javascript />
+                <Html />
+                <Css />
+                <Node />
+                <Mongodb />
+              </Styled.UsedTech>
+              <Styled.Paragraph>
+              The app allows users to log their running activity and share it with others on the platform. The design is retro-cartoonish, inspired by glitch.com.
+              </Styled.Paragraph>
+              <Styled.ProjectLinks>
+                <a 
+                  href="https://github.com/ispoljari/run-tracker-app"
+                  onClick={delayLinkOpen}
+                >
+                  View Code
+                </a>
+                <a 
+                  href="https://pure-peak-20096.herokuapp.com/"
+                  onClick={delayLinkOpen}
+                >
+                  View Project
+                </a>
+              </Styled.ProjectLinks>
+            </Col>
+          </Row>
+        </ScrollAnimation>
+        <ScrollAnimation
+          animateIn="fadeInLeft"
+          offset={150}
+          duration={0.5}
+          animateOnce
         >
-          <Col
-            xs={12}
-            mb={{xs:"15px", xl:"0px"}}
-            xl={6}
-            display= "flex"
-            alignItems= "flex-end"
+          <Styled.Hr />
+          <Row
+            mb={{xs:"30px", sm:"40px", lg:"50px", xl:"80px"}}
           >
-            <img 
-              src={newsDigestResults} 
-              alt="Run Tracker app screenshot"
-              style={{
-                width:"100%",
-                display: "block",
-                margin: "0 auto",
-                borderRadius: "5px"
-              }}
-            />
-          </Col>
-          <Col
-            xs={12}
-            xl={6}
-            pl={{xl:"30px"}}
-          >          
-            <Styled.SectionHeading>
-              News Digest
-            </Styled.SectionHeading>
-            <Styled.UsedTech
-              display="flex"
-              mt="5px"
+            <Col
+              xs={12}
+              mb={{xs:"15px", xl:"0px"}}
+              xl={6}
+              display= "flex"
+              alignItems= "flex-end"
             >
-              <Javascript />
-              <Jquery />
-              <Html />
-              <Css />
-            </Styled.UsedTech>
-            <Styled.Paragraph>
-            With this app the user can search through millions of articles from various news sources and blogs, and filter them by selecting different categories.
-            </Styled.Paragraph>
-            <Styled.ProjectLinks>
-              <a 
-                href="https://github.com/ispoljari/news-digest-app"
-                onClick={delayLinkOpen}
+              <img 
+                src={newsDigestResults} 
+                alt="News digest app screenshot"
+                style={{
+                  width:"100%",
+                  display: "block",
+                  margin: "0 auto",
+                  borderRadius: "5px"
+                }}
+              />
+            </Col>
+            <Col
+              xs={12}
+              xl={6}
+              pl={{xl:"30px"}}
+            >          
+              <Styled.SectionHeading>
+                News Digest
+              </Styled.SectionHeading>
+              <Styled.UsedTech
+                display="flex"
+                mt="5px"
               >
-                View Code
-              </a>
-              <a 
-                href="https://ispoljari.github.io/news-digest-app/"
-                onClick={delayLinkOpen}
-              >
-                View Project
-              </a>
-            </Styled.ProjectLinks>
-          </Col>
-        </Row>
-        <Styled.Hr />
-        <Row
-          mb={{xs:"30px", sm:"40px", lg:"50px", xl:"80px"}}
+                <Javascript />
+                <Jquery />
+                <Html />
+                <Css />
+              </Styled.UsedTech>
+              <Styled.Paragraph>
+              With this app the user can search through millions of articles from various news sources and blogs, and filter them by selecting different categories.
+              </Styled.Paragraph>
+              <Styled.ProjectLinks>
+                <a 
+                  href="https://github.com/ispoljari/news-digest-app"
+                  onClick={delayLinkOpen}
+                >
+                  View Code
+                </a>
+                <a 
+                  href="https://ispoljari.github.io/news-digest-app/"
+                  onClick={delayLinkOpen}
+                >
+                  View Project
+                </a>
+              </Styled.ProjectLinks>
+            </Col>
+          </Row>
+        </ScrollAnimation>
+        <ScrollAnimation
+          animateIn="fadeInRight"
+          offset={150}
+          duration={0.5}
+          animateOnce
         >
-          <Col
-            xs={12}
-            mb={{xs:"15px", xl:"0px"}}
-            xl={6}
-            display= "flex"
-            alignItems= "flex-end"
+          <Styled.Hr />
+          <Row
+            mb={{xs:"30px", sm:"40px", lg:"50px", xl:"80px"}}
           >
-            <img 
-              src={recipesResults} 
-              alt="Run Tracker app screenshot"
-              style={{
-                width:"100%",
-                display: "block",
-                margin: "0 auto",
-                borderRadius: "5px"
-              }}
-            />
-          </Col>
-          <Col
-            xs={12}
-            xl={6}
-            pl={{xl:"30px"}}
-          >          
-            <Styled.SectionHeading>
-              Recipe Builder
-            </Styled.SectionHeading>
-            <Styled.UsedTech
-              display="flex"
-              mt="5px"
+            <Col
+              xs={12}
+              mb={{xs:"15px", xl:"0px"}}
+              xl={6}
+              display= "flex"
+              alignItems= "flex-end"
             >
-              <Javascript />
-              <ReactIcon />
-              <Html />
-              <Css />
-            </Styled.UsedTech>
-            <Styled.Paragraph>
-            This app is intended for anyone that needs cooking inspiration. The user can take a picture of the ingredients and the app returns a list of related recipes.
-            </Styled.Paragraph>
-            <Styled.ProjectLinks>
-              <a 
-                href="https://github.com/ispoljari/react-recipe-builder-app"
-                onClick={delayLinkOpen}
+              <img 
+                src={recipesResults} 
+                alt="Recibe builder app screenshot"
+                style={{
+                  width:"100%",
+                  display: "block",
+                  margin: "0 auto",
+                  borderRadius: "5px"
+                }}
+              />
+            </Col>
+            <Col
+              xs={12}
+              xl={6}
+              pl={{xl:"30px"}}
+            >          
+              <Styled.SectionHeading>
+                Recipe Builder
+              </Styled.SectionHeading>
+              <Styled.UsedTech
+                display="flex"
+                mt="5px"
               >
-                View Code
-              </a>
-              <a 
-                href="https://limitless-cove-25974.herokuapp.com/"
-                onClick={delayLinkOpen}
-              >
-                View Project
-              </a>
-            </Styled.ProjectLinks>
-          </Col>
-        </Row>
+                <Javascript />
+                <ReactIcon />
+                <Html />
+                <Css />
+              </Styled.UsedTech>
+              <Styled.Paragraph>
+              This app is intended for anyone that needs cooking inspiration. The user can take a picture of the ingredients and the app returns a list of related recipes.
+              </Styled.Paragraph>
+              <Styled.ProjectLinks>
+                <a 
+                  href="https://github.com/ispoljari/react-recipe-builder-app"
+                  onClick={delayLinkOpen}
+                >
+                  View Code
+                </a>
+                <a 
+                  href="https://limitless-cove-25974.herokuapp.com/"
+                  onClick={delayLinkOpen}
+                >
+                  View Project
+                </a>
+              </Styled.ProjectLinks>
+            </Col>
+          </Row>
+        </ScrollAnimation>
       </Box>
     </Col>
   </Row>
