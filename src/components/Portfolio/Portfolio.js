@@ -4,10 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
 import * as Styled from './Portfolio.style';
-import addRun from '../../img/run-tracker/add-run.png';
-import chooseAvatar from '../../img/run-tracker/choose-avatar.png';
-import editRun from '../../img/run-tracker/edit-run.png';
-import mainFeed from '../../img/run-tracker/main-feed.png';
+import running from '../../img/run-tracker/running.jpg';
 
 const Portfolio = () => (
   <Row
@@ -34,42 +31,31 @@ const Portfolio = () => (
           mb={{xs:"30px", sm:"40px", lg:"50px", xl:"60px"}}
         >
           <Col
-            // xs={12}
-            // md={4}
-            // display="flex"
-            // alignItems="center"
-            // justifyContent={{xs: 'left', md: "center"}}
+            xs={12}
+            mb={{xs:"30px", sm:"40px", lg:"50px", xl:"0px"}}
+            xl={7}
           >
+            <img 
+              src={running} 
+              alt="Run Tracker app screenshot"
+              style={{
+                width:"100%",
+                display: "block",
+                margin: "0 auto"
+              }}
+            />
+          </Col>
+          <Col
+            xs={12}
+            xl={5}
+            pl="30px"
+          >          
             <Styled.SectionHeading>
               Run Tracker
             </Styled.SectionHeading>
             <Styled.Paragraph>
-              App description
+            This app is intended for anyone who whishes to log their running activity and share them with other users on the platform. I wanted to make the design wacky and retro, so I took the inspiration from glitch.com
             </Styled.Paragraph>
-          </Col>
-          <Col
-            xs={12}
-            md={8}
-          >
-            <Carousel
-              showArrows
-              showIndicators
-              swipeable
-              showThumbs={false}
-            >
-              <div>
-                <img src={mainFeed} />
-              </div>
-              <div>
-                <img src={addRun} />
-              </div>
-              <div>
-                <img src={chooseAvatar} />
-              </div>
-              <div>
-                <img src={editRun} />
-              </div>
-            </Carousel>
           </Col>
         </Row>
       </Box>

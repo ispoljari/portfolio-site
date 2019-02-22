@@ -30,14 +30,14 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h2 {
-    font-size: calc(28px + (46 - 28) * ((100vw - 320px) / (1700 - 320))) !important;
+    font-size: calc(28px + (46 - 28) * ((100vw - 320px) / (1700 - 320)));
   
     @media (min-width: 1700px) {
-      font-size: 46px !important;
+      font-size: 46px;
     }
 
     @media (max-width: 320px) {
-      font-size: 28px !important;
+      font-size: 28px;
     }
   }
 `;
