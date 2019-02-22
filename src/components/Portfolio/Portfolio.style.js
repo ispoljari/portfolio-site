@@ -65,6 +65,15 @@ export const ProjectLinks = styled(Box)`
       font-size: 16px;
     }
 
+    user-select: none;  
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 0.4s ease-in-out;
+
+    :active {
+      transform: scale(1.2);
+      transition: transform 0s;
+    }
+
     :hover {
       color: turquoise;
     }
