@@ -5,7 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 
 import * as Styled from './Portfolio.style';
 import running from '../../img/run-tracker/running.jpg';
-import { Javascript, Html, Css } from '../index';
+import { Javascript, Html, Css, Node } from '../index';
 
 const Portfolio = () => (
   <Row
@@ -58,8 +58,9 @@ const Portfolio = () => (
               mt="5px"
             >
               <Javascript />
-              <Html />       
-              <Css />              
+              <Html />
+              <Css />
+              <Node />
             </Styled.UsedTech>
             <Styled.Paragraph>
             This app is intended for anyone who whishes to log their running activity and share them with other users on the platform. I wanted to make the design wacky and retro, so I took the inspiration from glitch.com
