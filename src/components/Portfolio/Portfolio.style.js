@@ -25,7 +25,7 @@ export const Paragraph = styled.p`
 `;
 
 export const SectionHeading = styled.h2`
-  color: ${props => props.white ? 'white' : '#191919'};
+  color: red;
 `;
 
 export const UsedTech = styled(Box)`
@@ -86,14 +86,7 @@ export const ProjectLinks = styled(Box)`
     padding: 10px;
 
     :last-of-type {
-      background-color: white;
       margin-right: 0;
-      color: rgba(25,25,25,0.8);
-      border: 1px solid rgba(25,25,25,0.8);
-
-      :hover {
-        color: black;
-      }
     }
   }
 `;

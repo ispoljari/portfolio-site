@@ -6,6 +6,7 @@ import { Carousel } from 'react-responsive-carousel';
 import * as Styled from './Portfolio.style';
 import runTrackerPosts from '../../img/run-tracker/posts.png';
 import { Javascript, Html, Css, Node, Mongodb } from '../index';
+import { delayLinkOpen } from '../../util/index';
 
 const Portfolio = () => (
   <Row
@@ -73,15 +74,13 @@ const Portfolio = () => (
             <Styled.ProjectLinks>
               <a 
                 href="https://github.com/ispoljari/run-tracker-app"
-                target="_blank"
-                rel="noopener noreferrer"
+                onClick={delayLinkOpen}
               >
                 View Code
               </a>
               <a 
                 href="https://pure-peak-20096.herokuapp.com/"
-                target="_blank"
-                rel="noopener noreferrer"
+                onClick={delayLinkOpen}
               >
                 View Project
               </a>
