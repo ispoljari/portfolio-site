@@ -30,7 +30,15 @@ export const SectionHeading = styled.h2`
 
 export const UsedTech = styled(Box)`
   svg {
+    width: calc(20px + (30 - 20) * ((100vw - 320px) / (1700 - 320)));
+    height: calc(20px + (30 - 20) * ((100vw - 320px) / (1700 - 320)));
+  }
+
+  @media (min-width: 1700px) {
     width: 30px;
-    height: 30px;
+  }
+
+  @media (max-width: 320px) {
+    width: 20px;
   }
 `;

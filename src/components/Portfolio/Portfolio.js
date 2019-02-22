@@ -33,7 +33,7 @@ const Portfolio = () => (
         >
           <Col
             xs={12}
-            mb={{xs:"30px", sm:"40px", lg:"50px", xl:"0px"}}
+            mb={{xs:"20px", xl:"0px"}}
             xl={7}
           >
             <img 
@@ -54,7 +54,9 @@ const Portfolio = () => (
             <Styled.SectionHeading>
               Run Tracker
             </Styled.SectionHeading>
-            <Styled.UsedTech>
+            <Styled.UsedTech
+              mt="5px"
+            >
               <Javascript />
             </Styled.UsedTech>
             <Styled.Paragraph>
