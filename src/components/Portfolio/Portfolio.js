@@ -6,7 +6,7 @@ import { Carousel } from 'react-responsive-carousel';
 import * as Styled from './Portfolio.style';
 import runTrackerPosts from '../../img/run-tracker/posts.png';
 import newsDigestResults from '../../img/news-digest/search-results.png';
-import { Javascript, Html, Css, Node, Mongodb } from '../index';
+import { Javascript, Html, Css, Node, Mongodb, Jquery } from '../index';
 import { delayLinkOpen } from '../../util/index';
 
 const Portfolio = () => (
@@ -122,6 +122,7 @@ const Portfolio = () => (
               mt="5px"
             >
               <Javascript />
+              <Jquery />
               <Html />
               <Css />
             </Styled.UsedTech>
