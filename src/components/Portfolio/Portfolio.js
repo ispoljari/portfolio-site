@@ -4,7 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
 import * as Styled from './Portfolio.style';
-import running from '../../img/run-tracker/running.jpg';
+import runTrackerPosts from '../../img/run-tracker/posts.png';
 import { Javascript, Html, Css, Node, Mongodb } from '../index';
 
 const Portfolio = () => (
@@ -33,13 +33,13 @@ const Portfolio = () => (
         >
           <Col
             xs={12}
-            mb={{xs:"20px", xl:"0px"}}
+            mb={{xs:"15px", xl:"0px"}}
             xl={6}
             display= "flex"
             alignItems= "flex-end"
           >
             <img 
-              src={running} 
+              src={runTrackerPosts} 
               alt="Run Tracker app screenshot"
               style={{
                 width:"100%",
@@ -68,16 +68,20 @@ const Portfolio = () => (
               <Mongodb />
             </Styled.UsedTech>
             <Styled.Paragraph>
-            This app is intended for anyone who whishes to log their running activity and share it with other users on the platform. I wanted the app design to be funny and sort of retro-cartoonish, so I took some inspiration from glitch.com.
+            The app allows users to log their running activity and share it with others on the platform. The design is retro-cartoonish, inspired by glitch.com.
             </Styled.Paragraph>
             <Styled.ProjectLinks>
               <a 
-                href="#1"
+                href="https://github.com/ispoljari/run-tracker-app"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 View Code
               </a>
               <a 
-                href="#2"
+                href="https://pure-peak-20096.herokuapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 View Project
               </a>
