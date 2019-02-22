@@ -65,6 +65,10 @@ export const ProjectLinks = styled(Box)`
       font-size: 16px;
     }
 
+    :hover {
+      color: turquoise;
+    }
+
     display: inline-block;
     margin-right: 10px;
     color: white;
@@ -77,6 +81,10 @@ export const ProjectLinks = styled(Box)`
       margin-right: 0;
       color: rgba(25,25,25,0.8);
       border: 1px solid rgba(25,25,25,0.8);
+
+      :hover {
+        color: black;
+      }
     }
   }
 `;
