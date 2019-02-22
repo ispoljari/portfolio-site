@@ -6,6 +6,7 @@ import { Carousel } from 'react-responsive-carousel';
 import * as Styled from './Portfolio.style';
 import runTrackerPosts from '../../img/run-tracker/posts.png';
 import newsDigestResults from '../../img/news-digest/search-results.png';
+import recipesResults from '../../img/recipe-builder/headline.png';
 import { Javascript, Html, Css, Node, Mongodb, Jquery } from '../index';
 import { delayLinkOpen } from '../../util/index';
 
@@ -31,7 +32,7 @@ const Portfolio = () => (
         role="main"
       >
         <Row
-          mb={{xs:"30px", sm:"40px", lg:"50px", xl:"60px"}}
+          mb={{xs:"30px", sm:"40px", lg:"50px", xl:"80px"}}
         >
           <Col
             xs={12}
@@ -90,7 +91,7 @@ const Portfolio = () => (
         </Row>
         <Styled.Hr />
         <Row
-          mb={{xs:"30px", sm:"40px", lg:"50px", xl:"60px"}}
+          mb={{xs:"30px", sm:"40px", lg:"50px", xl:"80px"}}
         >
           <Col
             xs={12}
@@ -139,6 +140,64 @@ const Portfolio = () => (
               </a>
               <a 
                 href="https://ispoljari.github.io/news-digest-app/"
+                onClick={delayLinkOpen}
+              >
+                View Project
+              </a>
+            </Styled.ProjectLinks>
+          </Col>
+        </Row>
+        <Styled.Hr />
+        <Row
+          mb={{xs:"30px", sm:"40px", lg:"50px", xl:"80px"}}
+        >
+          <Col
+            xs={12}
+            mb={{xs:"15px", xl:"0px"}}
+            xl={6}
+            display= "flex"
+            alignItems= "flex-end"
+          >
+            <img 
+              src={recipesResults} 
+              alt="Run Tracker app screenshot"
+              style={{
+                width:"100%",
+                display: "block",
+                margin: "0 auto",
+                borderRadius: "5px"
+              }}
+            />
+          </Col>
+          <Col
+            xs={12}
+            xl={6}
+            pl={{xl:"30px"}}
+          >          
+            <Styled.SectionHeading>
+              Recipe Builder
+            </Styled.SectionHeading>
+            <Styled.UsedTech
+              display="flex"
+              mt="5px"
+            >
+              <Javascript />
+              <Jquery />
+              <Html />
+              <Css />
+            </Styled.UsedTech>
+            <Styled.Paragraph>
+            This app is intended for anyone that needs cooking inspiration. The user can take a picture of the ingredients and the app returns a list of related recipes.
+            </Styled.Paragraph>
+            <Styled.ProjectLinks>
+              <a 
+                href="https://github.com/ispoljari/react-recipe-builder-app"
+                onClick={delayLinkOpen}
+              >
+                View Code
+              </a>
+              <a 
+                href="https://the-recipe-builder-app.netlify.com"
                 onClick={delayLinkOpen}
               >
                 View Project
