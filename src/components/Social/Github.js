@@ -11,7 +11,6 @@ const Github = () => (
       className="github-stroke"
       strokeOpacity="0.95" 
       stroke="#ffffff" 
-      id="svg_1" 
       strokeWidth="2" 
       strokeLinejoin="round" 
       strokeLinecap="round" 
