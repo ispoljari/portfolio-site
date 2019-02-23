@@ -25,6 +25,7 @@ const Navigation = ({ logo, location }) => (
       <Styled.LogoLink
         to="/"
         logo={logo === 'light' ? 'white' : 'black'}
+        aria-label="Link - Open Home page"
       >
         <Logo />
       </Styled.LogoLink>
@@ -34,6 +35,7 @@ const Navigation = ({ logo, location }) => (
         <li>
           <Link 
             to="/about"
+            aria-label="Link - Open the About page"
             >
             About
           </Link>
@@ -41,6 +43,7 @@ const Navigation = ({ logo, location }) => (
         <li>
           <Link 
             to="/portfolio"
+            aria-label="Link - Open the Portfolio page"
           >
             Portfolio
           </Link>

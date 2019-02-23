@@ -117,24 +117,28 @@ const Home = () => (
             href="https://www.linkedin.com/in/ivan-špoljarić-2206a184
             "
             onClick={delayLinkOpen}
+            aria-label="Link - Go to my linkedin page"
           >
             <Linkedin />
           </Styled.SocialLink >
           <Styled.SocialLink  
             href="https://github.com/ispoljari"
             onClick={delayLinkOpen}
+            aria-label="Link - Go to my github page"
           >
             <Github />
           </Styled.SocialLink >
           <Styled.SocialLink  
             href="https://medium.com/@ivanspoljaric22"
             onClick={delayLinkOpen}
+            aria-label="Link - Go to my medium page"
           >
             <Medium />
           </Styled.SocialLink >
           <Styled.SocialLink  
             href="mailto:ivanspoljaric22@gmail.com?subject=Business proposal"
             onClick={delayLinkOpen}
+            aria-label="Link - Send me an email at ivanspoljaric22@gmail.com"
           >
             <Gmail />
           </Styled.SocialLink >
