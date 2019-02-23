@@ -8,7 +8,7 @@ export const Heading = styled.h1`
   }
 
   @media (min-width: 1400px){
-    .break-under-xl {
+    .break-small {
       display: none;
     }
   }

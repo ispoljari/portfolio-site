@@ -75,7 +75,7 @@ const Home = () => (
                 a Book Worm
               </span>
             </TextLoop>&nbsp;
-            <br className="break-under-xl"/>
+            <br className="break-small"/>
             from&nbsp;
             <span>
               <a
