@@ -37,11 +37,6 @@ export const UsedTech = styled(Box)`
     @media (min-width: 992px) {
       margin-right: 10px;
     }
-   
-
-    :last-of-type {
-      margin-right: 0;
-    }
 
     @media (min-width: 1700px) {
       width: 25px;

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Grid, Row, Col } from '@smooth-ui/core-sc';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
+import "animate.css/animate.min.css";
 
 import GlobalStyle from '../../global.style';
 import * as Styled from './App.style';

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Box, Row, Col } from '@smooth-ui/core-sc';
-import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 
 import * as Styled from './About.style';
@@ -160,7 +159,7 @@ const About = () => (
                 I became passionate about Web development after I graduated from college. I started spending a lot of my time online, on websites like TechCrunch and Hacker News. After seeing all those cool apps, innovative startups, and brilliant developers changing our technological landscape on a daily basis, I decided I wanted to become a part of that disruptive movement.
                 <br/>
                 <br/> 
-                So in the last year I worked really hard and learned a lot of cool stuff related to front-end and back-end development. I used that knowledge to build my portfolio and this website. I know a lot about NodeJS, ExpressJS, MongoDB, jQuery, React, Redux, Bootstrap, Mocha, Chai, Enzyme, HTML, CSS, CSS-in-JS, TDD, responsive design, progressive enhancement, graceful degradation, a11y, mobile-first design, continuous integration, code transpiling, module bundling, RESTful architecture, API's and more.  
+                So in the last year and half I learned a lot of cool stuff related to front-end and back-end development. I used that knowledge to build my portfolio and this website. I know a lot about NodeJS, ExpressJS, MongoDB, jQuery, React, Redux, Bootstrap, Mocha, Chai, Enzyme, HTML, CSS, CSS-in-JS, TDD, responsive design, progressive enhancement, graceful degradation, a11y, mobile-first design, continuous integration, code transpiling, module bundling, RESTful architecture, API's and more.  
               </Styled.Paragraph>
             </Col>
           </Row>
@@ -241,7 +240,7 @@ const About = () => (
                 animateOnce
               >
                 <Styled.SectionHeading>
-                  Proud,&nbsp; 
+                  Proud&nbsp; 
                   <br className="break-large"/>
                   Father 👨‍👦
                 </Styled.SectionHeading>  

@@ -63,19 +63,67 @@ const Portfolio = () => (
               xs={12}
               xl={6}
               pl={{xl:"30px"}}
-            >          
-              <Styled.SectionHeading>
-                Run Tracker
-              </Styled.SectionHeading>
+            >
+              <ScrollAnimation
+                animateIn="fadeInDown"
+                offset={0}
+                duration={0.5}
+                delay={500}
+                animateOnce
+              >
+                <Styled.SectionHeading>
+                  Run Tracker
+                </Styled.SectionHeading>
+              </ScrollAnimation>          
               <Styled.UsedTech
                 display="flex"
                 mt="5px"
               >
-                <Javascript />
-                <Html />
-                <Css />
-                <Node />
-                <Mongodb />
+                <ScrollAnimation
+                  animateIn="fadeInRight"
+                  offset={0}
+                  duration={0.5}
+                  delay={500}
+                  animateOnce
+                >
+                  <Javascript />
+                </ScrollAnimation>
+                <ScrollAnimation
+                  animateIn="fadeInRight"
+                  offset={0}
+                  duration={0.5}
+                  delay={700}
+                  animateOnce
+                >
+                  <Html />
+                </ScrollAnimation>
+                <ScrollAnimation
+                  animateIn="fadeInRight"
+                  offset={0}
+                  duration={0.5}
+                  delay={900}
+                  animateOnce
+                >
+                  <Css />
+                </ScrollAnimation>
+                <ScrollAnimation
+                  animateIn="fadeInRight"
+                  offset={0}
+                  duration={0.5}
+                  delay={1100}
+                  animateOnce
+                >
+                  <Node />
+                </ScrollAnimation>
+                <ScrollAnimation
+                  animateIn="fadeInRight"
+                  offset={0}
+                  duration={0.5}
+                  delay={1300}
+                  animateOnce
+                >
+                  <Mongodb />
+                </ScrollAnimation>
               </Styled.UsedTech>
               <Styled.Paragraph>
               The app allows users to log their running activity and share it with others on the platform. The design is retro-cartoonish, inspired by glitch.com.
