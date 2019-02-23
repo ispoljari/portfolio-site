@@ -80,7 +80,7 @@ const Portfolio = () => (
                 mt="5px"
               >
                 <ScrollAnimation
-                  animateIn="fadeInRight"
+                  animateIn="fadeInDown"
                   offset={0}
                   duration={0.5}
                   delay={500}
@@ -89,7 +89,7 @@ const Portfolio = () => (
                   <Javascript />
                 </ScrollAnimation>
                 <ScrollAnimation
-                  animateIn="fadeInRight"
+                  animateIn="fadeInDown"
                   offset={0}
                   duration={0.5}
                   delay={700}
@@ -98,7 +98,7 @@ const Portfolio = () => (
                   <Html />
                 </ScrollAnimation>
                 <ScrollAnimation
-                  animateIn="fadeInRight"
+                  animateIn="fadeInDown"
                   offset={0}
                   duration={0.5}
                   delay={900}
@@ -107,7 +107,7 @@ const Portfolio = () => (
                   <Css />
                 </ScrollAnimation>
                 <ScrollAnimation
-                  animateIn="fadeInRight"
+                  animateIn="fadeInDown"
                   offset={0}
                   duration={0.5}
                   delay={1100}
@@ -116,7 +116,7 @@ const Portfolio = () => (
                   <Node />
                 </ScrollAnimation>
                 <ScrollAnimation
-                  animateIn="fadeInRight"
+                  animateIn="fadeInDown"
                   offset={0}
                   duration={0.5}
                   delay={1300}
@@ -177,18 +177,58 @@ const Portfolio = () => (
               xs={12}
               xl={6}
               pl={{xl:"30px"}}
-            >          
-              <Styled.SectionHeading>
-                News Digest
-              </Styled.SectionHeading>
+            >     
+               <ScrollAnimation
+                animateIn="fadeInLeft"
+                offset={150}
+                duration={0.5}
+                delay={500}
+                animateOnce
+              >
+                <Styled.SectionHeading>
+                  News Digest
+                </Styled.SectionHeading>
+              </ScrollAnimation>     
               <Styled.UsedTech
                 display="flex"
                 mt="5px"
               >
+                <ScrollAnimation
+                animateIn="fadeInLeft"
+                offset={150}
+                duration={0.5}
+                delay={500}
+                animateOnce
+              >
                 <Javascript />
+              </ScrollAnimation>
+              <ScrollAnimation
+                animateIn="fadeInLeft"
+                offset={150}
+                duration={0.5}
+                delay={700}
+                animateOnce
+              >
                 <Jquery />
+              </ScrollAnimation>
+              <ScrollAnimation
+                animateIn="fadeInLeft"
+                offset={150}
+                duration={0.5}
+                delay={900}
+                animateOnce
+              >
                 <Html />
+              </ScrollAnimation>
+              <ScrollAnimation
+                animateIn="fadeInLeft"
+                offset={150}
+                duration={0.5}
+                delay={1100}
+                animateOnce
+              >
                 <Css />
+              </ScrollAnimation>
               </Styled.UsedTech>
               <Styled.Paragraph>
               With this app the user can search through millions of articles from various news sources and blogs, and filter them by selecting different categories.
@@ -242,18 +282,58 @@ const Portfolio = () => (
               xs={12}
               xl={6}
               pl={{xl:"30px"}}
-            >          
-              <Styled.SectionHeading>
-                Recipe Builder
-              </Styled.SectionHeading>
+            >        
+              <ScrollAnimation
+                animateIn="fadeInRight"
+                offset={150}
+                duration={0.5}
+                delay={500}
+                animateOnce
+              >
+                <Styled.SectionHeading>
+                  Recipe Builder
+                </Styled.SectionHeading>
+              </ScrollAnimation>  
               <Styled.UsedTech
                 display="flex"
                 mt="5px"
               >
+                <ScrollAnimation
+                animateIn="fadeInRight"
+                offset={150}
+                duration={0.5}
+                delay={700}
+                animateOnce
+              >
                 <Javascript />
+              </ScrollAnimation>
+              <ScrollAnimation
+                animateIn="fadeInRight"
+                offset={150}
+                duration={0.5}
+                delay={900}
+                animateOnce
+              >
                 <ReactIcon />
+              </ScrollAnimation>
+              <ScrollAnimation
+                animateIn="fadeInRight"
+                offset={150}
+                duration={0.5}
+                delay={1100}
+                animateOnce
+              >
                 <Html />
+              </ScrollAnimation>
+              <ScrollAnimation
+                animateIn="fadeInRight"
+                offset={150}
+                duration={0.5}
+                delay={1300}
+                animateOnce
+              >
                 <Css />
+              </ScrollAnimation>
               </Styled.UsedTech>
               <Styled.Paragraph>
               This app is intended for anyone that needs cooking inspiration. The user can take a picture of the ingredients and the app returns a list of related recipes.
