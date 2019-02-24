@@ -9,7 +9,7 @@ import runTrackerPosts from '../../img/run-tracker/posts.png';
 import newsDigestResults from '../../img/news-digest/search-results.png';
 import recipesResults from '../../img/recipe-builder/headline.png';
 import quizzOpeningPage from '../../img/soundtrack-quizz/opening-page.png';
-import { Javascript, Html, Css, Node, Mongodb, Jquery, ReactIcon, Heroku } from '../index';
+import { Javascript, Html, Css, Node, Mongodb, Jquery, ReactIcon, Heroku, GithubPages } from '../index';
 import { delayLinkOpen } from '../../util/index';
 
 const Portfolio = () => (
@@ -204,41 +204,50 @@ const Portfolio = () => (
                 mt="5px"
               >
                 <ScrollAnimation
-                animateIn="fadeInLeft"
-                offset={150}
-                duration={0.5}
-                delay={500}
-                animateOnce
-              >
-                <Javascript />
-              </ScrollAnimation>
-              <ScrollAnimation
-                animateIn="fadeInLeft"
-                offset={150}
-                duration={0.5}
-                delay={700}
-                animateOnce
-              >
-                <Jquery />
-              </ScrollAnimation>
-              <ScrollAnimation
-                animateIn="fadeInLeft"
-                offset={150}
-                duration={0.5}
-                delay={900}
-                animateOnce
-              >
-                <Html />
-              </ScrollAnimation>
-              <ScrollAnimation
-                animateIn="fadeInLeft"
-                offset={150}
-                duration={0.5}
-                delay={1100}
-                animateOnce
-              >
-                <Css />
-              </ScrollAnimation>
+                  animateIn="fadeInLeft"
+                  offset={150}
+                  duration={0.5}
+                  delay={500}
+                  animateOnce
+                >
+                  <Javascript />
+                </ScrollAnimation>
+                <ScrollAnimation
+                  animateIn="fadeInLeft"
+                  offset={150}
+                  duration={0.5}
+                  delay={700}
+                  animateOnce
+                >
+                  <Jquery />
+                </ScrollAnimation>
+                <ScrollAnimation
+                  animateIn="fadeInLeft"
+                  offset={150}
+                  duration={0.5}
+                  delay={900}
+                  animateOnce
+                >
+                  <Html />
+                </ScrollAnimation>
+                <ScrollAnimation
+                  animateIn="fadeInLeft"
+                  offset={150}
+                  duration={0.5}
+                  delay={1100}
+                  animateOnce
+                >
+                  <Css />
+                </ScrollAnimation>
+                <ScrollAnimation
+                  animateIn="fadeInLeft"
+                  offset={150}
+                  duration={0.5}
+                  delay={1300}
+                  animateOnce
+                >
+                  <GithubPages/>
+                </ScrollAnimation>
               </Styled.UsedTech>
               <Styled.Paragraph>
               With this app the user can search through millions of articles from various news sources and blogs, and filter them by selecting different categories.
@@ -423,41 +432,50 @@ const Portfolio = () => (
                 mt="5px"
               >
                 <ScrollAnimation
-                animateIn="fadeInLeft"
-                offset={150}
-                duration={0.5}
-                delay={700}
-                animateOnce
-              >
-                <Javascript />
-              </ScrollAnimation>
-              <ScrollAnimation
-                animateIn="fadeInLeft"
-                offset={150}
-                duration={0.5}
-                delay={900}
-                animateOnce
-              >
-                <Jquery />
-              </ScrollAnimation>
-              <ScrollAnimation
-                animateIn="fadeInLeft"
-                offset={150}
-                duration={0.5}
-                delay={1100}
-                animateOnce
-              >
-                <Html />
-              </ScrollAnimation>
-              <ScrollAnimation
-                animateIn="fadeInLeft"
-                offset={150}
-                duration={0.5}
-                delay={1300}
-                animateOnce
-              >
-                <Css />
-              </ScrollAnimation>
+                  animateIn="fadeInLeft"
+                  offset={150}
+                  duration={0.5}
+                  delay={700}
+                  animateOnce
+                >
+                  <Javascript />
+                </ScrollAnimation>
+                <ScrollAnimation
+                  animateIn="fadeInLeft"
+                  offset={150}
+                  duration={0.5}
+                  delay={900}
+                  animateOnce
+                >
+                  <Jquery />
+                </ScrollAnimation>
+                <ScrollAnimation
+                  animateIn="fadeInLeft"
+                  offset={150}
+                  duration={0.5}
+                  delay={1100}
+                  animateOnce
+                >
+                  <Html />
+                </ScrollAnimation>
+                <ScrollAnimation
+                  animateIn="fadeInLeft"
+                  offset={150}
+                  duration={0.5}
+                  delay={1300}
+                  animateOnce
+                >
+                  <Css />
+                </ScrollAnimation>
+                <ScrollAnimation
+                  animateIn="fadeInLeft"
+                  offset={150}
+                  duration={0.5}
+                  delay={1500}
+                  animateOnce
+                >
+                  <GithubPages/>
+                </ScrollAnimation>
               </Styled.UsedTech>
               <Styled.Paragraph>
                 A quiz consisting of 10 questions. The topic is soundtrack music from movies, tv-shows and games.
