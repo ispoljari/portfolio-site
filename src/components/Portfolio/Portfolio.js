@@ -355,7 +355,7 @@ const Portfolio = () => (
                 </ScrollAnimation>
                 <ScrollAnimation
                   animateIn="fadeInRight"
-                  offset={0}
+                  offset={150}
                   duration={0.5}
                   delay={1500}
                   animateOnce
@@ -494,6 +494,31 @@ const Portfolio = () => (
                   View Project
                 </a>
               </Styled.ProjectLinks>
+            </Col>
+          </Row>
+        </ScrollAnimation>
+        <ScrollAnimation
+          animateIn="fadeInUp"
+          offset={50}
+          duration={0.5}
+          animateOnce
+        >
+          <Row
+            mb={{xs:"20px", sm:"30px", lg:"40px", xl:"50px"}}
+          >
+            <Col 
+              xs={12}
+            >
+              <Styled.Paragraph>
+                <b>I'm currently looking for dev. work!</b> 
+                <br />
+                Feel free to contact me at&nbsp;
+                <a 
+                  href="mailto:ivanspoljaric22@gmail.com?subject=Business proposal"
+                >
+                  ivanspoljaric22@gmail.com
+                </a>.
+              </Styled.Paragraph>        
             </Col>
           </Row>
         </ScrollAnimation>

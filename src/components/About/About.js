@@ -341,15 +341,14 @@ const About = () => (
             <Col 
               xs={12}
             >
-              <Styled.Paragraph>
-                <b>I'm currently looking for dev. work!</b> 
-                <br />
-                <a 
-                  href="mailto:ivanspoljaric22@gmail.com?subject=Business proposal"
-                >
-                  ivanspoljaric22@gmail.com
-                </a>.
-              </Styled.Paragraph>
+              <a 
+                href="https://www.netlify.com"
+              >
+                <img 
+                  src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg"
+                  alt="Deploys by netlify"
+                />
+              </a>      
             </Col>
           </Row>
         </ScrollAnimation>
