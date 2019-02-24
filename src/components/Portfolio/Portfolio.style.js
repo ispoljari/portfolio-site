@@ -34,6 +34,14 @@ export const UsedTech = styled(Box)`
     height: calc(20px + (25 - 20) * ((100vw - 320px) / (1700 - 320)));
     margin-right: 10px;
 
+    .heroku-logo {
+      fill: #2d2d2d;
+    }
+
+    rect {
+      fill: transparent;
+    }
+
     @media (min-width: 992px) {
       margin-right: 10px;
     }

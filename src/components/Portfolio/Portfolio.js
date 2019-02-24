@@ -9,7 +9,7 @@ import runTrackerPosts from '../../img/run-tracker/posts.png';
 import newsDigestResults from '../../img/news-digest/search-results.png';
 import recipesResults from '../../img/recipe-builder/headline.png';
 import quizzOpeningPage from '../../img/soundtrack-quizz/opening-page.png';
-import { Javascript, Html, Css, Node, Mongodb, Jquery, ReactIcon } from '../index';
+import { Javascript, Html, Css, Node, Mongodb, Jquery, ReactIcon, Heroku } from '../index';
 import { delayLinkOpen } from '../../util/index';
 
 const Portfolio = () => (
@@ -124,6 +124,15 @@ const Portfolio = () => (
                   animateOnce
                 >
                   <Mongodb />
+                </ScrollAnimation>
+                <ScrollAnimation
+                  animateIn="fadeInDown"
+                  offset={0}
+                  duration={0.5}
+                  delay={1500}
+                  animateOnce
+                >
+                  <Heroku />
                 </ScrollAnimation>
               </Styled.UsedTech>
               <Styled.Paragraph>
@@ -300,41 +309,50 @@ const Portfolio = () => (
                 mt="5px"
               >
                 <ScrollAnimation
-                animateIn="fadeInRight"
-                offset={150}
-                duration={0.5}
-                delay={700}
-                animateOnce
-              >
-                <Javascript />
-              </ScrollAnimation>
-              <ScrollAnimation
-                animateIn="fadeInRight"
-                offset={150}
-                duration={0.5}
-                delay={900}
-                animateOnce
-              >
-                <ReactIcon />
-              </ScrollAnimation>
-              <ScrollAnimation
-                animateIn="fadeInRight"
-                offset={150}
-                duration={0.5}
-                delay={1100}
-                animateOnce
-              >
-                <Html />
-              </ScrollAnimation>
-              <ScrollAnimation
-                animateIn="fadeInRight"
-                offset={150}
-                duration={0.5}
-                delay={1300}
-                animateOnce
-              >
-                <Css />
-              </ScrollAnimation>
+                  animateIn="fadeInRight"
+                  offset={150}
+                  duration={0.5}
+                  delay={700}
+                  animateOnce
+                >
+                  <Javascript />
+                </ScrollAnimation>
+                <ScrollAnimation
+                  animateIn="fadeInRight"
+                  offset={150}
+                  duration={0.5}
+                  delay={900}
+                  animateOnce
+                >
+                  <ReactIcon />
+                </ScrollAnimation>
+                <ScrollAnimation
+                  animateIn="fadeInRight"
+                  offset={150}
+                  duration={0.5}
+                  delay={1100}
+                  animateOnce
+                >
+                  <Html />
+                </ScrollAnimation>
+                <ScrollAnimation
+                  animateIn="fadeInRight"
+                  offset={150}
+                  duration={0.5}
+                  delay={1300}
+                  animateOnce
+                >
+                  <Css />
+                </ScrollAnimation>
+                <ScrollAnimation
+                  animateIn="fadeInRight"
+                  offset={0}
+                  duration={0.5}
+                  delay={1500}
+                  animateOnce
+                >
+                    <Heroku />
+                </ScrollAnimation>
               </Styled.UsedTech>
               <Styled.Paragraph>
               This app is intended for anyone that needs cooking inspiration. The user can take a picture of the ingredients and the app returns a list of related recipes.

@@ -18,3 +18,4 @@ export { default as Node} from './Tech/Node';
 export { default as Mongodb} from './Tech/Mongodb';
 export { default as Jquery} from './Tech/Jquery';
 export { default as ReactIcon} from './Tech/React';
+export { default as Heroku} from './Tech/Heroku';
