@@ -1,7 +1,12 @@
-# My personal portfolio site
-
-Curently in development ...
-
+# Portfolio site
+## LINK:
 [https://www.ispoljaric.com/](https://www.ispoljaric.com/)
 
-Powered by; React, React Router & Styled Components
+## SUMMARY
+A website with info about me, my interests, projects and skills.
+
+## DEMO VIDEO
+![Demo video](demo.gif)
+
+## BUILT WITH:
+React, React Router & Styled Components
