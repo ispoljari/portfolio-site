@@ -3,7 +3,6 @@ export { default as ScrollToTop } from './ScrollToTop/ScrollToTop';
 export { default as Pages } from './Pages/Pages';
 export { default as Navigation } from './Navigation/Navigation';
 export { default as Home } from './Home/Home';
-export { default as Matrix } from './Matrix/Matrix';
 export { default as About } from './About/About';
 export { default as Portfolio } from './Portfolio/Portfolio';
 export { default as Logo } from './Logo/Logo';

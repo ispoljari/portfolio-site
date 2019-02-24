@@ -1,11 +1,5 @@
 import FontFaceObserver from 'fontfaceobserver';
 
-const animateBackground = canvas => {
-  const ctx = canvas.getContext('2d');
-  canvas.height = window.innerHeight;
-  canvas.width = window.innerWidth;
-};
-
 /* 
 React is not aware of the spinner component because it exists as a sibling of the "root" div. 
 To be able to control it's display, it must be imepratively accessed in the DOM.
@@ -45,7 +39,6 @@ const delayLinkOpen = e => {
 }
 
 export {
-  animateBackground,
   showLoader,
   hideLoader,
   FONT_LATO,
