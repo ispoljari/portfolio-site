@@ -8,6 +8,7 @@ import * as Styled from './Portfolio.style';
 import runTrackerPosts from '../../img/run-tracker/posts.png';
 import newsDigestResults from '../../img/news-digest/search-results.png';
 import recipesResults from '../../img/recipe-builder/headline.png';
+import quizzOpeningPage from '../../img/soundtrack-quizz/opening-page.png';
 import { Javascript, Html, Css, Node, Mongodb, Jquery, ReactIcon } from '../index';
 import { delayLinkOpen } from '../../util/index';
 
@@ -269,7 +270,7 @@ const Portfolio = () => (
             >
               <img 
                 src={recipesResults} 
-                alt="Recibe builder app screenshot"
+                alt="Recipe builder app screenshot"
                 style={{
                   width:"100%",
                   display: "block",
@@ -347,6 +348,111 @@ const Portfolio = () => (
                 </a>
                 <a 
                   href="https://limitless-cove-25974.herokuapp.com/"
+                  onClick={delayLinkOpen}
+                >
+                  View Project
+                </a>
+              </Styled.ProjectLinks>
+            </Col>
+          </Row>
+        </ScrollAnimation>
+        <ScrollAnimation
+          animateIn="fadeInLeft"
+          offset={150}
+          duration={0.5}
+          animateOnce
+        >
+          <Styled.Hr />
+          <Row
+            mb={{xs:"30px", sm:"40px", lg:"50px", xl:"80px"}}
+          >
+            <Col
+              xs={12}
+              mb={{xs:"15px", xl:"0px"}}
+              xl={6}
+              display= "flex"
+              alignItems= "flex-end"
+            >
+              <img 
+                src={quizzOpeningPage} 
+                alt="Soundtrack quizz app opening page screenshot"
+                style={{
+                  width:"100%",
+                  display: "block",
+                  margin: "0 auto",
+                  borderRadius: "5px"
+                }}
+              />
+            </Col>
+            <Col
+              xs={12}
+              xl={6}
+              pl={{xl:"30px"}}
+            >        
+              <ScrollAnimation
+                animateIn="fadeInLeft"
+                offset={150}
+                duration={0.5}
+                delay={500}
+                animateOnce
+              >
+                <Styled.SectionHeading>
+                  Soundtracks Quizz
+                </Styled.SectionHeading>
+              </ScrollAnimation>  
+              <Styled.UsedTech
+                display="flex"
+                mt="5px"
+              >
+                <ScrollAnimation
+                animateIn="fadeInLeft"
+                offset={150}
+                duration={0.5}
+                delay={700}
+                animateOnce
+              >
+                <Javascript />
+              </ScrollAnimation>
+              <ScrollAnimation
+                animateIn="fadeInLeft"
+                offset={150}
+                duration={0.5}
+                delay={900}
+                animateOnce
+              >
+                <Jquery />
+              </ScrollAnimation>
+              <ScrollAnimation
+                animateIn="fadeInLeft"
+                offset={150}
+                duration={0.5}
+                delay={1100}
+                animateOnce
+              >
+                <Html />
+              </ScrollAnimation>
+              <ScrollAnimation
+                animateIn="fadeInLeft"
+                offset={150}
+                duration={0.5}
+                delay={1300}
+                animateOnce
+              >
+                <Css />
+              </ScrollAnimation>
+              </Styled.UsedTech>
+              <Styled.Paragraph>
+                A quiz consisting of 10 questions. The topic is soundtrack music from movies, tv-shows and games.
+              </Styled.Paragraph>
+              <Styled.ProjectLinks>
+                <a 
+                  href="https://github.com/ispoljari/quiz-app"
+                  onClick={delayLinkOpen}
+                >
+                  View Code
+                </a>
+                <a 
+                  href="https://ispoljari.github.io/quiz-app/"
                   onClick={delayLinkOpen}
                 >
                   View Project
