@@ -29,7 +29,7 @@ const About = () => (
         <ScrollAnimation
           animateIn="fadeInDown"
           offset={0}
-          duration={0.5}
+          duration={0.3}
           animateOnce
         >
           <Row
@@ -40,8 +40,8 @@ const About = () => (
               <ScrollAnimation
                 animateIn="fadeInDown"
                 offset={0}
-                duration={0.5}
-                delay={500}
+                duration={0.3}
+                delay={300}
                 animateOnce
               >
                 <Styled.SectionHeading>
@@ -63,7 +63,7 @@ const About = () => (
         <ScrollAnimation
           animateIn="fadeInLeft"
           offset={150}
-          duration={0.5}
+          duration={0.3}
           animateOnce
         >
           <Row
@@ -81,8 +81,8 @@ const About = () => (
               <ScrollAnimation
                 animateIn="fadeInLeft"
                 offset={150}
-                duration={0.5}
-                delay={500}
+                duration={0.3}
+                delay={300}
                 animateOnce
               >
                 <Styled.SectionHeading
@@ -118,7 +118,7 @@ const About = () => (
         <ScrollAnimation
           animateIn="fadeInRight"
           offset={150}
-          duration={0.5}
+          duration={0.3}
           animateOnce
         >
           <Row
@@ -134,8 +134,8 @@ const About = () => (
               <ScrollAnimation
                 animateIn="fadeInRight"
                 offset={150}
-                duration={0.5}
-                delay={500}
+                duration={0.3}
+                delay={300}
                 animateOnce
               >
                 <Styled.SectionHeading>
@@ -167,7 +167,7 @@ const About = () => (
         <ScrollAnimation
           animateIn="fadeInLeft"
           offset={150}
-          duration={0.5}
+          duration={0.3}
           animateOnce
         >
           <Row
@@ -185,8 +185,8 @@ const About = () => (
               <ScrollAnimation
                 animateIn="fadeInLeft"
                 offset={150}
-                duration={0.5}
-                delay={500}
+                duration={0.3}
+                delay={300}
                 animateOnce
               >
                 <Styled.SectionHeading
@@ -219,7 +219,7 @@ const About = () => (
         <ScrollAnimation
           animateIn="fadeInRight"
           offset={150}
-          duration={0.5}
+          duration={0.3}
           animateOnce
         >
           <Row
@@ -235,8 +235,8 @@ const About = () => (
               <ScrollAnimation
                 animateIn="fadeInRight"
                 offset={150}
-                duration={0.5}
-                delay={500}
+                duration={0.3}
+                delay={300}
                 animateOnce
               >
                 <Styled.SectionHeading>
@@ -269,7 +269,7 @@ const About = () => (
         <ScrollAnimation
           animateIn="fadeInLeft"
           offset={150}
-          duration={0.5}
+          duration={0.3}
           animateOnce
         >
           <Row
@@ -287,8 +287,8 @@ const About = () => (
                <ScrollAnimation
                 animateIn="fadeInLeft"
                 offset={150}
-                duration={0.5}
-                delay={500}
+                duration={0.3}
+                delay={300}
                 animateOnce
               >
                 <Styled.SectionHeading
@@ -332,7 +332,7 @@ const About = () => (
         <ScrollAnimation
           animateIn="fadeInUp"
           offset={50}
-          duration={0.5}
+          duration={0.3}
           animateOnce
         >
           <Row
