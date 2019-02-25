@@ -20,7 +20,7 @@ const Navigation = ({ logo, location }) => (
       display="flex"
       justifyContent="space-between"
       alignItems="center"
-      p="20px 0 20px 20px"
+      p="10px 0 10px 10px"
     >
       <Styled.LogoLink
         to="/"

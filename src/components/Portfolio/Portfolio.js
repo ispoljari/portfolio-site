@@ -80,60 +80,12 @@ const Portfolio = () => (
                 display="flex"
                 mt="5px"
               >
-                <ScrollAnimation
-                  animateIn="fadeInDown"
-                  offset={0}
-                  duration={0.5}
-                  delay={500}
-                  animateOnce
-                >
-                  <Javascript />
-                </ScrollAnimation>
-                <ScrollAnimation
-                  animateIn="fadeInDown"
-                  offset={0}
-                  duration={0.5}
-                  delay={700}
-                  animateOnce
-                >
-                  <Html />
-                </ScrollAnimation>
-                <ScrollAnimation
-                  animateIn="fadeInDown"
-                  offset={0}
-                  duration={0.5}
-                  delay={900}
-                  animateOnce
-                >
-                  <Css />
-                </ScrollAnimation>
-                <ScrollAnimation
-                  animateIn="fadeInDown"
-                  offset={0}
-                  duration={0.5}
-                  delay={1100}
-                  animateOnce
-                >
-                  <Node />
-                </ScrollAnimation>
-                <ScrollAnimation
-                  animateIn="fadeInDown"
-                  offset={0}
-                  duration={0.5}
-                  delay={1300}
-                  animateOnce
-                >
-                  <Mongodb />
-                </ScrollAnimation>
-                <ScrollAnimation
-                  animateIn="fadeInDown"
-                  offset={0}
-                  duration={0.5}
-                  delay={1500}
-                  animateOnce
-                >
-                  <Heroku />
-                </ScrollAnimation>
+                <Javascript />
+                <Html />
+                <Css />
+                <Node />
+                <Mongodb />
+                <Heroku />
               </Styled.UsedTech>
               <Styled.Paragraph>
               The app allows users to log their running activity and share it with others on the platform. The design is retro-cartoonish, inspired by glitch.com.
@@ -203,51 +155,11 @@ const Portfolio = () => (
                 display="flex"
                 mt="5px"
               >
-                <ScrollAnimation
-                  animateIn="fadeInLeft"
-                  offset={150}
-                  duration={0.5}
-                  delay={500}
-                  animateOnce
-                >
-                  <Javascript />
-                </ScrollAnimation>
-                <ScrollAnimation
-                  animateIn="fadeInLeft"
-                  offset={150}
-                  duration={0.5}
-                  delay={700}
-                  animateOnce
-                >
-                  <Jquery />
-                </ScrollAnimation>
-                <ScrollAnimation
-                  animateIn="fadeInLeft"
-                  offset={150}
-                  duration={0.5}
-                  delay={900}
-                  animateOnce
-                >
-                  <Html />
-                </ScrollAnimation>
-                <ScrollAnimation
-                  animateIn="fadeInLeft"
-                  offset={150}
-                  duration={0.5}
-                  delay={1100}
-                  animateOnce
-                >
-                  <Css />
-                </ScrollAnimation>
-                <ScrollAnimation
-                  animateIn="fadeInLeft"
-                  offset={150}
-                  duration={0.5}
-                  delay={1300}
-                  animateOnce
-                >
-                  <GithubPages/>
-                </ScrollAnimation>
+                <Javascript />
+                <Jquery />
+                <Html />
+                <Css />
+                <GithubPages/>
               </Styled.UsedTech>
               <Styled.Paragraph>
               With this app the user can search through millions of articles from various news sources and blogs, and filter them by selecting different categories.
@@ -317,51 +229,11 @@ const Portfolio = () => (
                 display="flex"
                 mt="5px"
               >
-                <ScrollAnimation
-                  animateIn="fadeInRight"
-                  offset={150}
-                  duration={0.5}
-                  delay={700}
-                  animateOnce
-                >
-                  <Javascript />
-                </ScrollAnimation>
-                <ScrollAnimation
-                  animateIn="fadeInRight"
-                  offset={150}
-                  duration={0.5}
-                  delay={900}
-                  animateOnce
-                >
-                  <ReactIcon />
-                </ScrollAnimation>
-                <ScrollAnimation
-                  animateIn="fadeInRight"
-                  offset={150}
-                  duration={0.5}
-                  delay={1100}
-                  animateOnce
-                >
-                  <Html />
-                </ScrollAnimation>
-                <ScrollAnimation
-                  animateIn="fadeInRight"
-                  offset={150}
-                  duration={0.5}
-                  delay={1300}
-                  animateOnce
-                >
-                  <Css />
-                </ScrollAnimation>
-                <ScrollAnimation
-                  animateIn="fadeInRight"
-                  offset={150}
-                  duration={0.5}
-                  delay={1500}
-                  animateOnce
-                >
-                    <Heroku />
-                </ScrollAnimation>
+                <Javascript />
+                <ReactIcon />
+                <Html />
+                <Css />
+                <Heroku />
               </Styled.UsedTech>
               <Styled.Paragraph>
               This app is intended for anyone that needs cooking inspiration. The user can take a picture of the ingredients and the app returns a list of related recipes.
@@ -431,51 +303,11 @@ const Portfolio = () => (
                 display="flex"
                 mt="5px"
               >
-                <ScrollAnimation
-                  animateIn="fadeInLeft"
-                  offset={150}
-                  duration={0.5}
-                  delay={700}
-                  animateOnce
-                >
-                  <Javascript />
-                </ScrollAnimation>
-                <ScrollAnimation
-                  animateIn="fadeInLeft"
-                  offset={150}
-                  duration={0.5}
-                  delay={900}
-                  animateOnce
-                >
-                  <Jquery />
-                </ScrollAnimation>
-                <ScrollAnimation
-                  animateIn="fadeInLeft"
-                  offset={150}
-                  duration={0.5}
-                  delay={1100}
-                  animateOnce
-                >
-                  <Html />
-                </ScrollAnimation>
-                <ScrollAnimation
-                  animateIn="fadeInLeft"
-                  offset={150}
-                  duration={0.5}
-                  delay={1300}
-                  animateOnce
-                >
-                  <Css />
-                </ScrollAnimation>
-                <ScrollAnimation
-                  animateIn="fadeInLeft"
-                  offset={150}
-                  duration={0.5}
-                  delay={1500}
-                  animateOnce
-                >
-                  <GithubPages/>
-                </ScrollAnimation>
+                <Javascript />
+                <Jquery />
+                <Html />
+                <Css />
+                <GithubPages/>
               </Styled.UsedTech>
               <Styled.Paragraph>
                 A quiz consisting of 10 questions. The topic is soundtrack music from movies, tv-shows and games.
