@@ -37,7 +37,7 @@ const Home = () => (
             I'm&nbsp;
             <br className="break-under-xs"/>
             <TextLoop
-              interval={2800}
+              interval={2500}
               springConfig={{ stiffness: 30, damping: 10 }}
               mask
             >

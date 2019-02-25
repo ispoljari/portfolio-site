@@ -36,7 +36,7 @@ const Portfolio = () => (
         <ScrollAnimation
           animateIn="fadeInDown"
           offset={0}
-          duration={0.3}
+          duration={0.4}
           animateOnce
         >
           <Row
@@ -68,8 +68,8 @@ const Portfolio = () => (
               <ScrollAnimation
                 animateIn="fadeInDown"
                 offset={0}
-                duration={0.3}
-                delay={300}
+                duration={0.4}
+                delay={400}
                 animateOnce
               >
                 <Styled.SectionHeading>
@@ -110,7 +110,7 @@ const Portfolio = () => (
         <ScrollAnimation
           animateIn="fadeInLeft"
           offset={150}
-          duration={0.3}
+          duration={0.4}
           animateOnce
         >
           <Styled.Hr />
@@ -143,8 +143,8 @@ const Portfolio = () => (
                <ScrollAnimation
                 animateIn="fadeInLeft"
                 offset={150}
-                duration={0.3}
-                delay={300}
+                duration={0.4}
+                delay={400}
                 animateOnce
               >
                 <Styled.SectionHeading>
@@ -184,7 +184,7 @@ const Portfolio = () => (
         <ScrollAnimation
           animateIn="fadeInRight"
           offset={150}
-          duration={0.3}
+          duration={0.4}
           animateOnce
         >
           <Styled.Hr />
@@ -217,8 +217,8 @@ const Portfolio = () => (
               <ScrollAnimation
                 animateIn="fadeInRight"
                 offset={150}
-                duration={0.3}
-                delay={300}
+                duration={0.4}
+                delay={400}
                 animateOnce
               >
                 <Styled.SectionHeading>
@@ -258,7 +258,7 @@ const Portfolio = () => (
         <ScrollAnimation
           animateIn="fadeInLeft"
           offset={150}
-          duration={0.3}
+          duration={0.4}
           animateOnce
         >
           <Styled.Hr />
@@ -291,8 +291,8 @@ const Portfolio = () => (
               <ScrollAnimation
                 animateIn="fadeInLeft"
                 offset={150}
-                duration={0.3}
-                delay={300}
+                duration={0.4}
+                delay={400}
                 animateOnce
               >
                 <Styled.SectionHeading>
@@ -332,7 +332,7 @@ const Portfolio = () => (
         <ScrollAnimation
           animateIn="fadeInUp"
           offset={50}
-          duration={0.3}
+          duration={0.4}
           animateOnce
         >
           <Row
