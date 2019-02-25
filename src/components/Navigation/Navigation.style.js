@@ -54,7 +54,7 @@ export const NavList = styled.ul`
               props.page === '/about' &&
                 css`
                   color: turquoise;
-                  font-weight: bold;
+                  -webkit-text-stroke: 1px turquoise;
                 `
             )
         }};
@@ -71,7 +71,7 @@ export const NavList = styled.ul`
               props.page === '/portfolio' &&
                 css`
                   color: turquoise;
-                  font-weight: bold;
+                  -webkit-text-stroke: 1px turquoise;
                 `
             )
         }};
@@ -81,10 +81,14 @@ export const NavList = styled.ul`
     :nth-child(1),
     :nth-child(2) {
       a {
-        :hover {
+        :hover,
+        :focus {
           color: turquoise;
-          font-weight: bold;
         }
+
+        /* :focus {
+          outline: 3px solid blue;
+        } */
       }
     }
 
