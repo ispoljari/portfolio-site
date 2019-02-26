@@ -33,6 +33,10 @@ export const Paragraph = styled.p`
 
     :hover {
       color: turquoise;
+
+      @media (hover: none) {
+        color: inherit;
+      }
     }
   }
 `;
