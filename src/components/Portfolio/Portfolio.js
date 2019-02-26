@@ -2,7 +2,6 @@ import React from 'react';
 import { Row, Col, Box } from '@smooth-ui/core-sc';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
-// import { Carousel } from 'react-responsive-carousel';
 
 import * as Styled from './Portfolio.style';
 import runTrackerPosts from '../../img/run-tracker/posts.png';
