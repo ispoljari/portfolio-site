@@ -5,8 +5,15 @@ const Github = () => (
     xmlns="http://www.w3.org/2000/svg"
     width="24px" 
     height="24px" 
-    viewBox="0 0 24 24" 
+    viewBox="0 0 24 24"
+    role="img" 
+    aria-labelledby="github-icon-svg"
   >
+    <title
+      id="github-icon-svg"
+    >
+      Github icon
+    </title>
     <path 
       className="github-stroke"
       strokeOpacity="0.95" 
