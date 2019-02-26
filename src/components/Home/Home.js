@@ -79,6 +79,7 @@ const Home = () => (
                 target="_blank"
                 rel="noopener noreferrer"
                 className="city-link"
+                aria-label="Location of Zagreb google maps"
               >
                 <span
                   tabIndex="-1"
@@ -121,7 +122,7 @@ const Home = () => (
             "
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Open Linkedin page"
+            aria-label="Linkedin page"
           >
             <span
               className="social-link_content"
@@ -134,7 +135,7 @@ const Home = () => (
             href="https://github.com/ispoljari"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Open Github page"
+            aria-label="Github page"
           >
             <span
               className="social-link_content"
@@ -147,7 +148,7 @@ const Home = () => (
             href="https://medium.com/@ivanspoljaric22"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Open Medium page"
+            aria-label="Medium page"
           >
             <span
               className="social-link_content"
