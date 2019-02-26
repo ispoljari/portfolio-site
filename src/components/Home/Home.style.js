@@ -24,11 +24,13 @@ export const Heading = styled.h1`
   }
 
   span,
-  span a {
+  .city-link,
+  .city_link_content {
     color: #fff;
   }
 
-  span a {
+  .city-link {
+    text-decoration: none;
     display: inline-block;
     user-select: none;  
     -webkit-tap-highlight-color: transparent;
@@ -40,13 +42,30 @@ export const Heading = styled.h1`
     }
   }
 
-  span a:hover {
+  .city-link_content {
+    text-decoration: underline;
+  }
+
+  .city-link:hover > .city-link_content {
     color: turquoise;
 
     /* Block "sticky hover" effect on mobile devices */
     @media (hover: none) {
       color: inherit;
     }
+  }
+
+  /* Remove default focus from target elements */  
+  .city-link:focus,
+  .city-link_content:focus {
+    outline: none;
+  }
+
+  /* Only when the outer element is reached by a keyboard, apply the focus styles. Now clicking on the element won't focus the link */  
+  .city-link:focus > .city-link_content {
+    color: turquoise;
+    outline: 1px dotted #212121;
+    outline: 5px auto -webkit-focus-ring-color;
   }
 `;
 
@@ -99,7 +118,8 @@ export const SocialLink = styled.a`
     pointer-events: none;
   }
 
-  :hover {
+  :hover,
+  :focus {
     .linkedin-fill,
     .medium-fill,
     .gmail-fill {

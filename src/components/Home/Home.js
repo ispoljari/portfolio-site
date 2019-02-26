@@ -80,9 +80,16 @@ const Home = () => (
             <span>
               <a
                 href="https://www.google.com/maps/place/Zagreb/@45.8401104,15.8242483,11z/data=!3m1!4b1!4m5!3m4!1s0x4765d692c902cc39:0x3a45249628fbc28a!8m2!3d45.8150108!4d15.9819189"
-                onClick={delayLinkOpen}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="city-link"
               >
-                Zagreb.
+                <span
+                  tabIndex="-1"
+                  className="city-link_content"
+                >
+                  Zagreb.
+                </span>
               </a>
             </span>
           </Styled.Heading>
