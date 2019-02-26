@@ -6,7 +6,14 @@ const Medium = () => (
     width="24px" 
     height="24px" 
     viewBox="0 0 24 24"
+    role="img" 
+    aria-labelledby="medium-icon-svg"
   >
+   <title
+      id="medium-icon-svg"
+    >
+      Medium icon
+    </title>
     <polygon
       className="medium-fill" 
       fillOpacity="0.95" 
