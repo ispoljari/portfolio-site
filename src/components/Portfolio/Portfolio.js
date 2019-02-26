@@ -286,9 +286,9 @@ const Portfolio = () => (
                 <br />
                 Feel free to contact me at&nbsp;
                 <a 
-                  href="mailto:ivanspoljaric22@gmail.com?subject=Business proposal"
+                  href="mailto:ivan@ispoljaric.com?subject=Business proposal"
                 >
-                  ivanspoljaric22@gmail.com
+                  ivan@ispoljaric.com
                 </a>.
               </Styled.Paragraph>        
             </Col>

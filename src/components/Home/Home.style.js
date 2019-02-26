@@ -118,8 +118,7 @@ export const SocialLink = styled.a`
     pointer-events: none;
   }
 
-  :hover,
-  :focus {
+  :hover {
     .linkedin-fill,
     .medium-fill,
     .gmail-fill {

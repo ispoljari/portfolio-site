@@ -4,7 +4,6 @@ import TextLoop from 'react-text-loop';
 
 import * as Styled from './Home.style';
 import { Linkedin, Github, Medium, Gmail } from '../index';
-import { delayLinkOpen } from '../../util/index';
 
 const Home = () => (
   <React.Fragment>  
@@ -123,29 +122,31 @@ const Home = () => (
           <Styled.SocialLink 
             href="https://www.linkedin.com/in/ivan-špoljarić-2206a184
             "
-            onClick={delayLinkOpen}
-            aria-label="Link - Go to my linkedin page"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open Linkedin page"
           >
             <Linkedin />
           </Styled.SocialLink >
           <Styled.SocialLink  
             href="https://github.com/ispoljari"
-            onClick={delayLinkOpen}
-            aria-label="Link - Go to my github page"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open Github page"
           >
             <Github />
           </Styled.SocialLink >
           <Styled.SocialLink  
             href="https://medium.com/@ivanspoljaric22"
-            onClick={delayLinkOpen}
-            aria-label="Link - Go to my medium page"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open Medium page"
           >
             <Medium />
           </Styled.SocialLink >
           <Styled.SocialLink  
-            href="mailto:ivanspoljaric22@gmail.com?subject=Business proposal"
-            onClick={delayLinkOpen}
-            aria-label="Link - Send me an email at ivanspoljaric22@gmail.com"
+            href="mailto:ivan@ispoljaric.com?subject=Business proposal"
+            aria-label="Send email to ivan@ispoljaric.com"
           >
             <Gmail />
           </Styled.SocialLink >
