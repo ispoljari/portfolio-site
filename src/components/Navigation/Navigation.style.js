@@ -85,7 +85,7 @@ export const NavList = styled.ul`
         :focus {
           color: turquoise;
         }
-
+        
         /* :focus {
           outline: 3px solid blue;
         } */

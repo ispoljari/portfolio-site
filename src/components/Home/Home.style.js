@@ -42,6 +42,11 @@ export const Heading = styled.h1`
 
   span a:hover {
     color: turquoise;
+
+    /* Block "sticky hover" effect on mobile devices */
+    @media (hover: none) {
+      color: inherit;
+    }
   }
 `;
 
@@ -99,10 +104,20 @@ export const SocialLink = styled.a`
     .medium-fill,
     .gmail-fill {
       fill: turquoise;
+
+      /* Block "sticky hover" effect on mobile devices */
+      @media (hover: none) { 
+        fill: #fff;
+      }
     }
 
     .github-stroke {
       stroke: turquoise;
+
+      /* Block "sticky hover" effect on mobile devices */
+      @media (hover: none) {
+        stroke: #fff;
+      }
     }
   }
 
