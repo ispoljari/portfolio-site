@@ -26,6 +26,21 @@ export const Paragraph = styled.p`
     font-size: 16px;
   }
 
+  /* Remove default focus from target elements */  
+  .video-link:focus,
+  .video-link_content:focus {
+    outline: none;
+  }
+
+  /* Only when the outer element is reached by a keyboard, apply the focus styles. Now clicking on the element won't focus the link */  
+  .video-link:focus > .video-link_content {
+    color: turquoise;
+
+    /* Apply default focus styles */
+    outline: 1px dotted #212121;
+    outline: 5px auto -webkit-focus-ring-color;
+  }
+
   a {
     user-select: none;  
     -webkit-tap-highlight-color: transparent;

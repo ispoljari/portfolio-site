@@ -48,7 +48,7 @@ const About = () => (
                   Pozdrav&nbsp;
                   <span 
                     role="img" 
-                    aria-label="hand wave emoji"
+                    aria-label="Hand wave emoji"
                   >
                       👋
                   </span>
@@ -93,7 +93,7 @@ const About = () => (
                   Mind&nbsp;
                   <span 
                     role="img" 
-                    aria-label="curious face emoji"
+                    aria-label="Curious face emoji"
                   >
                       🤔
                   </span>
@@ -144,7 +144,7 @@ const About = () => (
                   Developer&nbsp;
                   <span 
                     role="img" 
-                    aria-label="curious face emoji"
+                    aria-label="Programmer emoji"
                   >
                     👨‍💻
                   </span>
@@ -197,7 +197,7 @@ const About = () => (
                   Engineer&nbsp;
                   <span 
                     role="img" 
-                    aria-label="curious face emoji"
+                    aria-label="Thunderbolt emoji"
                   >
                     ⚡
                   </span>
@@ -242,7 +242,13 @@ const About = () => (
                 <Styled.SectionHeading>
                   Proud&nbsp; 
                   <br className="break-large"/>
-                  Father 👨‍👦
+                  Father 
+                  <span 
+                    role="img" 
+                    aria-label="Father and son emoji"
+                  >
+                    👨‍👦
+                  </span>
                 </Styled.SectionHeading>  
               </ScrollAnimation>
             </Col>
@@ -253,7 +259,7 @@ const About = () => (
             >
               <img 
                 src={fatherSon} 
-                alt="My wife, son and myself"
+                alt="My son sitting on my shoulders on the shore of river Krka"
                 style={
                   {
                     display: 'block',
@@ -299,7 +305,7 @@ const About = () => (
                   Quote&nbsp;
                   <span 
                     role="img" 
-                    aria-label="planet earth emoji"
+                    aria-label="Planet earth emoji"
                   >
                     🌍
                   </span>
@@ -319,10 +325,17 @@ const About = () => (
                 The text is too long to copy here, so here's&nbsp;
                 <a 
                   href="https://www.youtube.com/watch?v=GO5FwsblpT8"
+                  aria-label="Youtube"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="video-link"
                 >
-                  a link to a video
+                  <span
+                    tabIndex="-1"
+                    className="video-link_content"
+                  >
+                    a link to a video
+                  </span>
                 </a>&nbsp;
                 with him reading  those words, as seen in the last scene of the 2014's "Cosmos: A SpaceTime Odyssey" documentary. Every time I watch it I get goosebumps. It inspires in me both humility and hope for a better tomorrow.
               </Styled.Paragraph>
@@ -343,10 +356,11 @@ const About = () => (
             >
               <a 
                 href="https://www.netlify.com"
+                aria-label="Netlify home page"
               >
                 <img 
                   src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg"
-                  alt="Deploys by netlify"
+                  alt="Deploys by netlify logo"
                 />
               </a>      
             </Col>
