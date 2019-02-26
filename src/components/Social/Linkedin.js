@@ -6,7 +6,14 @@ const Linkedin = () => (
     width="60px" 
     height="60px" 
     viewBox="0 0 60 60" 
+    role="img" 
+    aria-labelledby="linkedin-icon-svg"
   >
+    <title
+      id="linkedin-icon-svg"
+    >
+      Linkedin icon
+    </title>
   <path
     className="linkedin-fill" 
     fill="#ffffff" 
