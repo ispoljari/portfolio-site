@@ -20,6 +20,11 @@ export const Paragraph = styled.p`
 
     :hover {
       color: turquoise;
+
+      /* Block "sticky hover" effect on mobile devices */
+      @media (hover: none) {
+        color: inherit;
+      }
     }
   }
 `;
@@ -79,6 +84,11 @@ export const ProjectLinks = styled(Box)`
 
     :hover {
       color: turquoise;
+
+      /* Block "sticky hover" effect on mobile devices */
+      @media (hover: none) {
+        color: white;
+      }
     }
 
     display: inline-block;
