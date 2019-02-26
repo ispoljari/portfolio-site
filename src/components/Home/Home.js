@@ -123,7 +123,12 @@ const Home = () => (
             rel="noopener noreferrer"
             aria-label="Open Linkedin page"
           >
-            <Linkedin />
+            <span
+              className="social-link_content"
+              tabIndex="-1"
+            >
+              <Linkedin />
+            </span>
           </Styled.SocialLink >
           <Styled.SocialLink  
             href="https://github.com/ispoljari"
@@ -131,7 +136,12 @@ const Home = () => (
             rel="noopener noreferrer"
             aria-label="Open Github page"
           >
-            <Github />
+            <span
+              className="social-link_content"
+              tabIndex="-1"
+            >
+              <Github />
+            </span>
           </Styled.SocialLink >
           <Styled.SocialLink  
             href="https://medium.com/@ivanspoljaric22"
@@ -139,13 +149,23 @@ const Home = () => (
             rel="noopener noreferrer"
             aria-label="Open Medium page"
           >
-            <Medium />
+            <span
+              className="social-link_content"
+              tabIndex="-1"
+            >
+              <Medium />
+            </span>
           </Styled.SocialLink >
           <Styled.SocialLink  
             href="mailto:ivan@ispoljaric.com?subject=Business proposal"
             aria-label="Send email to ivan@ispoljaric.com"
           >
-            <Gmail />
+            <span
+              className="social-link_content"
+              tabIndex="-1"
+            >
+              <Gmail />
+            </span>
           </Styled.SocialLink >
         </Box>
       </Col>
