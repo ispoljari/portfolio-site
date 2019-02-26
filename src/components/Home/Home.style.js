@@ -43,6 +43,7 @@ export const Heading = styled.h1`
   }
 
   .city-link_content {
+    display: block;
     text-decoration: underline;
   }
 
