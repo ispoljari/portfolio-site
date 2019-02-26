@@ -1,12 +1,22 @@
 import React from 'react';
 
 const GithubPages = () => (
-  <svg 
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="32px" 
+    height="32px"  
     enableBackground="new 0 0 32 32" 
     version="1.1" 
     viewBox="0 0 32 32" 
     xmlSpace="preserve"
+    role="img" 
+    aria-labelledby="bordergithub-icon-svg"
   >
+    <title
+      id="bordergithub-icon-svg"
+    >
+      Github icon with outer border
+    </title>
     <path 
       d="M30.875,30.875H11.341l-1.493-1.494H1.125V1.125h19.534l1.493,1.493h8.723V30.875z M11.755,29.875h18.12     V3.618h-8.137l-1.493-1.493H2.125v26.256h8.137L11.755,29.875z" 
       fill="#2d2d2d"
