@@ -77,7 +77,7 @@ const About = () => (
             <Styled.Paragraph
               white
             >
-              I started to code very early in my life. I developed my first app in 5th grade of primary school. It was written in QBasic and based on the popular TV Show "Who wants to be a "Millionaire".
+              I started to code very early in my life. I developed my first app in 5th grade of primary school. It was written in QBasic and based on the popular TV Show "Who wants to be a Millionaire".
               <br/>
               <br/> 
               Ever since I was a little kid, I was very curious about the world. My favorite subjects in school were mathematics, physics, and programming. I also loved learning about astronomy.
