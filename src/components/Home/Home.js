@@ -44,7 +44,7 @@ const Home = () => (
                 a Web Developer
               </span>
               <span>
-                an Elec. Engineer
+                an Engineer
               </span>
               <span>
                 a Spotify Addict
@@ -60,9 +60,6 @@ const Home = () => (
               </span>
               <span>
                 a Tech Geek
-              </span>
-              <span>
-                a Nintendo Owner
               </span>
               <span>
                 a Kona Rider

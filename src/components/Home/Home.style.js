@@ -67,8 +67,7 @@ export const Heading = styled.h1`
     color: turquoise;
 
     /* Apply default focus styles */
-    outline: 1px dotted #212121;
-    outline: 5px auto -webkit-focus-ring-color;
+    outline: 5px solid turquoise;
   }
 `;
 
@@ -179,8 +178,7 @@ export const SocialLink = styled.a`
     outline: none;
 
     .social-link_content {
-      outline: 1px dotted #212121;
-      outline: 5px auto -webkit-focus-ring-color;
+      outline: 3px solid turquoise;
     }
 
     .social-link_content .linkedin-fill,
