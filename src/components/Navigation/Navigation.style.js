@@ -81,14 +81,26 @@ export const NavList = styled.ul`
     :nth-child(1),
     :nth-child(2) {
       a {
-        :hover,
-        :focus {
+        :hover {
           color: turquoise;
         }
+
+        .nav-link_content {
+          display: block;
+        }
         
-        /* :focus {
-          outline: 3px solid blue;
-        } */
+        :focus {
+          outline: none;
+
+          .nav-link_content {
+            color: turquoise;
+            outline: 3px solid turquoise;
+          }
+        }
+
+        .nav-link_content:focus {
+          outline: none;
+        }
       }
     }
 
@@ -109,11 +121,12 @@ export const LogoLink = styled(Link)`
   -webkit-tap-highlight-color: transparent;
 
   svg {
+    display: block;
     height: 50px;
     width: 50px;
 
     .logo-fill {
-      fill: ${props => props.logo};
+      fill: ${props => props.theme.logoColor};
     }
 
     transition: transform 0.4s cubic-bezier(.54,.84,.44,.67);
@@ -132,5 +145,21 @@ export const LogoLink = styled(Link)`
       height: 65px;
       width: 65px;
     }
+  }
+
+  .logo-link_content {
+    display: block;
+  }
+
+  :focus {
+    outline: none;
+
+    .logo-link_content {
+      outline: 3px solid turquoise;
+    }
+  }
+
+  .logo-link_content:focus {
+    outline: none;
   }
 `;

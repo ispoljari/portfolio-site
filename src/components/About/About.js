@@ -20,17 +20,18 @@ const About = () => (
       olg={2}
       my={0}
       mx="auto"
-      >
+    >
       <Box
-        as="main"
-        role="main"
+        as="header"
+        role="banner"
       >
         <Row
           mb={{xs:"30px", sm:"40px", lg:"50px", xl:"60px"}}
         >
-          <Col 
-          >
-            <Styled.SectionHeading>
+          <Col>
+            <Styled.SectionHeading
+              as="h1"
+            >
               Pozdrav&nbsp;
               <span 
                 role="img" 
@@ -44,6 +45,11 @@ const About = () => (
             </Styled.Paragraph>
           </Col>
         </Row>
+      </Box>
+      <Box
+        as="main"
+        role="main"
+      >
         <Row
         mb={{xs:"30px", sm:"40px", lg:"50px", xl:"60px"}}
         backgroundColor="#191919"
@@ -229,7 +235,7 @@ const About = () => (
             <Styled.Paragraph
               white
             >
-                The most inspiring words I ever heard come from the mind of Carl Sagan. He also wrote one of my favorite SciFi novels called "Contact". His reflections are inspired by a photograph of our planet, made by the Voyager 1 space probe as it was leaving our solar system. The photograph is famously known as the "Pale Blue Dot". 
+              The most inspiring words I ever heard come from the mind of Carl Sagan. He also wrote one of my favorite SciFi novels called "Contact". His reflections are inspired by a photograph of our planet, made by the Voyager 1 space probe as it was leaving our solar system. The photograph is famously known as the "Pale Blue Dot". 
               <br />
               <br />              
               The text is too long to copy here, so here's&nbsp;
@@ -251,21 +257,35 @@ const About = () => (
             </Styled.Paragraph>
           </Col>
         </Row>
+      </Box>
+      <Box
+        as="footer"
+        role="contentinfo"
+      >
         <Row
           mb={{xs:"20px", sm:"30px", lg:"40px", xl:"50px"}}
         >
           <Col 
             xs={12}
           >
-            <a 
-              href="https://www.netlify.com"
-              aria-label="Netlify home page"
-            >
-              <img 
-                src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg"
-                alt="Deploys by netlify logo"
-              />
-            </a>      
+            <Styled.NetlifyBox>
+              <a 
+                href="https://www.netlify.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Netlify home page"
+              >
+                <span
+                  className="netlify-link_content"
+                  tabIndex ="-1"
+                >
+                  <img 
+                    src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg"
+                    alt="Deploys by netlify logo"
+                  />
+                </span>
+              </a>      
+            </Styled.NetlifyBox>
           </Col>
         </Row>
       </Box>

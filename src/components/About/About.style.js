@@ -1,6 +1,17 @@
 import styled from 'styled-components';
+import { Box } from '@smooth-ui/core-sc';
 
 export const SectionHeading = styled.h2`
+  font-size: calc(28px + (46 - 28) * ((100vw - 320px) / (1700 - 320)));
+
+  @media (min-width: 1700px) {
+    font-size: 46px;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 28px;
+  }
+
   color: ${props => props.white ? 'white' : '#191919'};
 
   .break-large {
@@ -37,8 +48,7 @@ export const Paragraph = styled.p`
     color: turquoise;
 
     /* Apply default focus styles */
-    outline: 1px dotted #212121;
-    outline: 5px auto -webkit-focus-ring-color;
+    outline: 3px solid turquoise;
   }
 
   a {
@@ -51,6 +61,22 @@ export const Paragraph = styled.p`
 
       @media (hover: none) {
         color: inherit;
+      }
+    }
+  }
+`;
+
+export const NetlifyBox = styled(Box)`
+  a {
+    .netlify-link_content {
+      outline: none;
+    }
+
+    :focus {
+      outline: none;
+
+      .netlify-link_content img {
+        outline: 5px solid turquoise;
       }
     }
   }

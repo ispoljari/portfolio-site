@@ -2,12 +2,11 @@ import React from 'react';
 import { Row, Col, Box } from '@smooth-ui/core-sc';
 
 import * as Styled from './Portfolio.style';
-import runTrackerPosts from '../../img/run-tracker/posts.png';
-import newsDigestResults from '../../img/news-digest/search-results.png';
-import recipesResults from '../../img/recipe-builder/headline.png';
-import quizzOpeningPage from '../../img/soundtrack-quizz/opening-page.png';
+import runTrackerPosts from '../../img/run-tracker/post.jpg';
+import newsDigestResults from '../../img/news-digest/search-results.jpg';
+import recipesResults from '../../img/recipe-builder/fruit-bowl.jpg';
+import quizzOpeningPage from '../../img/soundtrack-quizz/opening-page.jpg';
 import { Javascript, Html, Css, Node, Mongodb, Jquery, ReactIcon, Heroku, GithubPages } from '../index';
-import { delayLinkOpen } from '../../util/index';
 
 const Portfolio = () => (
   <Row
@@ -27,6 +26,40 @@ const Portfolio = () => (
       mx="auto"
     >
       <Box
+        as="header"
+        role="banner"
+      >
+        <Row
+          mb={{xs:"20px", sm:"30px", lg:"40px", xl:"50px"}}
+        >
+          <Col 
+            xs={12}
+          >
+            <Styled.SectionHeading
+              as="h1"
+            >
+              I'm currently looking for work!
+            </Styled.SectionHeading> 
+            <Styled.Paragraph
+              email
+            >
+              Feel free to contact me at&nbsp;
+              <a 
+                href="mailto:ivan@ispoljaric.com?subject=Business proposal"
+                aria-label="Send email to ivan@ispoljaric.com"
+              >
+                <span
+                  className="email-link_content"
+                  tabIndex="-1"
+                >
+                  ivan@ispoljaric.com
+                </span>
+              </a>.
+            </Styled.Paragraph>        
+          </Col>
+        </Row>
+      </Box>
+      <Box
         as="main"
         role="main"
       >
@@ -42,7 +75,7 @@ const Portfolio = () => (
           >
             <img 
               src={runTrackerPosts} 
-              alt="Run Tracker app screenshot"
+              alt="Run Tracker app screenshot showing an example post box"
               style={{
                 width:"100%",
                 display: "block",
@@ -76,15 +109,29 @@ const Portfolio = () => (
             <Styled.ProjectLinks>
               <a 
                 href="https://github.com/ispoljari/run-tracker-app"
-                onClick={delayLinkOpen}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Run tracker code"
               >
-                View Code
+                <span
+                  className="project-link_content"
+                  tabIndex="-1"
+                >
+                  View Code
+                </span>
               </a>
               <a 
                 href="https://pure-peak-20096.herokuapp.com/"
-                onClick={delayLinkOpen}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Run tracker live app"
               >
-                View Project
+                <span
+                  className="project-link_content"
+                  tabIndex="-1"
+                >
+                  View Project
+                </span>
               </a>
             </Styled.ProjectLinks>
           </Col>
@@ -102,7 +149,7 @@ const Portfolio = () => (
           >
             <img 
               src={newsDigestResults} 
-              alt="News digest app screenshot"
+              alt="News digest app screenshot showing the results of a search"
               style={{
                 width:"100%",
                 display: "block",
@@ -135,15 +182,29 @@ const Portfolio = () => (
             <Styled.ProjectLinks>
               <a 
                 href="https://github.com/ispoljari/news-digest-app"
-                onClick={delayLinkOpen}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="News digest code"
               >
-                View Code
+                <span
+                  className="project-link_content"
+                  tabIndex="-1"
+                >
+                  View Code
+                </span>
               </a>
               <a 
                 href="https://ispoljari.github.io/news-digest-app/"
-                onClick={delayLinkOpen}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="News digest live app"
               >
-                View Project
+                <span
+                  className="project-link_content"
+                  tabIndex="-1"
+                >
+                  View Project
+                </span>
               </a>
             </Styled.ProjectLinks>
           </Col>
@@ -161,7 +222,7 @@ const Portfolio = () => (
           >
             <img 
               src={recipesResults} 
-              alt="Recipe builder app screenshot"
+              alt="A screenshot of a fruit bowl"
               style={{
                 width:"100%",
                 display: "block",
@@ -194,22 +255,36 @@ const Portfolio = () => (
             <Styled.ProjectLinks>
               <a 
                 href="https://github.com/ispoljari/react-recipe-builder-app"
-                onClick={delayLinkOpen}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Recipe builder code"
               >
-                View Code
+                <span
+                  className="project-link_content"
+                  tabIndex="-1"
+                >
+                  View Code
+                </span>
               </a>
               <a 
                 href="https://limitless-cove-25974.herokuapp.com/"
-                onClick={delayLinkOpen}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Recipe builder live app"
               >
-                View Project
+                <span
+                  className="project-link_content"
+                  tabIndex="-1"
+                >
+                  View Project
+                </span>
               </a>
             </Styled.ProjectLinks>
           </Col>
         </Row>
         <Styled.Hr />
         <Row
-          mb={{xs:"30px", sm:"40px", lg:"50px", xl:"80px"}}
+          mb={{xs:"20px", sm:"30px", lg:"40px", xl:"50px"}}
         >
           <Col
             xs={12}
@@ -253,35 +328,31 @@ const Portfolio = () => (
             <Styled.ProjectLinks>
               <a 
                 href="https://github.com/ispoljari/quiz-app"
-                onClick={delayLinkOpen}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Soundtracks quizz code"
               >
-                View Code
+                <span
+                  className="project-link_content"
+                  tabIndex="-1"
+                >
+                  View Code
+                </span>
               </a>
               <a 
                 href="https://ispoljari.github.io/quiz-app/"
-                onClick={delayLinkOpen}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Soundtracks quizz live app"
               >
-                View Project
+                <span
+                  className="project-link_content"
+                  tabIndex="-1"
+                >
+                  View Project
+                </span>
               </a>
             </Styled.ProjectLinks>
-          </Col>
-        </Row>
-        <Row
-          mb={{xs:"20px", sm:"30px", lg:"40px", xl:"50px"}}
-        >
-          <Col 
-            xs={12}
-          >
-            <Styled.Paragraph>
-              <b>I'm currently looking for dev. work!</b> 
-              <br />
-              Feel free to contact me at&nbsp;
-              <a 
-                href="mailto:ivan@ispoljaric.com?subject=Business proposal"
-              >
-                ivan@ispoljaric.com
-              </a>.
-            </Styled.Paragraph>        
           </Col>
         </Row>
       </Box>

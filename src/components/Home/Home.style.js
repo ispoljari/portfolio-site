@@ -1,6 +1,16 @@
 import styled from 'styled-components';
 
 export const Heading = styled.h1`
+  font-size: calc(28px + (64 - 28) * ((100vw - 320px) / (1700 - 320))) !important;
+  
+  @media (min-width: 1700px) {
+    font-size: 64px !important;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 28px !important;
+  }
+
   @media (min-width: 450px){
     .break-under-xs {
       display: none;
@@ -67,8 +77,7 @@ export const Heading = styled.h1`
     color: turquoise;
 
     /* Apply default focus styles */
-    outline: 1px dotted #212121;
-    outline: 5px auto -webkit-focus-ring-color;
+    outline: 3px solid turquoise;
   }
 `;
 
@@ -179,8 +188,7 @@ export const SocialLink = styled.a`
     outline: none;
 
     .social-link_content {
-      outline: 1px dotted #212121;
-      outline: 5px auto -webkit-focus-ring-color;
+      outline: 3px solid turquoise;
     }
 
     .social-link_content .linkedin-fill,

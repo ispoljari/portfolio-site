@@ -44,7 +44,7 @@ const Home = () => (
                 a Web Developer
               </span>
               <span>
-                an Elec. Engineer
+                an Engineer
               </span>
               <span>
                 a Spotify Addict
@@ -60,9 +60,6 @@ const Home = () => (
               </span>
               <span>
                 a Tech Geek
-              </span>
-              <span>
-                a Nintendo Owner
               </span>
               <span>
                 a Kona Rider
@@ -104,6 +101,8 @@ const Home = () => (
         width="100%"
         my={0}
         mx="auto"
+        as="section"
+        role="region"
       >
         <Styled.SocialParagraph>
           Connect with me
@@ -114,8 +113,6 @@ const Home = () => (
           justifyContent="center"
           position="relative"
           mb={15}
-          as="section"
-          role="region"
         >
           <Styled.SocialLink 
             href="https://www.linkedin.com/in/ivan-špoljarić-2206a184

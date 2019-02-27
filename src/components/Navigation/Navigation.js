@@ -6,7 +6,7 @@ import { withRouter } from 'react-router-dom';
 import { Logo } from '../index';
 import * as Styled from './Navigation.style';
 
-const Navigation = ({ logo, location }) => (
+const Navigation = ({ location }) => (
   <Box
     width="100%"
     maxWidth="450px"
@@ -24,10 +24,14 @@ const Navigation = ({ logo, location }) => (
     >
       <Styled.LogoLink
         to="/"
-        logo={logo === 'light' ? 'white' : 'black'}
         aria-label="Home page"
       >
-        <Logo />
+        <span
+          className="logo-link_content"
+          tabIndex="-1"
+        >
+          <Logo />
+        </span>
       </Styled.LogoLink>
       <Styled.NavList
         page={location.pathname}
@@ -36,8 +40,13 @@ const Navigation = ({ logo, location }) => (
           <Link 
             to="/about"
             aria-label="About page"
+          >
+            <span
+              className="nav-link_content"
+              tabIndex="-1"
             >
-            About
+              About
+            </span>
           </Link>
         </li>
         <li>
@@ -45,7 +54,12 @@ const Navigation = ({ logo, location }) => (
             to="/portfolio"
             aria-label="Portfolio page"
           >
-            Portfolio
+            <span
+              className="nav-link_content"
+              tabIndex="-1"
+            >
+              Portfolio   
+            </span>
           </Link>
         </li>
       </Styled.NavList>
