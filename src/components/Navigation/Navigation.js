@@ -27,7 +27,12 @@ const Navigation = ({ logo, location }) => (
         logo={logo === 'light' ? 'white' : 'black'}
         aria-label="Home page"
       >
-        <Logo />
+        <span
+          className="logo-link_content"
+          tabIndex="-1"
+        >
+          <Logo />
+        </span>
       </Styled.LogoLink>
       <Styled.NavList
         page={location.pathname}

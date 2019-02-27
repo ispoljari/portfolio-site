@@ -121,6 +121,7 @@ export const LogoLink = styled(Link)`
   -webkit-tap-highlight-color: transparent;
 
   svg {
+    display: block;
     height: 50px;
     width: 50px;
 
@@ -144,5 +145,21 @@ export const LogoLink = styled(Link)`
       height: 65px;
       width: 65px;
     }
+  }
+
+  .logo-link_content {
+    display: block;
+  }
+
+  :focus {
+    outline: none;
+
+    .logo-link_content {
+      outline: 5px solid turquoise;
+    }
+  }
+
+  .logo-link_content:focus {
+    outline: none;
   }
 `;
