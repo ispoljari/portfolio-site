@@ -2,9 +2,9 @@ import React from 'react';
 import { Row, Col, Box } from '@smooth-ui/core-sc';
 
 import * as Styled from './Portfolio.style';
-import runTrackerPosts from '../../img/run-tracker/posts.png';
+import runTrackerPosts from '../../img/run-tracker/post.png';
 import newsDigestResults from '../../img/news-digest/search-results.png';
-import recipesResults from '../../img/recipe-builder/headline.png';
+import recipesResults from '../../img/recipe-builder/fruitBowl.png';
 import quizzOpeningPage from '../../img/soundtrack-quizz/opening-page.png';
 import { Javascript, Html, Css, Node, Mongodb, Jquery, ReactIcon, Heroku, GithubPages } from '../index';
 
@@ -188,7 +188,7 @@ const Portfolio = () => (
           >
             <img 
               src={recipesResults} 
-              alt="Recipe builder app screenshot the front page with the title"
+              alt="Recipe builder app with a screenshot of a fruit bowl"
               style={{
                 width:"100%",
                 display: "block",

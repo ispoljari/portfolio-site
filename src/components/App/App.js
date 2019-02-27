@@ -47,7 +47,7 @@ class App extends Component {
   };
 
   render() {
-    const { visible, theme, logo } = this.state;
+    const { visible, theme } = this.state;
 
     return (
       <ThemeProvider 
