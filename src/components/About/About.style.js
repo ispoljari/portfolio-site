@@ -38,7 +38,7 @@ export const Paragraph = styled.p`
     color: turquoise;
 
     /* Apply default focus styles */
-    outline: 5px solid turquoise;
+    outline: 3px solid turquoise;
   }
 
   a {

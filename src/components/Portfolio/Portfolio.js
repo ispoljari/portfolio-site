@@ -2,10 +2,10 @@ import React from 'react';
 import { Row, Col, Box } from '@smooth-ui/core-sc';
 
 import * as Styled from './Portfolio.style';
-import runTrackerPosts from '../../img/run-tracker/post.png';
-import newsDigestResults from '../../img/news-digest/search-results.png';
-import recipesResults from '../../img/recipe-builder/fruitBowl.png';
-import quizzOpeningPage from '../../img/soundtrack-quizz/opening-page.png';
+import runTrackerPosts from '../../img/run-tracker/post.jpg';
+import newsDigestResults from '../../img/news-digest/search-results.jpg';
+import recipesResults from '../../img/recipe-builder/fruit-bowl.jpg';
+import quizzOpeningPage from '../../img/soundtrack-quizz/opening-page.jpg';
 import { Javascript, Html, Css, Node, Mongodb, Jquery, ReactIcon, Heroku, GithubPages } from '../index';
 
 const Portfolio = () => (
@@ -188,7 +188,7 @@ const Portfolio = () => (
           >
             <img 
               src={recipesResults} 
-              alt="Recipe builder app with a screenshot of a fruit bowl"
+              alt="A screenshot of a fruit bowl"
               style={{
                 width:"100%",
                 display: "block",
@@ -327,7 +327,9 @@ const Portfolio = () => (
           <Col 
             xs={12}
           >
-            <Styled.Paragraph>
+            <Styled.Paragraph
+              email
+            >
               <b>I'm currently looking for dev. work!</b> 
               <br />
               Feel free to contact me at&nbsp;

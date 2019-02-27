@@ -20,7 +20,7 @@ export const Paragraph = styled.p`
     color: inherit;
 
     :hover {
-      color: turquoise;
+      color: ${props => props.email ? '#388e3c' : 'turquoise'};
 
       /* Block "sticky hover" effect on mobile devices */
       @media (hover: none) {
@@ -37,8 +37,8 @@ export const Paragraph = styled.p`
       outline: none;
 
       .email-link_content {
-        color: turquoise;
-        outline: 5px solid turquoise; 
+        color: ${props => props.email ? '#388e3c' : 'turquoise'};
+        outline: ${props => props.email ? '3px solid #388e3c' : '3px solid turquoise'};
       }
     }
 

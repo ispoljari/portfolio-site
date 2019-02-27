@@ -94,7 +94,7 @@ export const NavList = styled.ul`
 
           .nav-link_content {
             color: turquoise;
-            outline: 5px solid turquoise;
+            outline: 3px solid turquoise;
           }
         }
 
@@ -155,7 +155,7 @@ export const LogoLink = styled(Link)`
     outline: none;
 
     .logo-link_content {
-      outline: 5px solid turquoise;
+      outline: 3px solid turquoise;
     }
   }
 
