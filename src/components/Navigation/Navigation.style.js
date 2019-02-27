@@ -126,7 +126,7 @@ export const LogoLink = styled(Link)`
     width: 50px;
 
     .logo-fill {
-      fill: ${props => props.logo};
+      fill: ${props => props.theme.logoColor};
     }
 
     transition: transform 0.4s cubic-bezier(.54,.84,.44,.67);

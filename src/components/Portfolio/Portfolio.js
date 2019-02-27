@@ -41,7 +41,7 @@ const Portfolio = () => (
           >
             <img 
               src={runTrackerPosts} 
-              alt="Run Tracker app screenshot"
+              alt="Run Tracker app screenshot showing an example post box"
               style={{
                 width:"100%",
                 display: "block",
@@ -115,7 +115,7 @@ const Portfolio = () => (
           >
             <img 
               src={newsDigestResults} 
-              alt="News digest app screenshot"
+              alt="News digest app screenshot showing the results of a search"
               style={{
                 width:"100%",
                 display: "block",
@@ -188,7 +188,7 @@ const Portfolio = () => (
           >
             <img 
               src={recipesResults} 
-              alt="Recipe builder app screenshot"
+              alt="Recipe builder app screenshot the front page with the title"
               style={{
                 width:"100%",
                 display: "block",

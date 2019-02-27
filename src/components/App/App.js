@@ -13,18 +13,15 @@ class App extends Component {
   state = {
     visible: false,
     theme: theme.dark,
-    logo: 'light'
   };
 
   changeTheme = ({ pathname: page }) => {
     if (this.state.theme !== theme.dark && page === '/') {
       this.setState({
-        logo: 'light',
         theme: theme.dark,
       });
     } else if (this.state.theme !== theme.light && (page === '/about' || page === '/portfolio')) {
       this.setState({
-        logo: 'dark',
         theme: theme.light,
       });
     }
@@ -75,9 +72,7 @@ class App extends Component {
                 >
                   <Router> 
                     <ScrollToTop>
-                      <Navigation 
-                        logo={logo}
-                      />
+                      <Navigation />
                       <Pages 
                         changeTheme={this.changeTheme}
                       />

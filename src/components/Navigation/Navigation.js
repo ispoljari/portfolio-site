@@ -6,7 +6,7 @@ import { withRouter } from 'react-router-dom';
 import { Logo } from '../index';
 import * as Styled from './Navigation.style';
 
-const Navigation = ({ logo, location }) => (
+const Navigation = ({ location }) => (
   <Box
     width="100%"
     maxWidth="450px"
@@ -24,7 +24,6 @@ const Navigation = ({ logo, location }) => (
     >
       <Styled.LogoLink
         to="/"
-        logo={logo === 'light' ? 'white' : 'black'}
         aria-label="Home page"
       >
         <span
