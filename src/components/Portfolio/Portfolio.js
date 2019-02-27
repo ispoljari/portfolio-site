@@ -1,7 +1,6 @@
 import React from 'react';
 import { Row, Col, Box } from '@smooth-ui/core-sc';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import ScrollAnimation from 'react-animate-on-scroll';
 
 import * as Styled from './Portfolio.style';
 import runTrackerPosts from '../../img/run-tracker/posts.png';
@@ -268,31 +267,24 @@ const Portfolio = () => (
             </Styled.ProjectLinks>
           </Col>
         </Row>
-        <ScrollAnimation
-          animateIn="fadeIn"
-          offset={10}
-          duration={0.4}
-          animateOnce
+        <Row
+          mb={{xs:"20px", sm:"30px", lg:"40px", xl:"50px"}}
         >
-          <Row
-            mb={{xs:"20px", sm:"30px", lg:"40px", xl:"50px"}}
+          <Col 
+            xs={12}
           >
-            <Col 
-              xs={12}
-            >
-              <Styled.Paragraph>
-                <b>I'm currently looking for dev. work!</b> 
-                <br />
-                Feel free to contact me at&nbsp;
-                <a 
-                  href="mailto:ivan@ispoljaric.com?subject=Business proposal"
-                >
-                  ivan@ispoljaric.com
-                </a>.
-              </Styled.Paragraph>        
-            </Col>
-          </Row>
-        </ScrollAnimation>
+            <Styled.Paragraph>
+              <b>I'm currently looking for dev. work!</b> 
+              <br />
+              Feel free to contact me at&nbsp;
+              <a 
+                href="mailto:ivan@ispoljaric.com?subject=Business proposal"
+              >
+                ivan@ispoljaric.com
+              </a>.
+            </Styled.Paragraph>        
+          </Col>
+        </Row>
       </Box>
     </Col>
   </Row>
