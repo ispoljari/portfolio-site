@@ -26,6 +26,40 @@ const Portfolio = () => (
       mx="auto"
     >
       <Box
+        as="header"
+        role="banner"
+      >
+        <Row
+          mb={{xs:"20px", sm:"30px", lg:"40px", xl:"50px"}}
+        >
+          <Col 
+            xs={12}
+          >
+            <Styled.SectionHeading
+              as="h1"
+            >
+              I'm currently looking for work!
+            </Styled.SectionHeading> 
+            <Styled.Paragraph
+              email
+            >
+              Feel free to contact me at&nbsp;
+              <a 
+                href="mailto:ivan@ispoljaric.com?subject=Business proposal"
+                aria-label="Send email to ivan@ispoljaric.com"
+              >
+                <span
+                  className="email-link_content"
+                  tabIndex="-1"
+                >
+                  ivan@ispoljaric.com
+                </span>
+              </a>.
+            </Styled.Paragraph>        
+          </Col>
+        </Row>
+      </Box>
+      <Box
         as="main"
         role="main"
       >
@@ -250,7 +284,7 @@ const Portfolio = () => (
         </Row>
         <Styled.Hr />
         <Row
-          mb={{xs:"30px", sm:"40px", lg:"50px", xl:"80px"}}
+          mb={{xs:"20px", sm:"30px", lg:"40px", xl:"50px"}}
         >
           <Col
             xs={12}
@@ -319,32 +353,6 @@ const Portfolio = () => (
                 </span>
               </a>
             </Styled.ProjectLinks>
-          </Col>
-        </Row>
-        <Row
-          mb={{xs:"20px", sm:"30px", lg:"40px", xl:"50px"}}
-        >
-          <Col 
-            xs={12}
-          >
-            <Styled.Paragraph
-              email
-            >
-              <b>I'm currently looking for dev. work!</b> 
-              <br />
-              Feel free to contact me at&nbsp;
-              <a 
-                href="mailto:ivan@ispoljaric.com?subject=Business proposal"
-                aria-label="Send email to ivan@ispoljaric.com"
-              >
-                <span
-                  className="email-link_content"
-                  tabIndex="-1"
-                >
-                  ivan@ispoljaric.com
-                </span>
-              </a>.
-            </Styled.Paragraph>        
           </Col>
         </Row>
       </Box>

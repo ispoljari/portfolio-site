@@ -1,6 +1,16 @@
 import styled from 'styled-components';
 
 export const Heading = styled.h1`
+  font-size: calc(28px + (64 - 28) * ((100vw - 320px) / (1700 - 320))) !important;
+  
+  @media (min-width: 1700px) {
+    font-size: 64px !important;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 28px !important;
+  }
+
   @media (min-width: 450px){
     .break-under-xs {
       display: none;

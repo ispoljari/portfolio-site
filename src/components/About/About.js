@@ -20,17 +20,18 @@ const About = () => (
       olg={2}
       my={0}
       mx="auto"
-      >
+    >
       <Box
-        as="main"
-        role="main"
+        as="header"
+        role="banner"
       >
         <Row
           mb={{xs:"30px", sm:"40px", lg:"50px", xl:"60px"}}
         >
-          <Col 
-          >
-            <Styled.SectionHeading>
+          <Col>
+            <Styled.SectionHeading
+              as="h1"
+            >
               Pozdrav&nbsp;
               <span 
                 role="img" 
@@ -44,6 +45,11 @@ const About = () => (
             </Styled.Paragraph>
           </Col>
         </Row>
+      </Box>
+      <Box
+        as="main"
+        role="main"
+      >
         <Row
         mb={{xs:"30px", sm:"40px", lg:"50px", xl:"60px"}}
         backgroundColor="#191919"
@@ -251,6 +257,11 @@ const About = () => (
             </Styled.Paragraph>
           </Col>
         </Row>
+      </Box>
+      <Box
+        as="footer"
+        role="contentinfo"
+      >
         <Row
           mb={{xs:"20px", sm:"30px", lg:"40px", xl:"50px"}}
         >
