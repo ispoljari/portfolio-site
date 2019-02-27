@@ -229,7 +229,7 @@ const About = () => (
             <Styled.Paragraph
               white
             >
-                The most inspiring words I ever heard come from the mind of Carl Sagan. He also wrote one of my favorite SciFi novels called "Contact". His reflections are inspired by a photograph of our planet, made by the Voyager 1 space probe as it was leaving our solar system. The photograph is famously known as the "Pale Blue Dot". 
+              The most inspiring words I ever heard come from the mind of Carl Sagan. He also wrote one of my favorite SciFi novels called "Contact". His reflections are inspired by a photograph of our planet, made by the Voyager 1 space probe as it was leaving our solar system. The photograph is famously known as the "Pale Blue Dot". 
               <br />
               <br />              
               The text is too long to copy here, so here's&nbsp;
@@ -257,15 +257,24 @@ const About = () => (
           <Col 
             xs={12}
           >
-            <a 
-              href="https://www.netlify.com"
-              aria-label="Netlify home page"
-            >
-              <img 
-                src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg"
-                alt="Deploys by netlify logo"
-              />
-            </a>      
+            <Styled.NetlifyBox>
+              <a 
+                href="https://www.netlify.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Netlify home page"
+              >
+                <span
+                  className="netlify-link_content"
+                  tabIndex ="-1"
+                >
+                  <img 
+                    src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg"
+                    alt="Deploys by netlify logo"
+                  />
+                </span>
+              </a>      
+            </Styled.NetlifyBox>
           </Col>
         </Row>
       </Box>

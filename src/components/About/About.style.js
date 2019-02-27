@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Box } from '@smooth-ui/core-sc';
 
 export const SectionHeading = styled.h2`
   color: ${props => props.white ? 'white' : '#191919'};
@@ -50,6 +51,22 @@ export const Paragraph = styled.p`
 
       @media (hover: none) {
         color: inherit;
+      }
+    }
+  }
+`;
+
+export const NetlifyBox = styled(Box)`
+  a {
+    .netlify-link_content {
+      outline: none;
+    }
+
+    :focus {
+      outline: none;
+
+      .netlify-link_content img {
+        outline: 5px solid turquoise;
       }
     }
   }
