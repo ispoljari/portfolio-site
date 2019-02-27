@@ -4,7 +4,6 @@ import TextLoop from 'react-text-loop';
 
 import * as Styled from './Home.style';
 import { Linkedin, Github, Medium, Gmail } from '../index';
-import { delayLinkOpen } from '../../util/index';
 
 const Home = () => (
   <React.Fragment>  
@@ -37,7 +36,7 @@ const Home = () => (
             I'm&nbsp;
             <br className="break-under-xs"/>
             <TextLoop
-              interval={2800}
+              interval={2500}
               springConfig={{ stiffness: 30, damping: 10 }}
               mask
             >
@@ -63,9 +62,6 @@ const Home = () => (
                 a Tech Geek
               </span>
               <span>
-                a Jedi Knight
-              </span>
-              <span>
                 a Nintendo Owner
               </span>
               <span>
@@ -80,9 +76,17 @@ const Home = () => (
             <span>
               <a
                 href="https://www.google.com/maps/place/Zagreb/@45.8401104,15.8242483,11z/data=!3m1!4b1!4m5!3m4!1s0x4765d692c902cc39:0x3a45249628fbc28a!8m2!3d45.8150108!4d15.9819189"
-                onClick={delayLinkOpen}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="city-link"
+                aria-label="Location of Zagreb google maps"
               >
-                Zagreb.
+                <span
+                  tabIndex="-1"
+                  className="city-link_content"
+                >
+                  Zagreb.
+                </span>
               </a>
             </span>
           </Styled.Heading>
@@ -116,31 +120,53 @@ const Home = () => (
           <Styled.SocialLink 
             href="https://www.linkedin.com/in/ivan-špoljarić-2206a184
             "
-            onClick={delayLinkOpen}
-            aria-label="Link - Go to my linkedin page"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Linkedin page"
           >
-            <Linkedin />
+            <span
+              className="social-link_content"
+              tabIndex="-1"
+            >
+              <Linkedin />
+            </span>
           </Styled.SocialLink >
           <Styled.SocialLink  
             href="https://github.com/ispoljari"
-            onClick={delayLinkOpen}
-            aria-label="Link - Go to my github page"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Github page"
           >
-            <Github />
+            <span
+              className="social-link_content"
+              tabIndex="-1"
+            >
+              <Github />
+            </span>
           </Styled.SocialLink >
           <Styled.SocialLink  
             href="https://medium.com/@ivanspoljaric22"
-            onClick={delayLinkOpen}
-            aria-label="Link - Go to my medium page"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Medium page"
           >
-            <Medium />
+            <span
+              className="social-link_content"
+              tabIndex="-1"
+            >
+              <Medium />
+            </span>
           </Styled.SocialLink >
           <Styled.SocialLink  
-            href="mailto:ivanspoljaric22@gmail.com?subject=Business proposal"
-            onClick={delayLinkOpen}
-            aria-label="Link - Send me an email at ivanspoljaric22@gmail.com"
+            href="mailto:ivan@ispoljaric.com?subject=Business proposal"
+            aria-label="Send email to ivan@ispoljaric.com"
           >
-            <Gmail />
+            <span
+              className="social-link_content"
+              tabIndex="-1"
+            >
+              <Gmail />
+            </span>
           </Styled.SocialLink >
         </Box>
       </Col>

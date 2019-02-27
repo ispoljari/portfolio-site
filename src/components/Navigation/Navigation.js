@@ -20,12 +20,12 @@ const Navigation = ({ logo, location }) => (
       display="flex"
       justifyContent="space-between"
       alignItems="center"
-      p="20px 0 20px 20px"
+      p="10px 0 10px 10px"
     >
       <Styled.LogoLink
         to="/"
         logo={logo === 'light' ? 'white' : 'black'}
-        aria-label="Link - Open Home page"
+        aria-label="Home page"
       >
         <Logo />
       </Styled.LogoLink>
@@ -35,7 +35,7 @@ const Navigation = ({ logo, location }) => (
         <li>
           <Link 
             to="/about"
-            aria-label="Link - Open the About page"
+            aria-label="About page"
             >
             About
           </Link>
@@ -43,7 +43,7 @@ const Navigation = ({ logo, location }) => (
         <li>
           <Link 
             to="/portfolio"
-            aria-label="Link - Open the Portfolio page"
+            aria-label="Portfolio page"
           >
             Portfolio
           </Link>

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import { Link } from 'react-router-dom'; 
 
@@ -46,21 +46,49 @@ export const NavList = styled.ul`
 
     :nth-child(1) {
       a {
-        color: ${props => props.page === '/about' ? 'turquoise' : props.theme.navLinkColor};
+        color: ${props => props.theme.navLinkColor};
 
-        :hover {
-          color: turquoise;
-        }
+        
+        ${props => {
+            return (
+              props.page === '/about' &&
+                css`
+                  color: turquoise;
+                  -webkit-text-stroke: 1px turquoise;
+                `
+            )
+        }};
       }
     }
 
     :nth-child(2) {
       a {
-        color: ${props => props.page === '/portfolio' ? 'turquoise' : props.theme.navLinkColor};
+        color: ${props => props.theme.navLinkColor};
 
-        :hover {
+        
+        ${props => {
+            return (
+              props.page === '/portfolio' &&
+                css`
+                  color: turquoise;
+                  -webkit-text-stroke: 1px turquoise;
+                `
+            )
+        }};
+      }
+    }
+
+    :nth-child(1),
+    :nth-child(2) {
+      a {
+        :hover,
+        :focus {
           color: turquoise;
         }
+        
+        /* :focus {
+          outline: 3px solid blue;
+        } */
       }
     }
 

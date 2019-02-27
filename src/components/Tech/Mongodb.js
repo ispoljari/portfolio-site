@@ -2,8 +2,18 @@ import React from 'react';
 
 const Mongodb = () => (
   <svg 
+    xmlns="http://www.w3.org/2000/svg"
+    width="128px" 
+    height="128px"
     viewBox="0 0 128 128"
+    role="img" 
+    aria-labelledby="mongodb-icon-svg"
   >
+    <title
+      id="mongodb-icon-svg"
+    >
+      MongoDB icon
+    </title>
     <path 
       fillRule="evenodd" 
       clipRule="evenodd" 

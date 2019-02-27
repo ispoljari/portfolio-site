@@ -24,11 +24,13 @@ export const Heading = styled.h1`
   }
 
   span,
-  span a {
+  .city-link,
+  .city_link_content {
     color: #fff;
   }
 
-  span a {
+  .city-link {
+    text-decoration: none;
     display: inline-block;
     user-select: none;  
     -webkit-tap-highlight-color: transparent;
@@ -40,8 +42,33 @@ export const Heading = styled.h1`
     }
   }
 
-  span a:hover {
+  .city-link_content {
+    display: block;
+    text-decoration: underline;
+  }
+
+  .city-link:hover > .city-link_content {
     color: turquoise;
+
+    /* Block "sticky hover" effect on mobile devices */
+    @media (hover: none) {
+      color: inherit;
+    }
+  }
+
+  /* Remove default focus from target elements */  
+  .city-link:focus,
+  .city-link_content:focus {
+    outline: none;
+  }
+
+  /* Only when the outer element is reached by a keyboard, apply the focus styles. Now clicking on the element won't focus the link */  
+  .city-link:focus > .city-link_content {
+    color: turquoise;
+
+    /* Apply default focus styles */
+    outline: 1px dotted #212121;
+    outline: 5px auto -webkit-focus-ring-color;
   }
 `;
 
@@ -89,8 +116,12 @@ export const SocialLink = styled.a`
     transition: transform 0s;
   }
 
+  .social-link_content {
+    display: block;
+  }
+
   /* Make sure nothing inside the a tag has pointer events, so clicks on the a tag will always be found on that element */
-  > * {
+  .social-link_content > * {
     pointer-events: none;
   }
 
@@ -99,14 +130,25 @@ export const SocialLink = styled.a`
     .medium-fill,
     .gmail-fill {
       fill: turquoise;
+
+      /* Block "sticky hover" effect on mobile devices */
+      @media (hover: none) { 
+        fill: #fff;
+      }
     }
 
     .github-stroke {
       stroke: turquoise;
+
+      /* Block "sticky hover" effect on mobile devices */
+      @media (hover: none) {
+        stroke: #fff;
+      }
     }
   }
 
   svg {
+    display: block;
     height: 100%;
     width: 100%;
   }
@@ -131,5 +173,28 @@ export const SocialLink = styled.a`
 
   :last-of-type {
     margin-right: 0;
+  }
+
+  :focus {
+    outline: none;
+
+    .social-link_content {
+      outline: 1px dotted #212121;
+      outline: 5px auto -webkit-focus-ring-color;
+    }
+
+    .social-link_content .linkedin-fill,
+    .social-link_content .medium-fill,
+    .social-link_content .gmail-fill {
+      fill: turquoise;
+    }
+
+    .social-link_content .github-stroke {
+      stroke: turquoise;      
+    }
+  }
+
+  .social-link_content:focus {
+    outline: none;
   }
 `;

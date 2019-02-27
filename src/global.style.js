@@ -5,7 +5,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Lato', Arial, Helvetica, sans-serif;
     line-height: 1.6 !important;
     background-color: ${props => props.theme.backgroundColor};
-    transition: background-color 300ms linear;
+    transition: background-color 250ms linear;
     color: ${props => props.theme.color};
     -webkit-font-smoothing: antialiased;
   }
