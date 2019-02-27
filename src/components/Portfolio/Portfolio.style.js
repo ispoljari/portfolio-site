@@ -14,6 +14,7 @@ export const Paragraph = styled.p`
   }
 
   a {
+    text-decoration: none;
     user-select: none;  
     -webkit-tap-highlight-color: transparent;
     color: inherit;
@@ -25,6 +26,25 @@ export const Paragraph = styled.p`
       @media (hover: none) {
         color: inherit;
       }
+    }
+
+    .email-link_content {
+      display: inline-block;
+      text-decoration: underline;
+    }
+
+    :focus {
+      outline: none;
+
+      .email-link_content {
+        color: turquoise;
+        outline: 1px dotted #212121;
+        outline: 5px auto -webkit-focus-ring-color;
+      }
+    }
+
+    .email-link_content:focus {
+      outline: none;
     }
   }
 `;
@@ -94,12 +114,30 @@ export const ProjectLinks = styled(Box)`
     display: inline-block;
     margin-right: 10px;
     color: white;
-    background-color: #191919;
     text-decoration: none;
-    padding: 10px;
 
     :last-of-type {
       margin-right: 0;
+    }
+
+    .project-link_content {
+      display: block;
+      background-color: #191919;
+      padding: 10px;
+    }
+
+    :focus {
+      outline: none;
+
+      .project-link_content {
+        color: turquoise;
+        outline: 1px dotted #212121;
+        outline: 5px auto -webkit-focus-ring-color;
+      }
+    }
+
+    .project-link_content:focus {
+      outline: none;
     }
   }
 `;

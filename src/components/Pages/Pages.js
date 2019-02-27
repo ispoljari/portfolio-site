@@ -19,7 +19,7 @@ class Pages extends Component {
         >
           <CSSTransition
             key={location.key}
-            timeout={{ enter: 250, exit: 100 }}
+            timeout={{ enter: 200, exit: 30 }}
             classNames="fade"
           >
             <div

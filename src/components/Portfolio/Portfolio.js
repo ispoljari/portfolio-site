@@ -7,7 +7,6 @@ import newsDigestResults from '../../img/news-digest/search-results.png';
 import recipesResults from '../../img/recipe-builder/headline.png';
 import quizzOpeningPage from '../../img/soundtrack-quizz/opening-page.png';
 import { Javascript, Html, Css, Node, Mongodb, Jquery, ReactIcon, Heroku, GithubPages } from '../index';
-import { delayLinkOpen } from '../../util/index';
 
 const Portfolio = () => (
   <Row
@@ -76,15 +75,29 @@ const Portfolio = () => (
             <Styled.ProjectLinks>
               <a 
                 href="https://github.com/ispoljari/run-tracker-app"
-                onClick={delayLinkOpen}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Run tracker code"
               >
-                View Code
+                <span
+                  className="project-link_content"
+                  tabIndex="-1"
+                >
+                  View Code
+                </span>
               </a>
               <a 
                 href="https://pure-peak-20096.herokuapp.com/"
-                onClick={delayLinkOpen}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Run tracker live app"
               >
-                View Project
+                <span
+                  className="project-link_content"
+                  tabIndex="-1"
+                >
+                  View Project
+                </span>
               </a>
             </Styled.ProjectLinks>
           </Col>
@@ -135,15 +148,29 @@ const Portfolio = () => (
             <Styled.ProjectLinks>
               <a 
                 href="https://github.com/ispoljari/news-digest-app"
-                onClick={delayLinkOpen}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="News digest code"
               >
-                View Code
+                <span
+                  className="project-link_content"
+                  tabIndex="-1"
+                >
+                  View Code
+                </span>
               </a>
               <a 
                 href="https://ispoljari.github.io/news-digest-app/"
-                onClick={delayLinkOpen}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="News digest live app"
               >
-                View Project
+                <span
+                  className="project-link_content"
+                  tabIndex="-1"
+                >
+                  View Project
+                </span>
               </a>
             </Styled.ProjectLinks>
           </Col>
@@ -194,15 +221,29 @@ const Portfolio = () => (
             <Styled.ProjectLinks>
               <a 
                 href="https://github.com/ispoljari/react-recipe-builder-app"
-                onClick={delayLinkOpen}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Recipe builder code"
               >
-                View Code
+                <span
+                  className="project-link_content"
+                  tabIndex="-1"
+                >
+                  View Code
+                </span>
               </a>
               <a 
                 href="https://limitless-cove-25974.herokuapp.com/"
-                onClick={delayLinkOpen}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Recipe builder live app"
               >
-                View Project
+                <span
+                  className="project-link_content"
+                  tabIndex="-1"
+                >
+                  View Project
+                </span>
               </a>
             </Styled.ProjectLinks>
           </Col>
@@ -253,15 +294,29 @@ const Portfolio = () => (
             <Styled.ProjectLinks>
               <a 
                 href="https://github.com/ispoljari/quiz-app"
-                onClick={delayLinkOpen}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Soundtracks quizz code"
               >
-                View Code
+                <span
+                  className="project-link_content"
+                  tabIndex="-1"
+                >
+                  View Code
+                </span>
               </a>
               <a 
                 href="https://ispoljari.github.io/quiz-app/"
-                onClick={delayLinkOpen}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Soundtracks quizz live app"
               >
-                View Project
+                <span
+                  className="project-link_content"
+                  tabIndex="-1"
+                >
+                  View Project
+                </span>
               </a>
             </Styled.ProjectLinks>
           </Col>
@@ -278,8 +333,14 @@ const Portfolio = () => (
               Feel free to contact me at&nbsp;
               <a 
                 href="mailto:ivan@ispoljaric.com?subject=Business proposal"
+                aria-label="Send email to ivan@ispoljaric.com"
               >
-                ivan@ispoljaric.com
+                <span
+                  className="email-link_content"
+                  tabIndex="-1"
+                >
+                  ivan@ispoljaric.com
+                </span>
               </a>.
             </Styled.Paragraph>        
           </Col>
