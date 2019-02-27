@@ -1,6 +1,5 @@
 import React from 'react';
 import { Row, Col, Box } from '@smooth-ui/core-sc';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import * as Styled from './Portfolio.style';
 import runTrackerPosts from '../../img/run-tracker/posts.png';
