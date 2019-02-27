@@ -81,14 +81,26 @@ export const NavList = styled.ul`
     :nth-child(1),
     :nth-child(2) {
       a {
-        :hover,
-        :focus {
+        :hover {
           color: turquoise;
         }
+
+        .nav-link_content {
+          display: block;
+        }
         
-        /* :focus {
-          outline: 3px solid blue;
-        } */
+        :focus {
+          outline: none;
+
+          .nav-link_content {
+            color: turquoise;
+            outline: 5px solid turquoise;
+          }
+        }
+
+        .nav-link_content:focus {
+          outline: none;
+        }
       }
     }
 

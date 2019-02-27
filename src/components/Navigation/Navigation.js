@@ -36,8 +36,13 @@ const Navigation = ({ logo, location }) => (
           <Link 
             to="/about"
             aria-label="About page"
+          >
+            <span
+              className="nav-link_content"
+              tabIndex="-1"
             >
-            About
+              About
+            </span>
           </Link>
         </li>
         <li>
@@ -45,7 +50,12 @@ const Navigation = ({ logo, location }) => (
             to="/portfolio"
             aria-label="Portfolio page"
           >
-            Portfolio
+            <span
+              className="nav-link_content"
+              tabIndex="-1"
+            >
+              Portfolio   
+            </span>
           </Link>
         </li>
       </Styled.NavList>
