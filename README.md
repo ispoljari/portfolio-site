@@ -1,6 +1,4 @@
 # Portfolio site
-## LINK:
-[https://www.ispoljaric.com/](https://www.ispoljaric.com/)
 
 ## SUMMARY
 A website with info about me, my interests, projects and skills.
